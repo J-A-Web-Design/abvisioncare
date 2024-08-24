@@ -27,7 +27,24 @@ blueprint:
   image:
     image_path: /src/assets/images/featured-image-5.jpg
     alt_text: An image
-  buttons: [bookshop:structure:buttons]
+  buttons: 
+    - text:
+        type: 'text'
+        label: 'Button Text'
+      link:
+        type: 'url'
+        label: 'Button Link'
+      background_color:
+        type: 'color'
+        label: 'Button Background Color'
+      hover_brightness:
+        type: 'range'
+        label: 'Hover Brightness'
+        min: 0
+        max: 100
+      text_color:
+        type: 'color'
+        label: 'Button Text Color'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
