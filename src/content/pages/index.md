@@ -80,4 +80,10 @@ content_blocks:
       hover_brightness: 0.85
       text_color: '#ffffff'
       button_icon: Github
+  - _bookshop_name: partners
+    title: Our Partners
+    partners:
+      - image: /images/aao-logo.png
+        alt: Alberta Vision Care - Alberta Association of Optometrists
+        link: https://www.optometrists.ab.ca/
 ---
