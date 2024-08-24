@@ -10,7 +10,7 @@ interface Props {
   }
   heading: {
     heading_text: string;
-    heading_gradient_color: string;
+    heading_color: string;
   };
   subheading: {
     markdown_content: string;
@@ -48,7 +48,7 @@ const backgroundImageSrc = getImageUrl(block.background_image.image_path);
 
 <section id="hero-219">
   <div class="cs-container">
-      <h2 class="cs-title"  style={{ '--heading-gradient-color': block.heading.heading_gradient_color }}>{block.heading.heading_text}</h2>
+      <h2 class="cs-title"  style={{ '--heading-gradient-color': block.heading.heading_color }}>{block.heading.heading_text}</h2>
       <p class="cs-text">
          {block.subheading.markdown_content}
       </p>
