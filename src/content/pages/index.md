@@ -92,4 +92,30 @@ content_blocks:
       - image: /images/cao-logo.png
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
+  - _bookshop_name: fourcards
+    title: Why Choose Us
+    cards:
+      - image: /images/alberta-vision-care-logo.png
+        title: Convenient Locations
+        description: >-
+          Find a Superstore Optical near you and schedule your eye exam with
+          ease.
+      - image: /path/to/image2.svg
+        title: Comprehensive Services
+        description: >-
+          We offer a range of services including comprehensive eye exams,
+          emergency eye care, and consultations on eye nutrition for maintaining
+          healthy vision.
+      - image: /path/to/image3.svg
+        title: Advanced Diagnostics
+        description: >-
+          Our optometrists are equipped with state-of-the-art diagnostic tools
+          like retinal cameras and visual field machines to accurately diagnose,
+          treat, and manage various eye diseases.
+      - image: /path/to/image4.svg
+        title: Patient-Centered Care
+        description: >-
+          We prioritize patient education and communication, ensuring you
+          understand your eye health, any potential issues, and how to address
+          them.
 ---
