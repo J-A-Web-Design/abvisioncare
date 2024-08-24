@@ -30,11 +30,11 @@ content_blocks:
     buttons:
       - _bookshop_name: buttons/primary
         button_text: GitHub
-        button_icon: Bars
         button_link: https://www.cloudcannon.com
         background_color: '#034ad8'
         hover_brightness: 0.85
         text_color: '#ffffff'
+        button_icon: Bars
       - _bookshop_name: buttons/secondary
         button_text: CloudCannon
         button_icon: CloudCannon
@@ -63,11 +63,11 @@ content_blocks:
     button:
       _bookshop_name: buttons/primary
       button_text: GitHub
-      button_icon: Github
       button_link: https://www.cloudcannon.com
       background_color: '#034ad8'
       hover_brightness: 0.85
       text_color: '#ffffff'
+      button_icon: Github
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
@@ -90,11 +90,11 @@ content_blocks:
     button:
       _bookshop_name: buttons/primary
       button_text: GitHub
-      button_icon: Github
       button_link: https://www.cloudcannon.com
       background_color: '#034ad8'
       hover_brightness: 0.85
       text_color: '#ffffff'
+      button_icon: Github
   - _bookshop_name: hero-alt
     background_image:
       image_path: /src/assets/images/field.jpg
@@ -111,5 +111,11 @@ content_blocks:
     image:
       image_path:
       alt_text: An image
-    buttons: []
+    buttons:
+      - _bookshop_name: buttons/primary
+        button_text: Book An Appointment
+        button_link: /
+        background_color: '#034AD8'
+        hover_brightness: 0.85
+        text_color: '#FEF9EF'
 ---
