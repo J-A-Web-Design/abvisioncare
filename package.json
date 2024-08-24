@@ -16,6 +16,8 @@
     "@astrojs/react": "^3.0.2",
     "@astrojs/tailwind": "^5.0.0",
     "@bookshop/astro-bookshop": "3.10.0",
+    "@fontsource-variable/exo": "^5.0.20",
+    "@fontsource-variable/montserrat": "^5.0.20",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",

@@ -5,6 +5,10 @@ import Header from '../components/navigation/header.astro';
 import Footer from '../components/navigation/footer.astro';
 import { SEO } from 'astro-seo';
 
+// Supports weights 100-900
+import '@fontsource-variable/exo';
+import '@fontsource-variable/montserrat';
+
 export interface SEOProps {
   page_description: string | null;
   featured_image: string | null;

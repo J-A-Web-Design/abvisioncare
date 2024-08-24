@@ -2,12 +2,12 @@
 spec:
   structures:
     - content_blocks
-  label: Hero Alt
-  description: Outline color
+  label: Hero Section
+  description: A hero section with a background image, heading, subheading, image, and buttons.
   icon: 'cottage'
   tags:
+    - Hero
     - Image
-    - Animation
     - Text
     - Buttons
 
@@ -15,6 +15,7 @@ spec:
 blueprint:
   background_image: 
       image_path: 
+      type: 'image'
       alt_text: An Image
   heading:
     heading_text: Astro Bookshop Starter
