@@ -30,19 +30,23 @@
   "footer": {
     "logo": "/images/logos/logo-wordmark-white.png",
     "logo_url": "/",
-    "copyright": "MyCompany. All rights reserved.",
+    "copyright": "Alberta Vision Care",
+    "developer": "J.A Web Design",
+    "developer_url": "https://jawebdesign.ca/",
     "background_color": "#333232",
     "color": "#ffffff",
-    "links": [
-      {
-        "link": "/blog/",
-        "text": "Blog"
-      },
-      {
-        "link": "/feed.xml",
-        "text": "RSS Feed"
-      }
-    ],
+    "useful_links": [
+    { "text": "Book An Appointment", "url": "#" },
+    { "text": "Contact Us", "url": "#" },
+    { "text": "About Us", "url": "#" },
+    { "text": "Our Optometrists", "url": "#" }
+                   ],
+  "locations": [
+    { "text": "Edmonton", "url": "#" },
+    { "text": "Sherwood Park", "url": "#" },
+    { "text": "St. Albert", "url": "#" },
+    { "text": "Spruce Grove", "url": "#" }
+              ],
     "social": [
       {
         "link": "https://www.facebook.com/mycompany",
