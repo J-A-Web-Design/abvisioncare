@@ -97,8 +97,8 @@ content_blocks:
       button_icon: Github
   - _bookshop_name: hero-alt
     background_image:
-      image_path: /src/assets/images/field.jpg
-      alt_text: An Image
+      image_path: /src/assets/images/alberta-vision-care-hero.jpg
+      alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
       heading_gradient_color: '#a0a2ff'
