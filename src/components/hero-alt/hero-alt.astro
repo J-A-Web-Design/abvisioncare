@@ -51,7 +51,11 @@ const backgroundImageSrc = getImageUrl(block.background_image.image_path);
       <p class="cs-text">
          {block.subheading.markdown_content}
       </p>
-      <a href={block.buttons[0].link} class="cs-button-solid">{block.buttons[0].text}</a>
+      {block.buttons && block.buttons.length > 0 && (
+        <a href={block.buttons[0].link} class="cs-button-solid">
+          {block.buttons[0].text}
+        </a>
+      )}
   </div>
 
   <!-- Background Image -->
