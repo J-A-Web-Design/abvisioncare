@@ -27,7 +27,7 @@ content_blocks:
         Grove, St. Albert, and Sherwood Park. Conveniently located within
         Superstore Optical locations, we offer flexible hours, including
         evenings and weekends, to accommodate your busy schedule.
-      color: '#393939'
+      color: '#F2E2D2'
     buttons:
       - _bookshop_name: buttons/primary
         button_text: Book An Appointment
@@ -39,10 +39,10 @@ content_blocks:
       image_path:
       alt_text: An image
   - _bookshop_name: left-right
-    background_color: '#ffffff'
+    background_color: '#3dc3dc'
     heading:
       heading_text: Heading
-      color: '#393939'
+      color: '#F7B2AD'
     text:
       markdown_content: >-
         In the heart of the bustling city, a quiet park offered a serene escape
