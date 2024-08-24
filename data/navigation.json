@@ -33,8 +33,8 @@
     "copyright": "Alberta Vision Care",
     "developer": "J.A Web Design",
     "developer_url": "https://jawebdesign.ca/",
-    "background_color": "#333232",
-    "color": "#ffffff",
+    "background_color": "#f1f5f9",
+    "color": "#2d3748",
     "useful_links": [
     { "text": "Book An Appointment", "url": "#" },
     { "text": "Contact Us", "url": "#" },
