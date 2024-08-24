@@ -35,19 +35,17 @@ content_blocks:
         hover_brightness: 0.85
         text_color: '#FEF9EF'
   - _bookshop_name: left-right
-    background_color: '#3dc3dc'
+    background_color: '#f2f2f2'
     heading:
-      heading_text: Heading
-      color: '#F7B2AD'
+      heading_text: Our Commitment to Your Vision
+      color: '#393939'
     text:
       markdown_content: >-
-        In the heart of the bustling city, a quiet park offered a serene escape
-        from the urban chaos. The sun cast gentle rays through the canopy of
-        ancient trees, creating a mosaic of light and shadow on the winding
-        paths. Children’s laughter mingled with the rustling of leaves, while
-        couples strolled hand-in-hand, savoring the tranquil atmosphere. Nearby,
-        a fountain bubbled softly, its rhythmic splashes providing a soothing
-        backdrop.
+        At Alberta Vision Care, we are dedicated to delivering high-quality eye
+        care services for your entire family. We understand that your vision is
+        crucial for everyday activities—from driving to work to seeing your
+        loved ones smile. That’s why we emphasize the importance of regular eye
+        exams and not taking your eye health for granted.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg
