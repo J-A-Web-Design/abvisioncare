@@ -49,7 +49,7 @@ const backgroundImageSrc = getImageUrl(block.background_image.image_path);
 <section id="hero-219">
   <div class="cs-container">
       <h2 class="cs-title"  style={`color: ${block.heading.heading_color};`}>{block.heading.heading_text}</h2>
-      <p class="cs-text">
+      <p class="cs-text" style={`color: ${block.subheading.color};`}>
          {block.subheading.markdown_content}
       </p>
       {block.buttons && block.buttons.length > 0 && (

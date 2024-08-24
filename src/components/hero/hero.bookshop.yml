@@ -67,11 +67,17 @@ _inputs:
         subtext:
           - 'Update subheading content and color.'
   heading_color:
-      type: color
-      preview:
-        text:
-          - key: name
-          - 'Select a color for the heading text.'
+    type: 'select'  # Changed from 'color' to 'select'
+    options:
+      - '#3dc3dc' # Light Blue
+      - '#ff5733' # Red
+      - '#33ff57' # Green
+      - '#3357ff' # Blue
+      - '#f5f5f5' # Gray
+    preview:
+      text:
+        - key: name
+        - 'Select a color for the heading text.'
   background_image:
     options:
       preview:
