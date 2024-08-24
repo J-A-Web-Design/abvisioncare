@@ -100,13 +100,14 @@ content_blocks:
       image_path: /src/assets/images/field.jpg
       alt_text: An Image
     heading:
-      heading_text: Astro Bookshop Starter
+      heading_text: Alberta’s Premier Vision Care Provider
       heading_gradient_color: '#a0a2ff'
     subheading:
       markdown_content: >-
-        A starting point for developers looking to build a website with Astro,
-        using Bookshop components in CloudCannon. Create your own copy, and
-        start creating your own components to use in the CloudCannon CMS.
+        Alberta Vision Care is proud to serve patients across Edmonton, Spruce
+        Grove, St. Albert, and Sherwood Park. Conveniently located within
+        Superstore Optical locations, we offer flexible hours, including
+        evenings and weekends, to accommodate your busy schedule.
       color: '#393939'
     image:
       image_path:
