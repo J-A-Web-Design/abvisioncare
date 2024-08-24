@@ -44,8 +44,8 @@ content_blocks:
         evenings and weekends, to accommodate your busy schedule
       color: '#393939'
     image:
-      image_path: /src/assets/images/alberta-vision-care-eye-exam.webp
-      alt_text: An image
+      image_path: /src/assets/images/alberta-vision-care-eye-chart.webp
+      alt_text: Alberta Vision Care Eye Chart
     flipped: false
     button:
       _bookshop_name: buttons/primary
