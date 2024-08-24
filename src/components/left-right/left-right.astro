@@ -111,6 +111,7 @@ const imageSrc =
               <div class="mt-4 md:mt-12 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
                 <Markdown content={block.text.markdown_content} />
               </div>
+              {block.button && <Button {...block.button} />}
             </div>
           </>
         ) : (
@@ -129,6 +130,7 @@ const imageSrc =
               <div class="mt-4 md:mt-12 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
                 <Markdown content={block.text.markdown_content} />
               </div>
+              {block.button && <Button {...block.button} />}
             </div>
           </>
         )
@@ -137,55 +139,12 @@ const imageSrc =
   </Container>
 </section>
 <style>
-  .left-right {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .left-right__wrapper {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
-    padding-block: 24px;
-    padding-inline: 32px;
-  }
-  .left-right__wrapper img {
-    width: 100%;
-    max-width: 500px;
-  }
-  .left-right__wrapper .left-right__text {
-  }
-  @media only screen and (min-width: 768px) {
-    .left-right__wrapper {
-      flex-direction: row;
-      gap: 4rem;
-      padding-block: 48px;
-    }
-    .left-right__wrapper img {
-      width: 50%;
-    }
-    .left-right__wrapper .left-right__text {
-    }
-  }
-  @media only screen and (min-width: 1024px) {
-    .left-right__wrapper {
-      padding-block: 48px;
-      gap: 10rem;
-    }
-  }
-
-  .left-right__wrapper img {
-    margin-top: 32px;
-  }
-
+  @media only screen and (min-width: 1024px) 
+  {
+    
   h2 {
     max-width: 620px;
     margin-block: 30px;
   }
+}
 </style>
