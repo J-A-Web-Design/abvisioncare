@@ -20,6 +20,7 @@ content_blocks:
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
+      heading_color: '#3ac7e1'
       heading_gradient_color: '#3dc3dc'
     subheading:
       markdown_content: >-
@@ -98,6 +99,7 @@ content_blocks:
       alt_text: An Image
     heading:
       heading_text: Astro Bookshop Starter
+      heading_color: '#3dc3dc'
       heading_gradient_color: '#a0a2ff'
     subheading:
       markdown_content: >-
