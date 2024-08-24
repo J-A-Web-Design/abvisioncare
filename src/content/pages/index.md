@@ -15,17 +15,14 @@ seo:
 content_blocks:
   - _bookshop_name: hero
     background_image:
-      image_path: /src/assets/images/alberta-vision-care-hero.jpg
+      image_path: /src/assets/images/alberta-vision-care-hero.webp
       type: image
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
       heading_color: '#3dc3dc'
     subheading:
-      markdown_content: >-
-        Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park.
-        Visit us at Superstore Optical locations with flexible hours, including
-        evenings and weekends, to fit your busy schedule.
+      markdown_content: Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park
       color: '#FEF9EF'
     buttons:
       - _bookshop_name: buttons/primary
@@ -34,6 +31,30 @@ content_blocks:
         background_color: '#034AD8'
         hover_brightness: 0.85
         text_color: '#FEF9EF'
+  - _bookshop_name: left-right
+    background_color: '#f2f2f2'
+    heading:
+      heading_text: Trusted Eye Care in Edmonton & Surrounding Areas
+      color: '#393939'
+    text:
+      markdown_content: >-
+        Alberta Vision Care is proud to serve patients across Edmonton, Spruce
+        Grove, St. Albert, and Sherwood Park. Conveniently located within
+        Superstore Optical locations, we offer flexible hours, including
+        evenings and weekends, to accommodate your busy schedule
+      color: '#393939'
+    image:
+      image_path: /src/assets/images/alberta-vision-care-eye-chart.webp
+      alt_text: Alberta Vision Care Eye Chart
+    flipped: false
+    button:
+      _bookshop_name: buttons/primary
+      button_text: GitHub
+      button_link: https://www.cloudcannon.com
+      background_color: '#034ad8'
+      hover_brightness: 0.85
+      text_color: '#ffffff'
+      button_icon: Github
   - _bookshop_name: left-right
     background_color: '#f2f2f2'
     heading:
@@ -48,36 +69,9 @@ content_blocks:
         exams and not taking your eye health for granted.
       color: '#393939'
     image:
-      image_path: /src/assets/images/featured-image-5.jpg
+      image_path: /src/assets/images/alberta-vision-care-eye-exam.webp
       alt_text: An image
     flipped: true
-    button:
-      _bookshop_name: buttons/primary
-      button_text: GitHub
-      button_link: https://www.cloudcannon.com
-      background_color: '#034ad8'
-      hover_brightness: 0.85
-      text_color: '#ffffff'
-      button_icon: Github
-  - _bookshop_name: left-right
-    background_color: '#ffffff'
-    heading:
-      heading_text: Heading
-      color: '#393939'
-    text:
-      markdown_content: >-
-        In the heart of the bustling city, a quiet park offered a serene escape
-        from the urban chaos. The sun cast gentle rays through the canopy of
-        ancient trees, creating a mosaic of light and shadow on the winding
-        paths. Children’s laughter mingled with the rustling of leaves, while
-        couples strolled hand-in-hand, savoring the tranquil atmosphere. Nearby,
-        a fountain bubbled softly, its rhythmic splashes providing a soothing
-        backdrop.
-      color: '#393939'
-    image:
-      image_path: /src/assets/images/undraw-hello.svg
-      alt_text: An image
-    flipped: false
     button:
       _bookshop_name: buttons/primary
       button_text: GitHub
