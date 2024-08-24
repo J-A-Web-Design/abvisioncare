@@ -1,6 +1,6 @@
 ---
 _schema: page
-title: Home
+title: Alberta Vision Care
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Astro, using
@@ -23,10 +23,10 @@ content_blocks:
       heading_color: '#3dc3dc'
     subheading:
       markdown_content: >-
-        **Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park.
+        Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park.
         Visit us at Superstore Optical locations with flexible hours, including
-        evenings and weekends, to fit your busy schedule.**
-      color: '#F2E2D2'
+        evenings and weekends, to fit your busy schedule.
+      color: '#FEF9EF'
     buttons:
       - _bookshop_name: buttons/primary
         button_text: Book An Appointment
