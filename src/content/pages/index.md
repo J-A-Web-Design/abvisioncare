@@ -13,7 +13,7 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: hero-alt
+  - _bookshop_name: hero
     background_image:
       image_path: /src/assets/images/alberta-vision-care-hero.jpg
       alt_text: Alberta Vision Care optometrist using an eye examination device
