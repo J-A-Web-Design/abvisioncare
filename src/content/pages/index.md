@@ -19,7 +19,7 @@ content_blocks:
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
-      heading_gradient_color: '#a0a2ff'
+      heading_gradient_color: '#475569'
     subheading:
       markdown_content: >-
         Alberta Vision Care is proud to serve patients across Edmonton, Spruce
