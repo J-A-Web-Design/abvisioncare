@@ -35,9 +35,6 @@ content_blocks:
         background_color: '#034AD8'
         hover_brightness: 0.85
         text_color: '#FEF9EF'
-    image:
-      image_path:
-      alt_text: An image
   - _bookshop_name: left-right
     background_color: '#3dc3dc'
     heading:
