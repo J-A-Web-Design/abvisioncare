@@ -48,7 +48,7 @@ const backgroundImageSrc = getImageUrl(block.background_image.image_path);
 
 <section id="hero-219">
   <div class="cs-container">
-      <h1 class="cs-title">{block.heading.heading_text}</h1>
+      <h2 class="cs-title"  style={{ '--heading-gradient-color': block.heading.heading_gradient_color }}>{block.heading.heading_text}</h2>
       <p class="cs-text">
          {block.subheading.markdown_content}
       </p>
@@ -130,7 +130,7 @@ const backgroundImageSrc = getImageUrl(block.background_image.image_path);
           max-width: 51.8125rem;
           /* 16px - 24px */
           margin: 0 auto clamp(1rem, 4vw, 1.5rem) 0;
-          /* color: #fff; */
+          color: #fff;
           position: relative;
       }
       #hero-219 .cs-text {
