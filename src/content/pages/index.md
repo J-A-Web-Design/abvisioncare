@@ -20,7 +20,7 @@ content_blocks:
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
-      heading_gradient_color: '#3dc3dc'
+      heading_color: '#3dc3dc'
     subheading:
       markdown_content: >-
         Alberta Vision Care is proud to serve patients across Edmonton, Spruce
@@ -98,7 +98,7 @@ content_blocks:
       alt_text: An Image
     heading:
       heading_text: Astro Bookshop Starter
-      heading_gradient_color: '#a0a2ff'
+      heading_color: '#a0a2ff'
     subheading:
       markdown_content: >-
         A starting point for developers looking to build a website with Astro,
