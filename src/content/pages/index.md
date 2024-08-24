@@ -15,7 +15,7 @@ seo:
 content_blocks:
   - _bookshop_name: hero
     background_image:
-      image_path: /src/assets/images/alberta-vision-care-hero.jpg
+      image_path: /src/assets/images/alberta-vision-care-hero.webp
       type: image
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
@@ -48,7 +48,7 @@ content_blocks:
         exams and not taking your eye health for granted.
       color: '#393939'
     image:
-      image_path: /src/assets/images/featured-image-5.jpg
+      image_path: /src/assets/images/alberta-vision-care-eye-exam.webp
       alt_text: An image
     flipped: true
     button:
