@@ -89,4 +89,7 @@ content_blocks:
       - image: /images/alberta-collage-of-optometrists.png
         alt: Alberta College of Optometrists
         link: http://www.collegeofoptometrists.ab.ca/
+      - image: /images/cao-logo.png
+        alt: Canadian Association of Optometrists
+        link: https://opto.ca/
 ---
