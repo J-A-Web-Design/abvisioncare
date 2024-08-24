@@ -13,34 +13,30 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: hero
-    background_color: '#FEF9EF'
+  - _bookshop_name: hero-alt
+    background_image:
+      image_path: /src/assets/images/alberta-vision-care-hero.jpg
+      alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
-      heading_text: Astro Bookshop Starter
+      heading_text: Alberta’s Premier Vision Care Provider
       heading_gradient_color: '#a0a2ff'
     subheading:
       markdown_content: >-
-        A starting point for **developers looking to build a website with Astro,
-        using Bookshop components in CloudCannon**. Create your own copy, and
-        start creating your own components to use in the CloudCannon CMS.
+        Alberta Vision Care is proud to serve patients across Edmonton, Spruce
+        Grove, St. Albert, and Sherwood Park. Conveniently located within
+        Superstore Optical locations, we offer flexible hours, including
+        evenings and weekends, to accommodate your busy schedule.
       color: '#393939'
     image:
-      image_path: /src/assets/images/field.jpg
+      image_path:
       alt_text: An image
     buttons:
       - _bookshop_name: buttons/primary
-        button_text: GitHub
-        button_link: https://www.cloudcannon.com
-        background_color: '#034ad8'
+        button_text: Book An Appointment
+        button_link: /
+        background_color: '#034AD8'
         hover_brightness: 0.85
-        text_color: '#ffffff'
-        button_icon: Bars
-      - _bookshop_name: buttons/secondary
-        button_text: CloudCannon
-        button_icon: CloudCannon
-        button_link: https://www.cloudcannon.com
-        text_color: '#034ad8'
-        hover_brightness: 0.95
+        text_color: '#FEF9EF'
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
@@ -95,28 +91,4 @@ content_blocks:
       hover_brightness: 0.85
       text_color: '#ffffff'
       button_icon: Github
-  - _bookshop_name: hero-alt
-    background_image:
-      image_path: /src/assets/images/alberta-vision-care-hero.jpg
-      alt_text: Alberta Vision Care optometrist using an eye examination device
-    heading:
-      heading_text: Alberta’s Premier Vision Care Provider
-      heading_gradient_color: '#a0a2ff'
-    subheading:
-      markdown_content: >-
-        Alberta Vision Care is proud to serve patients across Edmonton, Spruce
-        Grove, St. Albert, and Sherwood Park. Conveniently located within
-        Superstore Optical locations, we offer flexible hours, including
-        evenings and weekends, to accommodate your busy schedule.
-      color: '#393939'
-    image:
-      image_path:
-      alt_text: An image
-    buttons:
-      - _bookshop_name: buttons/primary
-        button_text: Book An Appointment
-        button_link: /
-        background_color: '#034AD8'
-        hover_brightness: 0.85
-        text_color: '#FEF9EF'
 ---
