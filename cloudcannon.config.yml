@@ -158,6 +158,7 @@ _inputs:
         - image/png
         - image/jpeg
         - image/gif
+        - image/webp
       paths:
         static: '.'
         uploads: src/assets/images
