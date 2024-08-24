@@ -23,10 +23,9 @@ content_blocks:
       heading_color: '#3dc3dc'
     subheading:
       markdown_content: >-
-        Alberta Vision Care is proud to serve patients across Edmonton, Spruce
-        Grove, St. Albert, and Sherwood Park. Conveniently located within
-        Superstore Optical locations, we offer flexible hours, including
-        evenings and weekends, to accommodate your busy schedule.
+        **Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park.
+        Visit us at Superstore Optical locations with flexible hours, including
+        evenings and weekends, to fit your busy schedule.**
       color: '#F2E2D2'
     buttons:
       - _bookshop_name: buttons/primary
