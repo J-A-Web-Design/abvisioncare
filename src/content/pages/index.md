@@ -32,9 +32,9 @@ content_blocks:
       - _bookshop_name: buttons/primary
         button_text: Book An Appointment
         button_link: /
-        background_color: '#034AD8'
+        background_color: '#FEF9EF'
         hover_brightness: 0.85
-        text_color: '#FEF9EF'
+        text_color: '#F2E2D2'
   - _bookshop_name: left-right
     background_color: '#3dc3dc'
     heading:
