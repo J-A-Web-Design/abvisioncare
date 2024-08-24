@@ -49,11 +49,11 @@ content_blocks:
     flipped: false
     button:
       _bookshop_name: buttons/primary
-      button_text: GitHub
-      button_link: https://www.cloudcannon.com
+      button_text: Contact Us
+      button_link: /contact
       background_color: '#034ad8'
       hover_brightness: 0.85
-      text_color: '#ffffff'
+      text_color: '#000000'
       button_icon: Github
   - _bookshop_name: left-right
     background_color: '#f2f2f2'
