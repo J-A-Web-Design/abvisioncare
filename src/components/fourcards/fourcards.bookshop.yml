@@ -1,0 +1,54 @@
+spec:
+  structures:
+    - content_blocks
+  label: Four Cards Section
+  description: Section with four cards
+  icon: 'business'
+  tags:
+  - Cards
+  - Section
+
+blueprint:
+  title: "Why Choose Us"
+  cards:
+    
+
+preview:
+  # Add any preview configurations here if needed
+
+_inputs:
+  title:
+    type: text
+    label: Title
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: title
+          - Title
+        subtext:
+          - 'Update the section title.'
+
+  cards:
+    type: group
+    label: Cards
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Images and Text'
+        subtext:
+          - 'Update card images, titles, and descriptions.'
+    fields:
+      - type: image
+        label: Image
+        key: image
+        options:
+          preview:
+            icon: 'image'
+      - type: text
+        label: Title
+        key: title
+      - type: text
+        label: Description
+        key: description
