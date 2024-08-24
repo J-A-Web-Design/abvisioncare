@@ -56,7 +56,7 @@ content_blocks:
       text_color: '#FEF9EF'
       button_icon: Github
   - _bookshop_name: left-right
-    background_color: '#f2f2f2'
+    background_color: '#FAF9F6'
     heading:
       heading_text: Our Commitment to Your Vision
       color: '#393939'
