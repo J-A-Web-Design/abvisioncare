@@ -89,22 +89,4 @@ content_blocks:
       hover_brightness: 0.85
       text_color: '#ffffff'
       button_icon: Github
-  - _bookshop_name: hero
-    background_image:
-      type: image
-      alt_text: An Image
-    heading:
-      heading_text: Astro Bookshop Starter
-      heading_color: '#a0a2ff'
-    subheading:
-      markdown_content: >-
-        A starting point for developers looking to build a website with Astro,
-        using Bookshop components in CloudCannon. Create your own copy, and
-        start creating your own components to use in the CloudCannon CMS.
-      color: '#393939'
-    buttons: []
-    background_color: '#ffffff'
-    image:
-      image_path: /src/assets/images/featured-image-5.jpg
-      alt_text: An image
 ---
