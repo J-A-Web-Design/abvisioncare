@@ -86,4 +86,7 @@ content_blocks:
       - image: /images/aao-logo.png
         alt: Alberta Vision Care - Alberta Association of Optometrists
         link: https://www.optometrists.ab.ca/
+      - image: /images/alberta-collage-of-optometrists.png
+        alt: Alberta College of Optometrists
+        link: http://www.collegeofoptometrists.ab.ca/
 ---
