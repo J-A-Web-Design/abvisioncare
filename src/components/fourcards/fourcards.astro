@@ -14,42 +14,28 @@ const {title, items} = Astro.props;
             </p> -->
         </div>
         <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild.svg" alt="heart icon" width="42" height="42" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Experienced Staff</h3>
-                <p class="cs-item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/toolbox.svg" alt="toolbox icon" width="42" height="42" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Own Our Equipment</h3>
-                <p class="cs-item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Licensed & Insured</h3>
-                <p class="cs-item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Licensed & Insured</h3>
-                <p class="cs-item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                </p>
-            </li>
+            {cards.map((card, index) => (
+                <li class="cs-item" key={index}>
+                    <picture class="cs-picture">
+                        <img
+                            src={card.image}
+                            alt={card.title}
+                            data-cloudcannon-field={`cards[${index}].image`}
+                            class="cs-card-image"
+                            loading="lazy"
+                            decoding="async"
+                            width="42"
+                            height="42"
+                        />
+                    </picture>
+                    <h3 class="cs-h3" data-cloudcannon-field={`cards[${index}].title`}>
+                        {card.title}
+                    </h3>
+                    <p class="cs-item-text" data-cloudcannon-field={`cards[${index}].description`}>
+                        {card.description}
+                    </p>
+                </li>
+            ))}
         </ul>
         <a href="" class="cs-button-solid">Get Free Quote</a>
     </div>
