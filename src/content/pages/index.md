@@ -118,4 +118,19 @@ content_blocks:
       - image: /images/cao-logo.png
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
+  - _bookshop_name: fourcards-alt
+    title: Why Choose Us
+    cards:
+      - image: /path/to/image1.svg
+        title: Experienced Staff
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      - image: /path/to/image2.svg
+        title: Own Our Equipment
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      - image: /path/to/image3.svg
+        title: Licensed & Insured
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      - image: /path/to/image4.svg
+        title: Certified Professionals
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
