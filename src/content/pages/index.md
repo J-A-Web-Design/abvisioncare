@@ -80,18 +80,6 @@ content_blocks:
       hover_brightness: 0.85
       text_color: '#ffffff'
       button_icon: Github
-  - _bookshop_name: partners
-    title: Our Partners
-    partners:
-      - image: /images/aao-logo.png
-        alt: Alberta Vision Care - Alberta Association of Optometrists
-        link: https://www.optometrists.ab.ca/
-      - image: /images/alberta-collage-of-optometrists.png
-        alt: Alberta College of Optometrists
-        link: http://www.collegeofoptometrists.ab.ca/
-      - image: /images/cao-logo.png
-        alt: Canadian Association of Optometrists
-        link: https://opto.ca/
   - _bookshop_name: fourcards
     title: Why Choose Us
     cards:
@@ -118,4 +106,16 @@ content_blocks:
           We prioritize patient education and communication, ensuring you
           understand your eye health, any potential issues, and how to address
           them.
+  - _bookshop_name: partners
+    title: Our Partners
+    partners:
+      - image: /images/aao-logo.png
+        alt: Alberta Vision Care - Alberta Association of Optometrists
+        link: https://www.optometrists.ab.ca/
+      - image: /images/alberta-collage-of-optometrists.png
+        alt: Alberta College of Optometrists
+        link: http://www.collegeofoptometrists.ab.ca/
+      - image: /images/cao-logo.png
+        alt: Canadian Association of Optometrists
+        link: https://opto.ca/
 ---
