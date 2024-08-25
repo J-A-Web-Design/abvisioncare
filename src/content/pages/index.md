@@ -95,7 +95,7 @@ content_blocks:
   - _bookshop_name: fourcards
     title: Why Choose Us
     cards:
-      - image: /images/alberta-vision-care-logo.png
+      - image: /images/alberta-vision-care-convenient-locations.png
         title: Convenient Locations
         description: >-
           Find a Superstore Optical near you and schedule your eye exam with
