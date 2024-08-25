@@ -100,7 +100,7 @@ content_blocks:
         description: >-
           Find a Superstore Optical near you and schedule your eye exam with
           ease.
-      - image: /path/to/image2.svg
+      - image: /images/alberta-vision-care-eye-examination.png
         title: Comprehensive Services
         description: >-
           We offer a range of services including comprehensive eye exams,
