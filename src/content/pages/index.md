@@ -106,7 +106,7 @@ content_blocks:
           We offer a range of services including comprehensive eye exams,
           emergency eye care, and consultations on eye nutrition for maintaining
           healthy vision.
-      - image: /images/alberta-vision-care-advanced-diagnostics.webp
+      - image: /images/alberta-vision-care-advanced-diagnostics.png
         title: Advanced Diagnostics
         description: >-
           Our optometrists are equipped with state-of-the-art diagnostic tools
