@@ -119,18 +119,22 @@ content_blocks:
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
   - _bookshop_name: fourcards-alt
-    title: Why Choose Us
+    title: Our Services
     cards:
-      - image: /path/to/image1.svg
-        title: Experienced Staff
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - image: /path/to/image2.svg
-        title: Own Our Equipment
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - image: /path/to/image3.svg
-        title: Licensed & Insured
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - image: /path/to/image4.svg
-        title: Certified Professionals
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      - image: /images/alberta-vision-care-eye-examination.png
+        title: Eye Exams
+        description: >-
+          Comprehensive exams for all ages, including pediatric and senior eye
+          care.
+      - image: /images/alberta-vision-care-eye-examination.png
+        title: Emergency Care
+        description: Immediate attention for eye injuries or sudden vision problems.
+      - image: /images/alberta-vision-care-eye-examination.png
+        title: Disease Management
+        description: >-
+          Expert management of conditions such as diabetic retinopathy,
+          glaucoma, cataracts, and dry eyes.
+      - image: /images/alberta-vision-care-eye-examination.png
+        title: Consultations
+        description: Advice on eye nutrition and maintaining overall eye health.
 ---
