@@ -112,7 +112,7 @@ content_blocks:
           Our optometrists are equipped with state-of-the-art diagnostic tools
           like retinal cameras and visual field machines to accurately diagnose,
           treat, and manage various eye diseases.
-      - image: /path/to/image4.svg
+      - image: /images/alberta-vision-care-patient-centered-care.png
         title: Patient-Centered Care
         description: >-
           We prioritize patient education and communication, ensuring you
