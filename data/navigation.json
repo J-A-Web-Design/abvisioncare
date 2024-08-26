@@ -18,16 +18,16 @@
         "text": "Services"
       },
       {
+        "link": "/frequently-asked-questions",
+        "text": "FAQs"
+      },
+      {
         "link": "/contact/",
         "text": "Contact"
       },
       {
         "link": "/locations",
         "text": "Location"
-      },
-      {
-        "link": "/frequently-asked-questions",
-        "text": "FAQs"
       }
     ]
   },
