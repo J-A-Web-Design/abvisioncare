@@ -16,8 +16,8 @@ content_blocks:
       - label: Home
         url: /
         active: false
-      - label: About Us
-        url: /about-us
+      - label: Contact Us
+        url: /contact
         active: true
     backgroundImage:
       mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
