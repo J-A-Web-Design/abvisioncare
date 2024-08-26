@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Locations
+title: Book An Eye Exam
 seo:
   page_description:
   canonical_url:
@@ -11,7 +11,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: pagebanner
-    title: Locations
+    title: Book An Eye Exam
     breadcrumbs:
       - label: Home
         url: /
