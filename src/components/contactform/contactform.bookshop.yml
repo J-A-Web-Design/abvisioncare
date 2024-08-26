@@ -1,17 +1,66 @@
-name: ContactForm
-label: Contact Form
-description: A simple contact form component.
-icon: form
-fields:
-  - name: title
-    label: Form Title
+spec:
+  structures:
+    - content_blocks
+  label: Contact Form Section
+  description: A section with a contact form.
+  icon: 'mail'
+  tags:
+  - Forms
+  - Section
+
+blueprint:
+  title: "Get in Touch"
+  subtitle: "We'd love to hear from you."
+  emailTo: "info@example.com"
+  submitText: "Send Message"
+
+preview:
+  # You can configure how the component previews in CloudCannon here
+
+_inputs:
+  title:
     type: text
-    default: Get in Touch
-  - name: submitText
-    label: Submit Button Text
+    label: Title
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: title
+          - Title
+        subtext:
+          - 'Update the form title.'
+
+  subtitle:
     type: text
-    default: Send Message
-  - name: emailTo
+    label: Subtitle
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: subtitle
+          - Subtitle
+        subtext:
+          - 'Update the form subtitle.'
+
+  emailTo:
+    type: text
     label: Email Recipient
+    options:
+      preview:
+        icon: 'email'
+        text:
+          - 'Email Address'
+        subtext:
+          - 'Update the email address where the form submissions will be sent.'
+
+  submitText:
     type: text
-    default: info@example.com
+    label: Submit Button Text
+    options:
+      preview:
+        icon: 'send'
+        text:
+          - key: submitText
+          - Button Text
+        subtext:
+          - 'Update the text on the submit button.'
