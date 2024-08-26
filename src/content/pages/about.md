@@ -10,19 +10,16 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: hero
-    background_image:
-      image_path:
-      type: image
-      alt_text: An Image
-    heading:
-      heading_text: Astro Bookshop Starter
-      heading_color: '#3dc3dc'
-    subheading:
-      markdown_content: >-
-        A starting point for developers looking to build a website with Astro,
-        using Bookshop components in CloudCannon. Create your own copy, and
-        start creating your own components to use in the CloudCannon CMS.
-      color: '#393939'
-    buttons: []
+  - _bookshop_name: pagebanner
+    title: About Us
+    breadcrumbs:
+      - label: Home
+        url: /
+        active: false
+      - label: About Us
+        url: /about-us
+        active: true
+    backgroundImage:
+      mobile:
+      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-about-us.webp
 ---
