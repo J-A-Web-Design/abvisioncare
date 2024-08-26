@@ -24,6 +24,10 @@
       {
         "link": "/locations",
         "text": "Location"
+      },
+      {
+        "link": "/frequently-asked-questions",
+        "text": "FAQs"
       }
     ]
   },
