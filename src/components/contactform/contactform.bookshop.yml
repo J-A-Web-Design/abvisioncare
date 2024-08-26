@@ -1,0 +1,17 @@
+name: ContactForm
+label: Contact Form
+description: A simple contact form component.
+icon: form
+fields:
+  - name: title
+    label: Form Title
+    type: text
+    default: Get in Touch
+  - name: submitText
+    label: Submit Button Text
+    type: text
+    default: Send Message
+  - name: emailTo
+    label: Email Recipient
+    type: text
+    default: info@example.com
