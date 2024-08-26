@@ -24,6 +24,10 @@
       {
         "link": "/locations",
         "text": "Location"
+      },
+      {
+        "link": "/book-an-eye-exam/",
+        "text": "Book Appoinment"
       }
     ]
   },
