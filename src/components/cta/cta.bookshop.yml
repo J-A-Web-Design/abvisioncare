@@ -1,29 +1,29 @@
 spec:
   structures:
     - content_blocks
-  label: Bookshop CTA Section
-  description: Section with a call to action for a bookshop
-  icon: 'book'
+  label: Alberta Vision Care CTA Section
+  description: Section with a call to action for Alberta Vision Care
+  icon: 'visibility'
   tags:
     - CTA
+    - Vision Care
     - Section
-    - Bookshop
 
 blueprint:
-  title: Bookshop CTA Section
+  title: Alberta Vision Care CTA Section
   fields:
     - label: Topper Text
       type: string
-      default: 'Discover Your Next Read'
+      default: 'Your Vision, Our Priority'
     - label: Title
       type: string
-      default: 'Browse Our Bestsellers'
+      default: 'Explore Our Services'
     - label: Button 1 Text
       type: string
-      default: 'Shop Now'
+      default: 'Book an Appointment'
     - label: Button 1 Link
       type: string
-      default: '#shop-now'
+      default: '#book-appointment'
     - label: Button 2 Text
       type: string
       default: 'Contact Us'
@@ -32,13 +32,13 @@ blueprint:
       default: '#contact-us'
     - label: Medium Image URL
       type: string
-      default: 'https://example.com/medium-book-image.jpg'
+      default: 'https://example.com/vision-care-medium.jpg'
     - label: Large Image URL
       type: string
-      default: 'https://example.com/large-book-image.jpg'
+      default: 'https://example.com/vision-care-large.jpg'
     - label: Image Alt Text
       type: string
-      default: 'Books displayed on a shelf'
+      default: 'Vision care clinic with eye exam equipment'
 
 _inputs:
   fields:
