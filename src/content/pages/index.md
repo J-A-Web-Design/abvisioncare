@@ -114,7 +114,7 @@ content_blocks:
         description: >-
           Comprehensive exams for all ages, including pediatric and senior eye
           care.
-      - image: /images/alberta-vision-care-eye-examination.png
+      - image: /images/alberta-vision-care-emergency-care.webp
         title: Emergency Care
         description: Immediate attention for eye injuries or sudden vision problems.
       - image: /images/alberta-vision-care-eye-examination.png
