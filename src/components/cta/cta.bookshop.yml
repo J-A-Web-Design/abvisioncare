@@ -57,35 +57,116 @@ _inputs:
         label: Topper Text
         type: string
         placeholder: 'Enter topper text'
+        options:
+          preview:
+            icon: 'short_text'
+            text:
+              - key: topper
+              - Topper Text
+            subtext:
+              - 'Update the text for the top of the section.'
+
       - name: title
         label: Title
         type: string
         placeholder: 'Enter the section title'
+        options:
+          preview:
+            icon: 'short_text'
+            text:
+              - key: title
+              - Title
+            subtext:
+              - 'Update the main title for the CTA section.'
+
       - name: button1
         label: Button 1 Text
         type: string
         placeholder: 'Enter text for button 1'
+        options:
+          preview:
+            icon: 'short_text'
+            text:
+              - key: button1
+              - Button 1 Text
+            subtext:
+              - 'Update the text for the first button.'
+
       - name: btnlink1
         label: Button 1 Link
         type: string
         placeholder: 'Enter URL for button 1'
+        options:
+          preview:
+            icon: 'link'
+            text:
+              - key: btnlink1
+              - Button 1 Link
+            subtext:
+              - 'Update the URL for the first button.'
+
       - name: button2
         label: Button 2 Text
         type: string
         placeholder: 'Enter text for button 2'
+        options:
+          preview:
+            icon: 'short_text'
+            text:
+              - key: button2
+              - Button 2 Text
+            subtext:
+              - 'Update the text for the second button.'
+
       - name: btnlink2
         label: Button 2 Link
         type: string
         placeholder: 'Enter URL for button 2'
+        options:
+          preview:
+            icon: 'link'
+            text:
+              - key: btnlink2
+              - Button 2 Link
+            subtext:
+              - 'Update the URL for the second button.'
+
       - name: medImage
         label: Medium Image URL
         type: string
         placeholder: 'Enter URL for medium image'
+        options:
+          preview:
+            icon: 'image'
+            text:
+              - key: medImage
+              - Medium Image URL
+            subtext:
+              - 'Update the URL for the medium-sized image.'
+
       - name: largeImage
         label: Large Image URL
         type: string
         placeholder: 'Enter URL for large image'
+        options:
+          preview:
+            icon: 'image'
+            text:
+              - key: largeImage
+              - Large Image URL
+            subtext:
+              - 'Update the URL for the large image.'
+
       - name: imageAlt
         label: Image Alt Text
         type: string
         placeholder: 'Enter alt text for the image'
+        options:
+          preview:
+            icon: 'short_text'
+            text:
+              - key: imageAlt
+              - Image Alt Text
+            subtext:
+              - 'Update the alt text for the image.'
+
