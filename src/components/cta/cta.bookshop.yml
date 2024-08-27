@@ -12,35 +12,35 @@ spec:
 blueprint:
   title: Alberta Vision Care CTA Section
   fields:
-    - label: Topper Text
+    - type: string
+      label: Topper Text
       key: topper_text
-      type: string
       default: 'Your Vision, Our Priority'
-    - label: Title
+    - type: string
+      label: Title
       key: title
-      type: string
       default: 'Explore Our Services'
-    - label: Buttons
+    - type: array
+      label: Buttons
       key: buttons
-      type: array
       structure:
-        - label: Button Text
+        - type: string
+          label: Button Text
           key: text
-          type: string
-        - label: Button Link
+        - type: string
+          label: Button Link
           key: link
-          type: string
-    - label: Medium Image URL
+    - type: string
+      label: Medium Image URL
       key: medium_image_url
-      type: string
       default: 'https://example.com/vision-care-medium.jpg'
-    - label: Large Image URL
+    - type: string
+      label: Large Image URL
       key: large_image_url
-      type: string
       default: 'https://example.com/vision-care-large.jpg'
-    - label: Image Alt Text
+    - type: string
+      label: Image Alt Text
       key: image_alt_text
-      type: string
       default: 'Vision care clinic with eye exam equipment'
 
 _inputs:
@@ -69,7 +69,7 @@ _inputs:
           subtext:
             - 'Update the main title of the CTA section.'
 
-    - type: group
+    - type: array
       label: Buttons
       key: buttons
       structure:
