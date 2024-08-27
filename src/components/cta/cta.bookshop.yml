@@ -24,18 +24,18 @@ blueprint:
       key: title
       default: 'Explore Our Services'
       
-    - type: array
-      label: Buttons
-      key: buttons
-      structure:
-        - type: string
-          label: Button Text
-          key: text
-          default: 'Click Here'
-        - type: string
-          label: Button Link
-          key: link
-          default: 'https://example.com'
+    # - type: array
+    #   label: Buttons
+    #   key: buttons
+    #   structure:
+    #     - type: string
+    #       label: Button Text
+    #       key: text
+    #       default: 'Click Here'
+    #     - type: string
+    #       label: Button Link
+    #       key: link
+    #       default: 'https://example.com'
       
     - type: string
       label: Medium Image URL
@@ -79,21 +79,21 @@ _inputs:
           subtext:
             - 'Update the main title of the CTA section.'
 
-    - type: array
-      label: Buttons
-      key: buttons
-      structure:
-        - type: text
-          label: Button Text
-          key: text
-          placeholder: 'Enter text for the button'
-          options:
-            preview:
-              icon: 'short_text'
-              text:
-                - 'Button Text'
-              subtext:
-                - 'Update the text for this button.'
+    # - type: array
+    #   label: Buttons
+    #   key: buttons
+    #   structure:
+    #     - type: text
+    #       label: Button Text
+    #       key: text
+    #       placeholder: 'Enter text for the button'
+    #       options:
+    #         preview:
+    #           icon: 'short_text'
+    #           text:
+    #             - 'Button Text'
+    #           subtext:
+    #             - 'Update the text for this button.'
         - type: text
           label: Button Link
           key: link
