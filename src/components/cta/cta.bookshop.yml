@@ -82,7 +82,7 @@ blueprints:
         type: string
         default: 'Image description'
 
-inputs:
+_inputs:
   cta_section:
     fields:
       - name: topper
