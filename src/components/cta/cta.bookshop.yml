@@ -24,15 +24,18 @@ blueprint:
       key: title
       default: 'Explore Our Services'
       
-    - type: string
-      label: Button Text
-      key: button1
-      default: 'Click Here'
-      
-    - type: string
-      label: Button Link
-      key: btnlink1
-      default: 'https://example.com'
+    - type: object
+      label: Button
+      key: button
+      fields:
+        - type: string
+          label: Button Text
+          key: text
+          default: 'Click Here'
+        - type: string
+          label: Button Link
+          key: link
+          default: 'https://example.com'
       
     - type: string
       label: Medium Image URL
@@ -76,29 +79,32 @@ _inputs:
           subtext:
             - 'Update the main title of the CTA section.'
 
-    - type: text
-      label: Button Text
-      key: button1
-      placeholder: 'Enter text for the button'
-      options:
-        preview:
-          icon: 'short_text'
-          text:
-            - 'Button Text'
-          subtext:
-            - 'Update the text for the button.'
-
-    - type: text
-      label: Button Link
-      key: btnlink1
-      placeholder: 'Enter URL for the button'
-      options:
-        preview:
-          icon: 'link'
-          text:
-            - 'Button Link'
-          subtext:
-            - 'Update the URL for the button.'
+    - type: object
+      label: Button
+      key: button
+      fields:
+        - type: text
+          label: Button Text
+          key: text
+          placeholder: 'Enter text for the button'
+          options:
+            preview:
+              icon: 'short_text'
+              text:
+                - 'Button Text'
+              subtext:
+                - 'Update the text for the button.'
+        - type: text
+          label: Button Link
+          key: link
+          placeholder: 'Enter URL for the button'
+          options:
+            preview:
+              icon: 'link'
+              text:
+                - 'Button Link'
+              subtext:
+                - 'Update the URL for the button.'
 
     - type: text
       label: Medium Image URL
