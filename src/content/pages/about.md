@@ -25,7 +25,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
-      heading_text: Premium Vision Care
+      heading_text: Expert Eye Care for Your Well-Being
       color: '#393939'
     text:
       markdown_content: >-
@@ -38,14 +38,14 @@ content_blocks:
         to maintain them.
       color: '#393939'
     image:
-      image_path: /src/assets/images/alberta-vision-care-eye-chart.webp
-      alt_text: An image
+      image_path: /src/assets/images/alberta-vision-care-about-us-1-1.webp
+      alt_text: Alberta Vision Care Eye Test
     flipped: true
     button:
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
-      heading_text: Premium Vision Care
+      heading_text: Holistic Approach to Eye Health
       color: '#393939'
     text:
       markdown_content: >-
@@ -58,8 +58,8 @@ content_blocks:
         for all of our patients.
       color: '#393939'
     image:
-      image_path: /src/assets/images/alberta-vision-care-eye-chart.webp
-      alt_text: An image
+      image_path: /src/assets/images/alberta-vision-care-eye-exam-2.webp
+      alt_text: Alberta Vision Care lady taking an eye exam
     flipped: false
     button:
 ---
