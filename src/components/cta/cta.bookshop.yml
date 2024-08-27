@@ -8,40 +8,8 @@ spec:
     - CTA
     - Section
 
-content_blocks:
-  cta_section:
-    label: CTA Section
-    properties:
-      topper:
-        type: string
-        label: Topper Text
-      title:
-        type: string
-        label: Title
-      button1:
-        type: string
-        label: Button 1 Text
-      btnlink1:
-        type: string
-        label: Button 1 Link
-      button2:
-        type: string
-        label: Button 2 Text
-      btnlink2:
-        type: string
-        label: Button 2 Link
-      medImage:
-        type: string
-        label: Medium Image URL
-      largeImage:
-        type: string
-        label: Large Image URL
-      imageAlt:
-        type: string
-        label: Image Alt Text
-
 blueprints:
-  cta_section:
+    cta_section:
     title: CTA Section
     description: Define the content blocks for a call to action section
     fields:
@@ -81,6 +49,8 @@ blueprints:
         label: Image Alt Text
         type: string
         default: 'Image description'
+
+
 
 _inputs:
   cta_section:
