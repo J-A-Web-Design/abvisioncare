@@ -1,25 +1,25 @@
 ---
-const { title, topper, button1, button2, medImage, largeImage } = Astro.props;
+const { title, topper, button1, button2, btnlink1, btnlink2, medImage, largeImage, imageAlt } = Astro.props;
 ---
 <section id="cta-1071">
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">Get Our Services</span>
-                <h2 class="cs-title">Find A Location</h2>
+                <span class="cs-topper">{topper}</span>
+                <h2 class="cs-title">{title}</h2>
             </div>
             <div class="cs-button-box">
-                <a href="" class="cs-button-solid">Schedule Our Services</a>
-                <a href="" class="cs-button-transparent">Contact Us</a>
+                <a href={btnlink1} class="cs-button-solid">{button1}</a>
+                <a href={btnlink2} class="cs-button-transparent">{button2}</a>
             </div>
         </div>
     </div>
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/boxhuwbys/alberta-vision-care-glasses.webp?updatedAt=1722648726101">
+        <source media="(max-width: 600px)" srcset={medImage}>
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/boxhuwbys/alberta-vision-care-glasses.webp?updatedAt=1722648726101">
-        <img loading="lazy" decoding="async" src="https://ik.imagekit.io/boxhuwbys/alberta-vision-care-glasses.webp?updatedAt=1722648726101" alt="mechanic" width="1280" height="568">
+        <source media="(min-width: 601px)" srcset={largeImage}>
+        <img loading="lazy" decoding="async" src={largeImage} alt={imageAlt} width="1280" height="568">
     </picture>
   </section>
   
