@@ -1,4 +1,3 @@
-# Metadata about this component, to be used in the CMS
 spec:
   structures:
     - content_blocks
@@ -10,7 +9,6 @@ spec:
     - Vision Care
     - Section
 
-# Defines the structure of this component, as well as the default values
 blueprint:
   title: Alberta Vision Care CTA Section
   fields:
@@ -24,18 +22,16 @@ blueprint:
       key: title
       default: 'Explore Our Services'
       
-    # - type: array
-    #   label: Buttons
-    #   key: buttons
-    #   structure:
-    #     - type: string
-    #       label: Button Text
-    #       key: text
-    #       default: 'Click Here'
-    #     - type: string
-    #       label: Button Link
-    #       key: link
-    #       default: 'https://example.com'
+    - type: array
+      label: Buttons
+      key: buttons
+      structure:
+        - type: string
+          label: Button Text
+          key: text
+        - type: string
+          label: Button Link
+          key: link
       
     - type: string
       label: Medium Image URL
@@ -52,7 +48,7 @@ blueprint:
       key: image_alt_text
       default: 'Vision care clinic with eye exam equipment'
 
-# Overrides any fields in the blueprint when viewing this component in the component browser
+
 _inputs:
   fields:
     - type: text
@@ -79,21 +75,21 @@ _inputs:
           subtext:
             - 'Update the main title of the CTA section.'
 
-    # - type: array
-    #   label: Buttons
-    #   key: buttons
-    #   structure:
-    #     - type: text
-    #       label: Button Text
-    #       key: text
-    #       placeholder: 'Enter text for the button'
-    #       options:
-    #         preview:
-    #           icon: 'short_text'
-    #           text:
-    #             - 'Button Text'
-    #           subtext:
-    #             - 'Update the text for this button.'
+    - type: array
+      label: Buttons
+      key: buttons
+      structure:
+        - type: text
+          label: Button Text
+          key: text
+          placeholder: 'Enter text for the button'
+          options:
+            preview:
+              icon: 'short_text'
+              text:
+                - 'Button Text'
+              subtext:
+                - 'Update the text for this button.'
         - type: text
           label: Button Link
           key: link
