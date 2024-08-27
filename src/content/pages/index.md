@@ -109,7 +109,7 @@ content_blocks:
   - _bookshop_name: fourcards-alt
     title: Our Services
     cards:
-      - image: /images/alberta-vision-care-eye-examination.png
+      - image: /images/alberta-vision-care-eye-exam.webp
         title: Eye Exams
         description: >-
           Comprehensive exams for all ages, including pediatric and senior eye
