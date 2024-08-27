@@ -50,8 +50,6 @@ blueprints:
         type: string
         default: 'Image description'
 
-
-
 _inputs:
   cta_section:
     fields:
