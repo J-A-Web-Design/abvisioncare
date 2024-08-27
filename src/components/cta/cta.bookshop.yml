@@ -9,7 +9,7 @@ spec:
     - Section
 
 blueprints:
-    cta_section:
+  cta_section:
     title: CTA Section
     description: Define the content blocks for a call to action section
     fields:
