@@ -137,5 +137,4 @@ content_blocks:
       - image: /images/cao-logo.png
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
-  - _bookshop_name: cta
 ---
