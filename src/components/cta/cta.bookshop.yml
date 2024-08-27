@@ -39,3 +39,85 @@ content_blocks:
       imageAlt:
         type: string
         label: Image Alt Text
+
+blueprints:
+  cta_section:
+    title: CTA Section
+    description: Define the content blocks for a call to action section
+    fields:
+      - name: topper
+        label: Topper Text
+        type: string
+        default: 'Get Our Services'
+      - name: title
+        label: Title
+        type: string
+        default: 'Find A Location'
+      - name: button1
+        label: Button 1 Text
+        type: string
+        default: 'Schedule Our Services'
+      - name: btnlink1
+        label: Button 1 Link
+        type: string
+        default: '#'
+      - name: button2
+        label: Button 2 Text
+        type: string
+        default: 'Contact Us'
+      - name: btnlink2
+        label: Button 2 Link
+        type: string
+        default: '#'
+      - name: medImage
+        label: Medium Image URL
+        type: string
+        default: 'https://example.com/medium-image.jpg'
+      - name: largeImage
+        label: Large Image URL
+        type: string
+        default: 'https://example.com/large-image.jpg'
+      - name: imageAlt
+        label: Image Alt Text
+        type: string
+        default: 'Image description'
+
+inputs:
+  cta_section:
+    fields:
+      - name: topper
+        label: Topper Text
+        type: string
+        placeholder: 'Enter topper text'
+      - name: title
+        label: Title
+        type: string
+        placeholder: 'Enter the section title'
+      - name: button1
+        label: Button 1 Text
+        type: string
+        placeholder: 'Enter text for button 1'
+      - name: btnlink1
+        label: Button 1 Link
+        type: string
+        placeholder: 'Enter URL for button 1'
+      - name: button2
+        label: Button 2 Text
+        type: string
+        placeholder: 'Enter text for button 2'
+      - name: btnlink2
+        label: Button 2 Link
+        type: string
+        placeholder: 'Enter URL for button 2'
+      - name: medImage
+        label: Medium Image URL
+        type: string
+        placeholder: 'Enter URL for medium image'
+      - name: largeImage
+        label: Large Image URL
+        type: string
+        placeholder: 'Enter URL for large image'
+      - name: imageAlt
+        label: Image Alt Text
+        type: string
+        placeholder: 'Enter alt text for the image'
