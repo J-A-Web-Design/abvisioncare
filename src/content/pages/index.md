@@ -117,12 +117,12 @@ content_blocks:
       - image: /images/alberta-vision-care-emergency-care.webp
         title: Emergency Care
         description: Immediate attention for eye injuries or sudden vision problems.
-      - image: /images/alberta-vision-care-eye-examination.png
+      - image: /images/alberta-vision-care-eye-exam.webp
         title: Disease Management
         description: >-
           Expert management of conditions such as diabetic retinopathy,
           glaucoma, cataracts, and dry eyes.
-      - image: /images/alberta-vision-care-eye-examination.png
+      - image: /images/alberta-vision-care-eye-exam.webp
         title: Consultations
         description: Advice on eye nutrition and maintaining overall eye health.
   - _bookshop_name: partners
