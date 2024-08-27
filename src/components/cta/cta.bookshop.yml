@@ -13,36 +13,46 @@ blueprint:
   title: Alberta Vision Care CTA Section
   fields:
     - label: Topper Text
+      key: topper_text
       type: string
       default: 'Your Vision, Our Priority'
     - label: Title
+      key: title
       type: string
       default: 'Explore Our Services'
     - label: Button 1 Text
+      key: button_1_text
       type: string
       default: 'Book an Appointment'
     - label: Button 1 Link
+      key: button_1_link
       type: string
       default: '#book-appointment'
     - label: Button 2 Text
+      key: button_2_text
       type: string
       default: 'Contact Us'
     - label: Button 2 Link
+      key: button_2_link
       type: string
       default: '#contact-us'
     - label: Medium Image URL
+      key: medium_image_url
       type: string
       default: 'https://example.com/vision-care-medium.jpg'
     - label: Large Image URL
+      key: large_image_url
       type: string
       default: 'https://example.com/vision-care-large.jpg'
     - label: Image Alt Text
+      key: image_alt_text
       type: string
       default: 'Vision care clinic with eye exam equipment'
 
 _inputs:
   fields:
     - label: Topper Text
+      key: topper_text
       type: text
       placeholder: 'Enter the top text for the CTA section'
       options:
@@ -54,6 +64,7 @@ _inputs:
             - 'Update the text displayed at the top of the section.'
 
     - label: Title
+      key: title
       type: text
       placeholder: 'Enter the main title for the CTA section'
       options:
@@ -65,6 +76,7 @@ _inputs:
             - 'Update the main title of the CTA section.'
 
     - label: Button 1 Text
+      key: button_1_text
       type: text
       placeholder: 'Enter text for the first button'
       options:
@@ -76,6 +88,7 @@ _inputs:
             - 'Update the text for the primary action button.'
 
     - label: Button 1 Link
+      key: button_1_link
       type: text
       placeholder: 'Enter URL for the first button'
       options:
@@ -87,6 +100,7 @@ _inputs:
             - 'Update the URL for the primary action button.'
 
     - label: Button 2 Text
+      key: button_2_text
       type: text
       placeholder: 'Enter text for the second button'
       options:
@@ -98,6 +112,7 @@ _inputs:
             - 'Update the text for the secondary action button.'
 
     - label: Button 2 Link
+      key: button_2_link
       type: text
       placeholder: 'Enter URL for the second button'
       options:
@@ -109,6 +124,7 @@ _inputs:
             - 'Update the URL for the secondary action button.'
 
     - label: Medium Image URL
+      key: medium_image_url
       type: text
       placeholder: 'Enter URL for the medium-sized image'
       options:
@@ -120,6 +136,7 @@ _inputs:
             - 'Update the URL for the image shown on small screens.'
 
     - label: Large Image URL
+      key: large_image_url
       type: text
       placeholder: 'Enter URL for the large image'
       options:
@@ -131,6 +148,7 @@ _inputs:
             - 'Update the URL for the image shown on larger screens.'
 
     - label: Image Alt Text
+      key: image_alt_text
       type: text
       placeholder: 'Enter alt text for the image'
       options:
