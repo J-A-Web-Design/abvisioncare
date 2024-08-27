@@ -1,133 +1,134 @@
 spec:
   structures:
     - content_blocks
-  label: CTA Section
-  description: Section with a call to action
-  icon: 'call_to_action'
+  label: Bookshop CTA Section
+  description: Section with a call to action for a bookshop
+  icon: 'book'
   tags:
     - CTA
     - Section
+    - Bookshop
 
 blueprint:
-  title: CTA Section
+  title: Bookshop CTA Section
   fields:
     - label: Topper Text
       type: string
-      default: 'Get Our Services'
+      default: 'Discover Your Next Read'
     - label: Title
       type: string
-      default: 'Find A Location'
+      default: 'Browse Our Bestsellers'
     - label: Button 1 Text
       type: string
-      default: 'Schedule Our Services'
+      default: 'Shop Now'
     - label: Button 1 Link
       type: string
-      default: '#'
+      default: '#shop-now'
     - label: Button 2 Text
       type: string
       default: 'Contact Us'
     - label: Button 2 Link
       type: string
-      default: '#'
+      default: '#contact-us'
     - label: Medium Image URL
       type: string
-      default: 'https://example.com/medium-image.jpg'
+      default: 'https://example.com/medium-book-image.jpg'
     - label: Large Image URL
       type: string
-      default: 'https://example.com/large-image.jpg'
+      default: 'https://example.com/large-book-image.jpg'
     - label: Image Alt Text
       type: string
-      default: 'Image description'
+      default: 'Books displayed on a shelf'
 
 _inputs:
   fields:
     - label: Topper Text
       type: text
-      placeholder: 'Enter topper text'
+      placeholder: 'Enter the top text for the CTA section'
       options:
         preview:
           icon: 'short_text'
           text:
             - 'Topper Text'
           subtext:
-            - 'Update the text for the top of the section.'
+            - 'Update the text displayed at the top of the section.'
 
     - label: Title
       type: text
-      placeholder: 'Enter the section title'
+      placeholder: 'Enter the main title for the CTA section'
       options:
         preview:
           icon: 'short_text'
           text:
             - 'Title'
           subtext:
-            - 'Update the main title for the CTA section.'
+            - 'Update the main title of the CTA section.'
 
     - label: Button 1 Text
       type: text
-      placeholder: 'Enter text for button 1'
+      placeholder: 'Enter text for the first button'
       options:
         preview:
           icon: 'short_text'
           text:
             - 'Button 1 Text'
           subtext:
-            - 'Update the text for the first button.'
+            - 'Update the text for the primary action button.'
 
     - label: Button 1 Link
       type: text
-      placeholder: 'Enter URL for button 1'
+      placeholder: 'Enter URL for the first button'
       options:
         preview:
           icon: 'link'
           text:
             - 'Button 1 Link'
           subtext:
-            - 'Update the URL for the first button.'
+            - 'Update the URL for the primary action button.'
 
     - label: Button 2 Text
       type: text
-      placeholder: 'Enter text for button 2'
+      placeholder: 'Enter text for the second button'
       options:
         preview:
           icon: 'short_text'
           text:
             - 'Button 2 Text'
           subtext:
-            - 'Update the text for the second button.'
+            - 'Update the text for the secondary action button.'
 
     - label: Button 2 Link
       type: text
-      placeholder: 'Enter URL for button 2'
+      placeholder: 'Enter URL for the second button'
       options:
         preview:
           icon: 'link'
           text:
             - 'Button 2 Link'
           subtext:
-            - 'Update the URL for the second button.'
+            - 'Update the URL for the secondary action button.'
 
     - label: Medium Image URL
       type: text
-      placeholder: 'Enter URL for medium image'
+      placeholder: 'Enter URL for the medium-sized image'
       options:
         preview:
           icon: 'image'
           text:
             - 'Medium Image URL'
           subtext:
-            - 'Update the URL for the medium-sized image.'
+            - 'Update the URL for the image shown on small screens.'
 
     - label: Large Image URL
       type: text
-      placeholder: 'Enter URL for large image'
+      placeholder: 'Enter URL for the large image'
       options:
         preview:
           icon: 'image'
           text:
             - 'Large Image URL'
           subtext:
-            - 'Update the URL for the large image.'
+            - 'Update the URL for the image shown on larger screens.'
 
     - label: Image Alt Text
       type: text
@@ -138,4 +139,4 @@ _inputs:
           text:
             - 'Image Alt Text'
           subtext:
-            - 'Update the alt text for the image.'
+            - 'Update the alt text for the image to improve accessibility.'
