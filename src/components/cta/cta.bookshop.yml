@@ -20,22 +20,16 @@ blueprint:
       key: title
       type: string
       default: 'Explore Our Services'
-    - label: Button 1 Text
-      key: button_1_text
-      type: string
-      default: 'Book an Appointment'
-    - label: Button 1 Link
-      key: button_1_link
-      type: string
-      default: '#book-appointment'
-    - label: Button 2 Text
-      key: button_2_text
-      type: string
-      default: 'Contact Us'
-    - label: Button 2 Link
-      key: button_2_link
-      type: string
-      default: '#contact-us'
+    - label: Buttons
+      key: buttons
+      type: array
+      structure:
+        - label: Button Text
+          key: text
+          type: string
+        - label: Button Link
+          key: link
+          type: string
     - label: Medium Image URL
       key: medium_image_url
       type: string
@@ -75,53 +69,32 @@ _inputs:
           subtext:
             - 'Update the main title of the CTA section.'
 
-    - label: Button 1 Text
-      key: button_1_text
-      type: text
-      placeholder: 'Enter text for the first button'
-      options:
-        preview:
-          icon: 'short_text'
-          text:
-            - 'Button 1 Text'
-          subtext:
-            - 'Update the text for the primary action button.'
-
-    - label: Button 1 Link
-      key: button_1_link
-      type: text
-      placeholder: 'Enter URL for the first button'
-      options:
-        preview:
-          icon: 'link'
-          text:
-            - 'Button 1 Link'
-          subtext:
-            - 'Update the URL for the primary action button.'
-
-    - label: Button 2 Text
-      key: button_2_text
-      type: text
-      placeholder: 'Enter text for the second button'
-      options:
-        preview:
-          icon: 'short_text'
-          text:
-            - 'Button 2 Text'
-          subtext:
-            - 'Update the text for the secondary action button.'
-
-    - label: Button 2 Link
-      key: button_2_link
-      type: text
-      placeholder: 'Enter URL for the second button'
-      options:
-        preview:
-          icon: 'link'
-          text:
-            - 'Button 2 Link'
-          subtext:
-            - 'Update the URL for the secondary action button.'
+    - label: Buttons
+      key: buttons
+      type: group
+      structure:
+        - label: Button Text
+          key: text
+          type: text
+          placeholder: 'Enter text for the button'
+          options:
+            preview:
+              icon: 'short_text'
+              text:
+                - 'Button Text'
+              subtext:
+                - 'Update the text for this button.'
+        - label: Button Link
+          key: link
+          type: text
+          placeholder: 'Enter URL for the button'
+          options:
+            preview:
+              icon: 'link'
+              text:
+                - 'Button Link'
+              subtext:
+                - 'Update the URL for this button.'
 
     - label: Medium Image URL
       key: medium_image_url
