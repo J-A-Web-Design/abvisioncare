@@ -1,0 +1,46 @@
+spec:
+  structures:
+    - content_blocks
+  label: CTA Section
+  description: Section with a call to action
+  icon: 'call_to_action'
+  tags:
+    - CTA
+    - Section
+
+content_blocks:
+  cta_section:
+    label: CTA Section
+    properties:
+      topper:
+        type: string
+        label: Topper Text
+      title:
+        type: string
+        label: Title
+      button1:
+        type: object
+        label: Button 1
+        properties:
+          text:
+            type: string
+            label: Button Text
+          url:
+            type: string
+            label: Button URL
+      button2:
+        type: object
+        label: Button 2
+        properties:
+          text:
+            type: string
+            label: Button Text
+          url:
+            type: string
+            label: Button URL
+      medImage:
+        type: string
+        label: Medium Image URL
+      largeImage:
+        type: string
+        label: Large Image URL
