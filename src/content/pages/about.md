@@ -58,8 +58,8 @@ content_blocks:
         for all of our patients.
       color: '#393939'
     image:
-      image_path: /src/assets/images/alberta-vision-care-eye-chart.webp
-      alt_text: An image
+      image_path: /src/assets/images/alberta-vision-care-eye-exam-2.webp
+      alt_text: Alberta Vision Care lady taking an eye exam
     flipped: false
     button:
 ---
