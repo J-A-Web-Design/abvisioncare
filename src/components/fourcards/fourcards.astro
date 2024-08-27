@@ -40,7 +40,9 @@ const {title, cards} = Astro.props;
                 </li>
             ))}
         </ul>
-        <a href="" class="cs-button-solid">Get Free Quote</a>
+        <div class="pt-8">
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
     </div>
 </div>
 </section>
@@ -52,7 +54,7 @@ const {title, cards} = Astro.props;
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #why-choose-12 {
-        padding: var(--sectionPadding);
+        /* padding: var(--sectionPadding); */
     }
     #why-choose-12 .cs-container {
         width: 100%;

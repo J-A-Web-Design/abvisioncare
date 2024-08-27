@@ -30,17 +30,21 @@ const {title, cards} = Astro.props;
                             height="100"
                         />
                     </picture>
-                    <h3 class="cs-h3" data-cloudcannon-field={`cards[${index}].title`}>
+                    <div class="px-4 pb-4">
+                        <h3 class="cs-h3" data-cloudcannon-field={`cards[${index}].title`}>
                         {card.title}
                     </h3>
                     <p class="cs-item-text" data-cloudcannon-field={`cards[${index}].description`}>
                         {card.description}
                     </p>
+                    </div>
                 </div>
                 </li>
             ))}
         </ul>
-        <a href="" class="cs-button-solid">Get Free Quote</a>
+       <div class="pt-8">
+        <a href="/contact" class="cs-button-solid">Contact Us</a>
+       </div>
     </div>
 </div>
 </section>
@@ -108,7 +112,7 @@ const {title, cards} = Astro.props;
     margin: 0 auto;
     /* prevents padding and border from affecting height and width */
     /* 16px - 32px */
-    padding: clamp(1rem, 4.5vw, 2rem);
+    padding: 0;
     background-color: #ebe9e9;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -131,9 +135,9 @@ const {title, cards} = Astro.props;
         width: auto;
         height: auto;
         margin: auto;
-        margin-bottom: 2rem;
-        border-radius: 50%;
-        background-color: var(--primary);
+        margin-bottom: 0.5rem;
+        /* border-radius: 50%; */
+        /* background-color: var(--primary); */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -143,6 +147,7 @@ const {title, cards} = Astro.props;
         width: auto;
         height: auto;
         display: block;
+        border-radius: 8px 8px 0 0;
     }
     #why-choose-12 .cs-h3 {
         font-size: 1.25rem;
