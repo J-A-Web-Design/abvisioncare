@@ -138,7 +138,7 @@ content_blocks:
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
   - _bookshop_name: cta
-    title: Alberta Vision Care CTA Section
+    title: Looking for a convenient location near you?
     fields:
       - type: stringdfds
         label: dsd
