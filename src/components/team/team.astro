@@ -20,7 +20,6 @@ const { title, topper, description, team_members } = Astro.props;
         <ul class="cs-card-group">
             {team_members.map(member => (
                 <li class="cs-item" key={member.name}>
-                    <span class="cs-job">{member.job_title}</span>
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)" srcset={member.image.mobile} />
                         <source media="(min-width: 601px)" srcset={member.image.tablet} />
@@ -28,6 +27,7 @@ const { title, topper, description, team_members } = Astro.props;
                     </picture>
                     <div class="cs-info">
                         <span class="cs-name">{member.name}</span>
+                    <span class="cs-job">{member.job_title}</span>
                         <div class="cs-social">
                             {member.social_links.facebook && (
                                 <a href={member.social_links.facebook} class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
