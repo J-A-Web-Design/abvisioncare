@@ -62,4 +62,44 @@ content_blocks:
       alt_text: Alberta Vision Care lady taking an eye exam
     flipped: false
     button:
+  - _bookshop_name: team
+    title: Our Expert Team
+    topper: Our Team
+    description: >-
+      Aqestic recusandae laudantium optio amet a quisquam saepe aliquid,
+      voluptate praesentium dicta fuga dolor error.
+    team_members:
+      - name: Esther Howard
+        job_title: Web Developer
+        image:
+          mobile: >-
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
+          tablet: >-
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
+        social_links:
+          facebook: ''
+          twitter: ''
+          instagram: ''
+      - name: Leslie Alexander
+        job_title: Web Developer
+        image:
+          mobile: >-
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
+          tablet: >-
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
+        social_links:
+          facebook: ''
+          twitter: ''
+          instagram: ''
+      - name: Wade Warren
+        job_title: Web Developer
+        image:
+          mobile: >-
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
+          tablet: >-
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
+        social_links:
+          facebook: ''
+          twitter: ''
+          instagram: ''
 ---
