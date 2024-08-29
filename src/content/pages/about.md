@@ -76,24 +76,11 @@ content_blocks:
           facebook: ''
           twitter: ''
           instagram: ''
-      - name: Leslie Alexander
-        job_title: Web Developer
+      - name: Dr Easwaran
+        job_title:
         image:
-          mobile: >-
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
-          tablet: >-
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
-        social_links:
-          facebook: ''
-          twitter: ''
-          instagram: ''
-      - name: Wade Warren
-        job_title: Web Developer
-        image:
-          mobile: >-
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
-          tablet: >-
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
+          mobile: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
+          tablet: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
         social_links:
           facebook: ''
           twitter: ''
