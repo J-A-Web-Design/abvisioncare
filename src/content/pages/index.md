@@ -139,5 +139,9 @@ content_blocks:
         link: https://opto.ca/
   - _bookshop_name: cta
     title: Alberta Vision Care CTA Section
-    fields: []
+    fields:
+      - type: stringdfds
+        label: dsd
+        key: topper_textfsf
+        default: Your Vision, Our Prioritydsf
 ---
