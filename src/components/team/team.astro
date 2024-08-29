@@ -51,3 +51,149 @@ const { title, topper, description, team_members } = Astro.props;
         </ul>
     </div>
 </section>
+<style>
+    /*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #meet-team-1703 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+  }
+  #meet-team-1703 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #meet-team-1703 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #meet-team-1703 .cs-card-group {
+    width: 100%;
+    max-width: 56.9375rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2vw, 1.5rem);
+    row-gap: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  #meet-team-1703 .cs-item {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    grid-column: span 12;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #meet-team-1703 .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #meet-team-1703 .cs-item:hover .cs-name {
+    color: var(--primary);
+  }
+  #meet-team-1703 .cs-job {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 0.5rem 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #meet-team-1703 .cs-job:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--primary);
+    position: relative;
+    display: block;
+  }
+  #meet-team-1703 .cs-picture {
+    width: 100%;
+    /* 300px - 380px */
+    height: clamp(18.75rem, 70vw, 23.75rem);
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #meet-team-1703 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s;
+  }
+  #meet-team-1703 .cs-info {
+    width: 100%;
+    padding: 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #meet-team-1703 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+    color: var(--headerColor);
+    display: block;
+    transition: color 0.3s;
+  }
+  #meet-team-1703 .cs-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #meet-team-1703 .cs-link-icon {
+    width: 1rem;
+    height: auto;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #meet-team-1703 .cs-container {
+    max-width: 80rem;
+  }
+  #meet-team-1703 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #meet-team-1703 .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #meet-team-1703 .cs-card-group {
+    width: 65vw;
+    flex: none;
+  }
+}
+                                
+</style>
