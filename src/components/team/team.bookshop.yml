@@ -1,0 +1,105 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  label: Meet The Team
+  description: A section showcasing team members with their roles and social links.
+  icon: 'group'
+  tags:
+    - Team
+    - Profile
+    - Social
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: Our Expert Team
+  topper: Our Team
+  description: >-
+    Aqestic recusandae laudantium optio amet a quisquam saepe aliquid, voluptate
+    praesentium dicta fuga dolor error.
+  team_members:
+    - name: Esther Howard
+      job_title: Web Developer
+      image:
+        mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
+        tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
+      social_links:
+        facebook: ''
+        twitter: ''
+        instagram: ''
+    - name: Leslie Alexander
+      job_title: Web Developer
+      image:
+        mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
+        tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
+      social_links:
+        facebook: ''
+        twitter: ''
+        instagram: ''
+    - name: Wade Warren
+      job_title: Web Developer
+      image:
+        mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
+        tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
+      social_links:
+        facebook: ''
+        twitter: ''
+        instagram: ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  title:
+    type: text
+    label: Section Title
+    options:
+      preview:
+        icon: 'short_text'
+  topper:
+    type: text
+    label: Section Topper
+    options:
+      preview:
+        icon: 'short_text'
+  description:
+    type: textarea
+    label: Section Description
+    options:
+      preview:
+        icon: 'subject'
+  team_members:
+    type: group
+    label: Team Members
+    options:
+      preview:
+        icon: 'person'
+    fields:
+      - name: name
+        type: text
+        label: Name
+      - name: job_title
+        type: text
+        label: Job Title
+      - name: image
+        type: group
+        label: Images
+        fields:
+          - name: mobile
+            type: image
+            label: Mobile Image
+          - name: tablet
+            type: image
+            label: Tablet & Above Image
+      - name: social_links
+        type: group
+        label: Social Links
+        fields:
+          - name: facebook
+            type: url
+            label: Facebook
+          - name: twitter
+            type: url
+            label: Twitter
+          - name: instagram
+            type: url
+            label: Instagram

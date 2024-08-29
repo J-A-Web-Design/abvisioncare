@@ -9,7 +9,7 @@ const {title, topper, button1, btnlink1, imageAlt} = Astro.props;
                 <h2 class="cs-title">{title}</h2>
             </div>
             <div class="cs-button-box">
-                <a href={btnlink1} class="cs-button-solid">{button1}</a>
+                <a href='/locations' class="cs-button-solid">Find A Clinic</a>
             </div>
         </div>
     </div>
@@ -57,12 +57,12 @@ const {title, topper, button1, btnlink1, imageAlt} = Astro.props;
       gap: clamp(3rem, 6vw, 4rem);
     }
     #cta-1071 .cs-flex {
-      max-width: 39.375rem;
+      max-width: 79.375rem;
     }
   
     #cta-1071 .cs-title {
       margin: 0;
-  
+      text-transform: uppercase;
       color: var(--bodyTextColorWhite);
     }
     #cta-1071 .cs-button-box {
@@ -174,7 +174,7 @@ const {title, topper, button1, btnlink1, imageAlt} = Astro.props;
       display: block;
       height: 100%;
       width: 100%;
-      background: #1a1a1a;
+      background: #1a1a1ae5;
       opacity: 0.88;
       top: 0;
       left: 0;
