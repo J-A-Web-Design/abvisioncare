@@ -1,5 +1,5 @@
 ---
-const {title, topper, button1, btnlink1, medImage, largeImage, imageAlt} = Astro.props;
+const {title, topper, button1, btnlink1, imageAlt} = Astro.props;
 ---
 <section id="cta-1071">
     <div class="cs-container">
@@ -15,10 +15,10 @@ const {title, topper, button1, btnlink1, medImage, largeImage, imageAlt} = Astro
     </div>
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset={medImage}>
+        <source media="(max-width: 600px)" srcset='https://ik.imagekit.io/boxhuwbys/abvisioncare-optometry-banner.webp'>
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset={largeImage}>
-        <img loading="lazy" decoding="async" src={largeImage} alt={imageAlt} width="1280" height="568">
+        <source media="(min-width: 601px)" srcset='https://ik.imagekit.io/boxhuwbys/abvisioncare-optometry-banner.webp'>
+        <img loading="lazy" decoding="async" src='https://ik.imagekit.io/boxhuwbys/abvisioncare-optometry-banner.webp' alt={imageAlt} width="1280" height="568">
     </picture>
   </section>
   
