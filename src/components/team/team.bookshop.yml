@@ -53,19 +53,19 @@ preview:
 _inputs:
   title:
     type: text
-    label: Section Title
+    label: Title
     options:
       preview:
         icon: 'short_text'
   topper:
     type: text
-    label: Section Topper
+    label: Topper
     options:
       preview:
         icon: 'short_text'
   description:
     type: textarea
-    label: Section Description
+    label: Description
     options:
       preview:
         icon: 'subject'
