@@ -65,17 +65,13 @@ content_blocks:
   - _bookshop_name: team
     title: Our Expert Team
     topper: Our Team
-    description: >-
-      Aqestic recusandae laudantium optio amet a quisquam saepe aliquid,
-      voluptate praesentium dicta fuga dolor error.
+    description:
     team_members:
-      - name: Esther Howard
-        job_title: Web Developer
+      - name: Dr Jill
+        job_title:
         image:
-          mobile: >-
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
-          tablet: >-
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
+          mobile: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
+          tablet: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
         social_links:
           facebook: ''
           twitter: ''
