@@ -19,7 +19,7 @@ blueprint:
     praesentium dicta fuga dolor error.
   team_members:
     - name: Esther Howard
-      job_title: Web Developer
+      # job_title: Web Developer
       image:
         mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
         tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
@@ -28,7 +28,7 @@ blueprint:
         twitter: ''
         instagram: ''
     - name: Leslie Alexander
-      job_title: Web Developer
+      # job_title: Web Developer
       image:
         mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
         tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
@@ -37,7 +37,7 @@ blueprint:
         twitter: ''
         instagram: ''
     - name: Wade Warren
-      job_title: Web Developer
+      # job_title: Web Developer
       image:
         mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
         tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
@@ -79,9 +79,9 @@ _inputs:
       - name: name
         type: text
         label: Name
-      - name: job_title
-        type: text
-        label: Job Title
+      # - name: job_title
+      #   type: text
+      #   label: Job Title
       - name: image
         type: group
         label: Images
