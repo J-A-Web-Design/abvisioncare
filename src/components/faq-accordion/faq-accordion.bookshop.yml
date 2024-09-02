@@ -26,9 +26,14 @@ preview:
     options:
       preview:
         icon: 'help_outline'
-    question:
-      type: text
-      label: Question
-    answer:
-      type: markdown
-      label: Answer
+    fields:
+      - name: question
+        type: text
+        label: Question
+      - name: answer
+        type: markdown
+        label: Answer
+        options:
+          preview:
+            icon: 'subject'
+
