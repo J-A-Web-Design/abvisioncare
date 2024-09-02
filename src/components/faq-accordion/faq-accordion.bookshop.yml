@@ -12,7 +12,6 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: Frequently Asked Questions
   faqs:
     - question: What is an Optometrist?
       answer: >-
