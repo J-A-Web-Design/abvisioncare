@@ -1,6 +1,6 @@
 spec:
   structures:
-  -
+  - content_blocks
   label: FAQ Section
   description: Frequently Asked Questions section 
   icon: 'cottage'
