@@ -41,6 +41,9 @@ _inputs:
         label: Answer
         key: answer
         options:
+          allow_resize: true
+          empty_type: 'null'
+          initial_height: 200
           preview:
             icon: 'subject'
 
