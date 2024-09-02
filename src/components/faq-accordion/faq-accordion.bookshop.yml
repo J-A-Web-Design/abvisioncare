@@ -13,8 +13,10 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   faqs:
-    - question: What is an Optometrist?
-      answer: >-
+    - question:
+        text: "What is an Optometrist?"
+      answer:
+        markdown_content: >-
           The Canadian Association of Optometrists (CAO) defines an optometrist, or Doctor of Optometry, 
           as an independent primary health care provider with expertise in examining, diagnosing, treating, 
           managing, and preventing diseases and disorders related to the visual system, the eyes, and their 

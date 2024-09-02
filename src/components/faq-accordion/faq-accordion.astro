@@ -1,5 +1,13 @@
 ---
-const { faqs } = Astro.props;
+interface Props{
+    question:{
+        text:string;
+    };
+    answer:{
+        markdown_content: string;
+    }
+}
+const faqs = Astro.props;
 ---
 
 <!-- ============================================ -->
@@ -25,11 +33,11 @@ const { faqs } = Astro.props;
                         <li key={index} class="cs-faq-item">
                             <button class="cs-button">
                                 <span class="cs-button-text">
-                                    {item.question}
+                                    {item.question.text}
                                 </span>
                             </button>
                             <p class="cs-item-p">
-                                {item.answer}
+                                {item.answer.markdown_content}
                             </p>
                         </li>
                     ))
