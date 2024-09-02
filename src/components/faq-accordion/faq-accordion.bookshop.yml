@@ -20,22 +20,15 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  title:
-    type: text
-    label: Title
-    options:
-      preview:
-        icon: 'short_text'
   faqs:
     type: group
     label: FAQs
     options:
       preview:
         icon: 'help_outline'
-    fields:
-      - name: question
-        type: text
-        label: Question
-      - name: answer
-        text:
-            - Text
+    question:
+      type: text
+      label: Question
+    answer:
+      type: markdown
+      label: Answer
