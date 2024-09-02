@@ -13,13 +13,13 @@ blueprint:
   title:
     title_text: 'Frequently Asked Questions'
   faq:
-    question:
-      type: text
-      label: 'Question Text'
-    answer:
-      type: markdown
-      label: 'Answer Text'
-      markdown_content: >-
+    fields:
+      - name: question
+        type: text
+        label: 'Question Text'
+      - name: answer
+        type: markdown
+        label: 'Answer Text'
 
 _inputs:
   title:
