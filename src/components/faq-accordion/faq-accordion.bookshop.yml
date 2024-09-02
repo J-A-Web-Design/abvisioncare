@@ -10,8 +10,6 @@ spec:
     - Questions
 
 blueprint:
-  title:
-    title_text: 'Frequently Asked Questions'
   faq:
     question:
       type: text
@@ -21,13 +19,6 @@ blueprint:
       label: 'Answer Text'
 
 _inputs:
-  title:
-    options:
-      preview:
-        icon: 'short_text'
-        text:
-          - key: title_text
-          - 'Update FAQ section title.'
   faq:
     options:
       preview:
