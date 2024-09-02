@@ -1,0 +1,20 @@
+spec:
+  structures:
+  -
+  label: FAQ Section
+  description: Frequently Asked Questions section 
+  icon: 'cottage'
+  tags:
+  fields:
+      - label: FAQ Items
+        name: faqs
+        type: group
+        fields:
+          - label: Question
+            name: question
+            type: text
+            default: "What are your prices for brake replacement?"
+          - label: Answer
+            name: answer
+            type: textarea
+            default: "Some cleaning plans require a minimum commitment term..."
