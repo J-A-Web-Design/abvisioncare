@@ -2,19 +2,43 @@ spec:
   structures:
   - content_blocks
   label: FAQ Section
-  description: Frequently Asked Questions section 
-  icon: 'cottage'
+  description: A FAQ section with a list of frequently asked questions.
+  icon: 'help_outline'
   tags:
-  fields:
-      - label: FAQ Items
-        name: faqs
-        type: group
-        fields:
-          - label: Question
-            name: question
-            type: text
-            default: "What are your prices for brake replacement?"
-          - label: Answer
-            name: answer
-            type: textarea
-            default: "Some cleaning plans require a minimum commitment term..."
+    - FAQ
+    - Text
+    - Questions
+
+blueprint:
+  title:
+    title_text: 'Frequently Asked Questions'
+    title_color: '#3dc3dc'
+  faq_items:
+    - question:
+        type: 'text'
+        label: 'Question Text'
+      answer:
+        type: 'markdown'
+        label: 'Answer Text'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  title:
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: title_text
+          - 'Update FAQ section title.'
+  faq_items:
+    options:
+      preview:
+        icon: 'help_outline'
+        text:
+          - Question
+        subtext:
+          - 'Update the question and answer pairs.'
+
