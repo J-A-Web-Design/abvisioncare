@@ -20,6 +20,6 @@ content_blocks:
         url: /about-us
         active: true
     backgroundImage:
-      mobile:
-      desktop:
+      mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
+      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
 ---
