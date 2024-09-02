@@ -23,14 +23,14 @@ content_blocks:
       mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
       desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
   - _bookshop_name: faq-accordion
-    title:
-      title_text: Frequently Asked Questions
-      title_color: '#3dc3dc'
-    faq_items:
-      - question:
-          type: text
-          label: Question Text
-        answer:
-          type: markdown
-          label: Answer Text
+    title: Frequently Asked Questions
+    faqs:
+      - question: What is an Optometrist?
+        answer: >-
+          The Canadian Association of Optometrists (CAO) defines an optometrist,
+          or Doctor of Optometry, as an independent primary health care provider
+          with expertise in examining, diagnosing, treating, managing, and
+          preventing diseases and disorders related to the visual system, the
+          eyes, and their associated structures. Additionally, optometrists are
+          skilled in identifying ocular manifestations of systemic conditions.
 ---
