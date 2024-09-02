@@ -1,5 +1,5 @@
 ---
-const { faq } = Astro.props;
+const { faqs } = Astro.props;
 ---
 
 <!-- ============================================ -->
@@ -11,24 +11,24 @@ const { faq } = Astro.props;
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture1">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/body-shop.jpg">
+                <source media="(max-width: 600px)" srcset="">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/body-shop.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/body-shop.jpg" alt="body shop" width="522" height="609" aria-hidden="true">
+                <source media="(min-width: 601px)" srcset="">
+                <img loading="lazy" decoding="async" src="" alt="" width="522" height="609" aria-hidden="true">
             </picture>
             <picture class="cs-picture cs-picture2">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-cutout.png">
+                <source media="(max-width: 600px)" srcset="">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-cutout.png">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-cutout.png" alt="mechanic" width="263" height="650" aria-hidden="true">
+                <source media="(min-width: 601px)" srcset="">
+                <img loading="lazy" decoding="async" src="" alt="" width="263" height="650" aria-hidden="true">
             </picture>
         </div>
         <div class="cs-content">
             <h2 class="cs-title">Frequently Asked Questions</h2>
             <ul class="cs-faq-group">
-                {faq && faq.length > 0 ? (
-                    faq.map((item, index) => (
+                {faqs && faqs.length > 0 ? (
+                    faqs.map((item, index) => (
                         <li key={index} class="cs-faq-item">
                             <button class="cs-button">
                                 <span class="cs-button-text">
