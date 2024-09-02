@@ -29,16 +29,7 @@ _inputs:
     options:
       preview:
         icon: 'help_outline'
-    fields:
-      - name: question
+    question:
         type: text
-        label: Question
-      - name: answer
+    answer:
         type: markdown
-        label: Answer
-        options:
-          allow_resize: true
-          empty_type: 'null'
-          initial_height: 200
-          preview:
-            icon: 'subject'
