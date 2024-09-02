@@ -13,13 +13,12 @@ blueprint:
   title:
     title_text: 'Frequently Asked Questions'
   faq:
-    fields:
-      - name: question
-        type: text
-        label: 'Question Text'
-      - name: answer
-        type: markdown
-        label: 'Answer Text'
+    question:
+      type: text
+      label: 'Question Text'
+    answer:
+      type: markdown
+      label: 'Answer Text'
 
 _inputs:
   title:
@@ -37,10 +36,3 @@ _inputs:
           - 'Question'
         subtext:
           - 'Update the question and answer pairs.'
-    fields:
-      - name: question
-        type: text
-        label: 'Question Text'
-      - name: answer
-        type: markdown
-        label: 'Answer Text'
