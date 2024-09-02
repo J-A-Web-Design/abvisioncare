@@ -21,10 +21,6 @@ blueprint:
         type: 'markdown'
         label: 'Answer Text'
 
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-
-# Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   title:
     options:
@@ -38,7 +34,15 @@ _inputs:
       preview:
         icon: 'help_outline'
         text:
-          - Question
+          - 'Question'
         subtext:
           - 'Update the question and answer pairs.'
+    fields:
+      - name: question
+        type: text
+        label: 'Question Text'
+      - name: answer
+        type: markdown
+        label: 'Answer Text'
+
 
