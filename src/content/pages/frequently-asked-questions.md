@@ -22,4 +22,15 @@ content_blocks:
     backgroundImage:
       mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
       desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
+  - _bookshop_name: faq-accordion
+    title:
+      title_text: Frequently Asked Questions
+      title_color: '#3dc3dc'
+    faq_items:
+      - question:
+          type: text
+          label: Question Text
+        answer:
+          type: markdown
+          label: Answer Text
 ---
