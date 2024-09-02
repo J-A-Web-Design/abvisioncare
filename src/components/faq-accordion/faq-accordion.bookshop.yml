@@ -25,10 +25,10 @@ _inputs:
   faqs:
     type: group
     label: FAQs
-    options:
-      preview:
-        icon: 'help_outline'
-    question:
+    fields:
+      - name: question
+        label: Question
         type: text
-    answer:
+      - name: answer
+        label: Answer
         type: markdown
