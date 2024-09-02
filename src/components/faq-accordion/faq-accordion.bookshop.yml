@@ -21,10 +21,6 @@ blueprint:
         managing, and preventing diseases and disorders related to the visual system, the eyes, and their 
         associated structures. Additionally, optometrists are skilled in identifying ocular manifestations of systemic conditions.
 
-
-preview:
-  # Add any preview configurations here if needed
-
 # Overrides any fields in the blueprint when viewing this component in the component browser
 _inputs:
   faqs:
@@ -34,16 +30,15 @@ _inputs:
       preview:
         icon: 'help_outline'
     fields:
-      - type: text
+      - name: question
+        type: text
         label: Question
-        key: question
-      - type: markdown
+      - name: answer
+        type: markdown
         label: Answer
-        key: answer
         options:
           allow_resize: true
           empty_type: 'null'
           initial_height: 200
           preview:
             icon: 'subject'
-
