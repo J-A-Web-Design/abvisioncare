@@ -16,8 +16,7 @@ blueprint:
         type: text
         label: 'Question Text'
       - name: answer
-        type: markdown
-        label: 'Answer Text'
+        markdown_content: >-
 
 _inputs:
   faq:
