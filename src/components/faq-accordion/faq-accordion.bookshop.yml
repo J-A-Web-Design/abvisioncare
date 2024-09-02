@@ -37,5 +37,5 @@ preview:
         type: text
         label: Question
       - name: answer
-        type: markdown
-        label: Answer
+        type: textarea
+        label: question
