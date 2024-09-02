@@ -11,12 +11,13 @@ spec:
 
 blueprint:
   faq:
-    question:
-      type: text
-      label: 'Question Text'
-    answer:
-      type: markdown
-      label: 'Answer Text'
+    fields:
+      - name: question
+        type: text
+        label: 'Question Text'
+      - name: answer
+        type: markdown
+        label: 'Answer Text'
 
 _inputs:
   faq:
