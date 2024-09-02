@@ -27,12 +27,12 @@ preview:
       preview:
         icon: 'help_outline'
     fields:
-      - name: question
-        type: text
-        label: Question
       - type: text
         label: Question
-        key: description
+        key: question
+      - type: textarea
+        label: Answer
+        key: answer
         options:
           preview:
             icon: 'subject'
