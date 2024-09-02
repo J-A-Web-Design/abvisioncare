@@ -30,7 +30,7 @@ preview:
       - type: text
         label: Question
         key: question
-      - type: textarea
+      - type: markdown
         label: Answer
         key: answer
         options:
