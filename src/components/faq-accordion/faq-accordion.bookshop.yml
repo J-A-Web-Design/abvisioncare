@@ -1,6 +1,6 @@
 spec:
   structures:
-  - content_blocks
+    - content_blocks
   label: FAQ Section
   description: A FAQ section with a list of frequently asked questions.
   icon: 'help_outline'
@@ -12,14 +12,14 @@ spec:
 blueprint:
   title:
     title_text: 'Frequently Asked Questions'
-    title_color: '#3dc3dc'
-  faq_items:
-    - question:
-        type: 'text'
-        label: 'Question Text'
-      answer:
-        type: 'markdown'
-        label: 'Answer Text'
+  faq:
+    question:
+      type: text
+      label: 'Question Text'
+    answer:
+      type: markdown
+      label: 'Answer Text'
+      markdown_content: >-
 
 _inputs:
   title:
@@ -29,7 +29,7 @@ _inputs:
         text:
           - key: title_text
           - 'Update FAQ section title.'
-  faq_items:
+  faq:
     options:
       preview:
         icon: 'help_outline'
@@ -44,5 +44,3 @@ _inputs:
       - name: answer
         type: markdown
         label: 'Answer Text'
-
-

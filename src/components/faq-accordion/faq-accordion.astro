@@ -1,5 +1,5 @@
 ---
-const { faqs } = Astro.props;
+const { question, answer } = Astro.props;
 ---
 
 <!-- ============================================ -->
@@ -27,19 +27,23 @@ const { faqs } = Astro.props;
         <div class="cs-content">
             <h2 class="cs-title">Frequently Asked Questions</h2>
             <ul class="cs-faq-group">
-                {faqs.map(faq => (
+                {question && answer ?(
 
                 <li class="cs-faq-item active">
                     <button class="cs-button">
                         <span class="cs-button-text" data-cms="question">
-                            {faq.question}
+                            {question}
                         </span>
                     </button>
                     <p class="cs-item-p" data-cms="answer">
-                        {faq.answer}
+                        {answer}
                     </p>
                 </li>
-                ))}
+                ) : (
+                    <li class="cs-faq-item">
+                        <p>No FAQs available.</p>
+                    </li>
+                )}
             </ul>
         </div>
     </div>
