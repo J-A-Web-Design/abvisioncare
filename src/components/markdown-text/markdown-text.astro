@@ -1,0 +1,77 @@
+---
+import Markdown from "../utility/markdown.astro";
+import { marked } from 'marked';
+
+interface Props {
+  markdown: {
+    heading:string;
+    markdown_content: string;
+    color: string;
+  };
+}
+
+const block = Astro.props;
+
+---
+
+<!-- ============================================ --><!--                     FAQ                      --><!-- ============================================ -->
+<section id="faq-1194">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h2 class="cs-title">{block.markdown?.heading}</h2>
+      <Markdown content={block.markdown?.markdown_content || 'Content not available'}>          
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #faq-1194 {
+      padding: var(--sectionPadding);
+      position: relative;
+      overflow: hidden;
+    }
+    #faq-1194 .cs-container {
+      width: 100%;
+      /* chnages to 1280px at desktop */
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* 40px - 48px */
+      gap: clamp(2.5rem, 5vw, 3rem);
+    }
+    #faq-1194 .cs-content {
+      text-align: left;
+      max-width: 80rem;
+    }
+
+    #faq-1194 .cs-title {
+      /* 20 characters wide including spaces */
+      max-width: 120ch;
+      margin: 0 0 2rem 0;
+    }
+
+  }
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #faq-1194 .cs-container {
+      max-width: 80rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    #faq-1194 .cs-content {
+      width: 100%;
+    }
+
+  }
+</style>
