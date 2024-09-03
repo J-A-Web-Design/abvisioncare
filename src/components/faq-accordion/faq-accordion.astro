@@ -16,9 +16,9 @@ const block = Astro.props;
   <div class="cs-container">
     <div class="cs-content">
       <h2 class="cs-title">Frequently Asked Questions</h2>
-      <p class="cs-text" style={`color: ${block.faqtext?.color || 'black'};`}>
+      <div>
         {block.faqtext?.markdown_content || 'Content not available'}
-      </p>
+      </div>
     </div>
   </div>
 </section>
