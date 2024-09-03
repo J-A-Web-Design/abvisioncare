@@ -15,7 +15,6 @@ blueprint:
   FAQs:
     markdown_content: >-
       A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
-    color: '#393939'
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
