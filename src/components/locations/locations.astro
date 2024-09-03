@@ -1,8 +1,8 @@
 ---
-
-const locationsBlock = locationsData.content_blocks.find(block => block.type === 'locations_list');
+const locationsBlock = Astro.props.locationsData.content_blocks.find(block => block.type === 'locations_list');
 const locations = locationsBlock ? locationsBlock.fields[0].fields : [];
 ---
+
 
 <div class="sm:flex flex-row justify-center">
     <div class="m-8">
