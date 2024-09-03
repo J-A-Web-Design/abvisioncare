@@ -17,7 +17,7 @@ const block = Astro.props;
 <section id="faq-1194">
   <div class="cs-container">
     <div class="cs-content">
-      <h2 class="cs-title">Frequently Asked Questions</h2>
+      <h2 class="cs-title">Common Questions & Answers about Vision Care in Alberta</h2>
       <Markdown content={block.faqs?.markdown_content || 'Content not available'}>          
     </div>
   </div>
@@ -55,17 +55,8 @@ const block = Astro.props;
 
     #faq-1194 .cs-title {
       /* 20 characters wide including spaces */
-      max-width: 50ch;
+      max-width: 120ch;
       margin: 0 0 2rem 0;
-    }
-    #faq-1194 .cs-faq-group {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 1rem;
     }
 
   }
