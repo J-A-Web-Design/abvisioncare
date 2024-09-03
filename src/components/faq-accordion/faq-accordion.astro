@@ -3,7 +3,7 @@ import Markdown from "../utility/markdown.astro";
 import { marked } from 'marked';
 
 interface Props {
-  faqtext: {
+  faqs: {
     markdown_content: string;
     color: string;
   };
@@ -11,8 +11,6 @@ interface Props {
 
 const block = Astro.props;
 
-// Convert Markdown content to HTML
-const faqHtml = marked(block.faqtext?.markdown_content || 'Content not available');
 ---
 
 <!-- ============================================ --><!--                     FAQ                      --><!-- ============================================ -->
@@ -20,7 +18,7 @@ const faqHtml = marked(block.faqtext?.markdown_content || 'Content not available
   <div class="cs-container">
     <div class="cs-content">
       <h2 class="cs-title">Frequently Asked Questions</h2>
-      <Markdown content={block.faqtext?.markdown_content || 'Content not available'}>          
+      <Markdown content={block.faqs?.markdown_content || 'Content not available'}>          
     </div>
   </div>
 </section>
