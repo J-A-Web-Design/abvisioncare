@@ -31,7 +31,7 @@ content_blocks:
         services:
 
 
-        **General Eye Exam Recommendations:**
+        ### **General Eye Exam Recommendations:**
 
 
         * **Ages 19 to 64:** We suggest having your eyes examined every two
@@ -47,7 +47,10 @@ content_blocks:
         monitor your condition closely.
 
 
-        **Comprehensive Eye Exam Includes:**
+        &nbsp;
+
+
+        ### **Comprehensive Eye Exam Includes:**
 
 
         * Glasses Prescription
@@ -63,7 +66,10 @@ content_blocks:
         * Eye teaming evaluation
 
 
-        **Pediatric Eye Exam:**
+        &nbsp;
+
+
+        ### **Pediatric Eye Exam:**
 
 
         * **Coverage:** Children from six months to nineteen years are covered
@@ -73,8 +79,9 @@ content_blocks:
         child turns one year old to identify any issues early and provide
         necessary treatment.
 
+          &nbsp;
 
-        **Senior Eye Exam:**
+        ### **Senior Eye Exam:**
 
 
         * **Coverage:** Individuals over 65 receive annual eye exams under
@@ -85,7 +92,10 @@ content_blocks:
         cataracts, particularly in relation to hypertension or diabetes.
 
 
-        **Emergencies:**
+        &nbsp;
+
+
+        ### **Emergencies:**
 
 
         * **During Office Hours:** Contact our office immediately if you
@@ -95,7 +105,10 @@ content_blocks:
         10240 Kingsway Ave NW, Edmonton.
 
 
-        **Emergency Situations to Address:**
+        &nbsp;
+
+
+        ### **Emergency Situations to Address:**
 
 
         * Redness and irritation
