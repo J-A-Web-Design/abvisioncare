@@ -20,12 +20,7 @@ const faqHtml = marked(block.faqtext?.markdown_content || 'Content not available
   <div class="cs-container">
     <div class="cs-content">
       <h2 class="cs-title">Frequently Asked Questions</h2>
-      <div>
-        {block.faqtext?.markdown_content || 'Content not available'}
-      </div>
-
-          <!-- Render the HTML content -->
-          <div innerHTML={faqHtml} />
+      <Markdown content={block.faqtext?.markdown_content || 'Content not available'}>          
     </div>
   </div>
 </section>
