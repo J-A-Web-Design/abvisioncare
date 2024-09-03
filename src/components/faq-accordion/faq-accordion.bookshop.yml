@@ -12,7 +12,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  faqtext:
+  FAQs:
     markdown_content: >-
       A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
     color: '#393939'
@@ -23,11 +23,11 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  faqtext:
+  FAQs:
     options:
       preview:
         icon: 'short_text'
         text:
-          - Subheading
+          - FAQs
         subtext:
-          - 'Update subheading content and color.'
+          - 'Update frequently asked questions.'
