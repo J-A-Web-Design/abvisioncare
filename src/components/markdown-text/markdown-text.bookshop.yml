@@ -28,6 +28,6 @@ _inputs:
       preview:
         icon: 'short_text'
         text:
-          - markdowns
+          - Markdown
         subtext:
           - 'Update frequently asked questions.'
