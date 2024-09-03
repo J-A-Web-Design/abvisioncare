@@ -84,3 +84,22 @@ main {
 img {
   object-fit: cover;
 }
+
+iframe {
+  max-width: 320px;
+  max-height: 320px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 468px) {
+  iframe {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 600px;
+    height: 800px;
+  }
+}
