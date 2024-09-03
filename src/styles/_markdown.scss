@@ -15,7 +15,7 @@
   line-height: 2.5rem;
 }
 .markdown-text h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 2rem;
   font-family: "Exo Variable", sans-serif;
   font-weight: bold;
@@ -123,5 +123,8 @@
   }
   .markdown-text li {
     font-size: 1.5rem;
+  }
+  .markdown-text h3 {
+    font-size: 2rem;
   }
 }
