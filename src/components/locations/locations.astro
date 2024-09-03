@@ -1,6 +1,5 @@
 ---
-const locationsBlock = Astro.props.locationsData.content_blocks.find(block => block.type === 'locations_list');
-const locations = locationsBlock ? locationsBlock.fields[0].fields : [];
+const { locations } = Astro.props;
 ---
 
 
