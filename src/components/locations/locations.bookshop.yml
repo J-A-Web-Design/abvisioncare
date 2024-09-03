@@ -134,7 +134,7 @@ _inputs:
         type: text
         label: Address
       - name: number
-        type: text
+        type: number
         label: Phone Number
       - name: numberLink
         type: text
