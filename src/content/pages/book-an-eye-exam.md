@@ -22,4 +22,5 @@ content_blocks:
     backgroundImage:
       mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
       desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
+  - _bookshop_name: booking
 ---
