@@ -23,7 +23,7 @@ content_blocks:
       mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
       desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
   - _bookshop_name: faq-accordion
-    faqtext:
+    FAQs:
       markdown_content: >-
         What is an Optometrist?
 
@@ -226,5 +226,4 @@ content_blocks:
         If you need a recheck or have any questions about your eligibility, feel
         free to contact our office. We’re here to assist you and ensure your eye
         care needs are met.
-      color: '#393939'
 ---
