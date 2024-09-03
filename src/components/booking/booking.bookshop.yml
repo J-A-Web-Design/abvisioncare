@@ -1,0 +1,9 @@
+spec:
+  structures:
+    - content_blocks
+  label: Book An Eye Exam
+  description: A section with a booking form.
+  icon: 'mail'
+  tags:
+  - Forms
+  - Section

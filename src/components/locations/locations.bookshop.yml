@@ -1,0 +1,40 @@
+spec:
+  structures:
+    - content_blocks
+  label: Locations
+  description: A section with a map and various locations.
+  icon: 'map'
+  tags:
+    - Map
+    - Section
+
+content_blocks:
+  - type: locations_list
+    label: Locations List
+    description: A list of locations to display
+    fields:
+      - name: locations
+        type: list
+        label: Locations
+        fields:
+          - name: id
+            type: number
+            label: ID
+          - name: name
+            type: text
+            label: Location Name
+          - name: address
+            type: text
+            label: Address
+          - name: number
+            type: text
+            label: Phone Number
+          - name: numberLink
+            type: text
+            label: Phone Number Link
+          - name: ext
+            type: text
+            label: Extension
+          - name: mapLink
+            type: text
+            label: Map Link

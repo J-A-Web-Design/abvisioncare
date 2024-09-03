@@ -1,0 +1,54 @@
+---
+
+const locationsBlock = locationsData.content_blocks.find(block => block.type === 'locations_list');
+const locations = locationsBlock ? locationsBlock.fields[0].fields : [];
+---
+
+<div class="sm:flex flex-row justify-center">
+    <div class="m-8">
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1Rhxpvbfsh0ZWprSjaMlTOi3zsbpH0zQ&ehbc=2E312F"
+        width="700"
+        height="980" class="rounded"></iframe>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-3 my-8 mx-4 sm:mx-2">
+      {
+         locations.map((location) => (
+          <section class="block max-w-lg p-5 bg-blue-900 border border-gray-800 rounded-md shadow-lg mb-4">
+            <h3 class="text-xl font-bold my-2 text-slate-100">
+              {location.name}
+            </h3>
+            <p class="mb-3 text-gray-200 text-sm">Address: {location.address}</p>
+            <p class="mb-3 text-gray-200 text-sm">Phone: 
+             <a href={location.numberLink}>
+              {location.number}
+             </a>
+              </p>
+            <p class="mb-3 text-gray-200 text-sm">Extension: {location.ext}</p>
+
+            <a
+              href="{location.mapLink}"
+              class="font-bold text-blue-400 hover:text-slate-300 flex gap-2">
+              View Map
+              <svg
+                class="w-6 h-6 text-blue-400 hover:text-slate-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24">
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4"
+                />
+              </svg>
+            </a>
+          </section>
+        ))
+      }
+    </div>
+  </div>
