@@ -64,23 +64,29 @@ content_blocks:
     button:
   - _bookshop_name: team
     title: Our Expert Team
-    topper: Our Team
-    description:
+    topper: Meet Our Team
+    description: >-
+      Meet our dedicated team of professionals who are passionate about what
+      they do.
     team_members:
-      - name: Dr Jill
-        job_title:
-        image:
-          mobile: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
-          tablet: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
+      - name: Doctor Gill
+        job_title: Doctor
+        description: >-
+          Dr. Gill, originally from the Philippines, moved to Edmonton with her
+          family at the age of six. She pursued her undergraduate studies at the
+          University of Saskatchewan...
+        image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
         social_links:
           facebook: ''
           twitter: ''
           instagram: ''
-      - name: Dr Easwaran
-        job_title:
-        image:
-          mobile: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
-          tablet: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
+      - name: Esther Howard
+        job_title: Web Developer
+        description: >-
+          Esther is a skilled web developer with a passion for creating
+          responsive and user-friendly websites.
+        image: >-
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
         social_links:
           facebook: ''
           twitter: ''
