@@ -76,3 +76,6 @@ _inputs:
           - name: tablet
             type: image
             label: Tablet & Above Image
+      - name: read_more_url
+        type: url
+        label: Read More URL
