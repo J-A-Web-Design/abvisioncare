@@ -40,7 +40,7 @@ const {title, cards} = Astro.props;
                 </li>
             ))}
         </ul>
-        <div class="pt-8">
+        <div class="pt-8 pb-8">
             <a href="/contact" class="cs-button-solid">Contact Us</a>
         </div>
     </div>
@@ -55,6 +55,7 @@ const {title, cards} = Astro.props;
 @media only screen and (min-width: 0rem) {
     #why-choose-12 {
         /* padding: var(--sectionPadding); */
+        background: #f2f2f2;
     }
     #why-choose-12 .cs-container {
         width: 100%;
@@ -111,8 +112,10 @@ const {title, cards} = Astro.props;
     /* prevents padding and border from affecting height and width */
     /* 16px - 32px */
     padding: clamp(1rem, 4.5vw, 2rem);
-    background-color: #ebe9e9;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; /* rounded-lg */
+        background-color: #ffffff; /* bg-white */
+        border: 1px solid #e5e7eb; /* border-gray-200 */
+        box-shadow: 0 0px 2px 0.5px rgba(0, 0, 0, 0.452); /* shadow */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

@@ -57,7 +57,6 @@ const {title, cards} = Astro.props;
 @media only screen and (min-width: 0rem) {
     #why-choose-12 {
         padding: var(--sectionPadding);
-        background: #ebe9e9;
     }
     #why-choose-12 .cs-container {
         width: 100%;
@@ -114,8 +113,10 @@ const {title, cards} = Astro.props;
     /* prevents padding and border from affecting height and width */
     /* 16px - 32px */
     padding: 0;
-    background-color: #ebe9e9;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; /* rounded-lg */
+        background-color: #ffffff; /* bg-white */
+        border: 1px solid #e5e7eb; /* border-gray-200 */
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.452); /* shadow */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
