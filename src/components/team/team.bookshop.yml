@@ -8,7 +8,6 @@ spec:
   tags:
     - Team
     - Profile
-    - Social
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -21,18 +20,11 @@ blueprint:
       job_title: Doctor
       description: Dr. Gill, originally from the Philippines, moved to Edmonton with her family at the age of six. She pursued her undergraduate studies at the University of Saskatchewan...
       image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
-      social_links:
-        facebook: ''
-        twitter: ''
-        instagram: ''
     - name: Esther Howard
       job_title: Web Developer
       description: Esther is a skilled web developer with a passion for creating responsive and user-friendly websites.
-      image: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
-      social_links:
-        facebook: ''
-        twitter: ''
-        instagram: ''
+      image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp?updatedAt=1724910341474
+
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -83,16 +75,3 @@ _inputs:
           - name: tablet
             type: image
             label: Tablet & Above Image
-      - name: social_links
-        type: group
-        label: Social Links
-        fields:
-          - name: facebook
-            type: url
-            label: Facebook
-          - name: twitter
-            type: url
-            label: Twitter
-          - name: instagram
-            type: url
-            label: Instagram
