@@ -22,21 +22,11 @@ content_blocks:
         International optometric bridging program from U of W and started
         practicing in 2010. She practiced in Camrose for 7 years and from 2017
         she has been practicing in Edmonton. She has a special interests in
-        Myopia control and ocular nutrition.<br><br>
-
-
-        Dr. Gill completed her Doctorate in Optometry in 2015, having gained
-        extensive experience during her externship year across several states,
-        including Florida, Washington, Michigan, and Ontario. Her training
-        covered areas such as Pediatric & Vision Therapy, Post-operative Care,
-        Ocular Disease, and Specialty Contact Lenses. In addition to her
-        proficiency in English, she speaks fluent Punjabi. Outside of her
-        professional life, Dr. Gill enjoys traveling and spending time outdoors
-        with her family.
+        Myopia control and ocular nutrition.
       color: '#393939'
     image:
-      image_path: /public/images/alberta-vision-care-dreaswaran.webp
-      alt_text: An image of Dr Easwaran, Doctor at Alberta Vision Care
+      image_path: /src/assets/images/undraw-hello.svg
+      alt_text: An image
     flipped: true
     button:
 ---
