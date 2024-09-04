@@ -25,7 +25,7 @@ content_blocks:
         Myopia control and ocular nutrition.
       color: '#393939'
     image:
-      image_path: /public/images/alberta-vision-care-dreaswaran.webp
+      image_path:
       alt_text: An image of Dr Easwaran, Doctor at Alberta Vision Care
     flipped: false
     button:
