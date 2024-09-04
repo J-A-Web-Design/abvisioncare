@@ -13,34 +13,26 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: Our Expert Team
-  topper: Our Team
+  topper: Meet Our Team
   description: >-
-    Aqestic recusandae laudantium optio amet a quisquam saepe aliquid, voluptate
-    praesentium dicta fuga dolor error.
+    Meet our dedicated team of professionals who are passionate about what they do.
   team_members:
+    - name: Doctor Gill
+      job_title: Doctor
+      description: Dr. Gill, originally from the Philippines, moved to Edmonton with her family at the age of six. She pursued her undergraduate studies at the University of Saskatchewan...
+      image:
+        mobile: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
+        tablet: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
+      social_links:
+        facebook: ''
+        twitter: ''
+        instagram: ''
     - name: Esther Howard
-      # job_title: Web Developer
+      job_title: Web Developer
+      description: Esther is a skilled web developer with a passion for creating responsive and user-friendly websites.
       image:
         mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
         tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
-      social_links:
-        facebook: ''
-        twitter: ''
-        instagram: ''
-    - name: Leslie Alexander
-      # job_title: Web Developer
-      image:
-        mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
-        tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg
-      social_links:
-        facebook: ''
-        twitter: ''
-        instagram: ''
-    - name: Wade Warren
-      # job_title: Web Developer
-      image:
-        mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
-        tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg
       social_links:
         facebook: ''
         twitter: ''
@@ -79,9 +71,12 @@ _inputs:
       - name: name
         type: text
         label: Name
-      # - name: job_title
-      #   type: text
-      #   label: Job Title
+      - name: job_title
+        type: text
+        label: Job Title
+      - name: description
+        type: textarea
+        label: Description
       - name: image
         type: group
         label: Images
