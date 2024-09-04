@@ -39,6 +39,6 @@ content_blocks:
     image:
       image_path: /src/assets/images/alberta-vision-care-drgill.webp
       alt_text: An image of Dr Gill, Doctor at Alberta Vision Care
-    flipped: true
+    flipped: false
     button:
 ---
