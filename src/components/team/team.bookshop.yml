@@ -25,7 +25,7 @@ blueprint:
       job_title: 
       description: 
       image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp?updatedAt=1724910341474
-      read_more_url: 
+      read_more_url: /team-members/doctor-gill/
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
