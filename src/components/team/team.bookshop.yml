@@ -20,9 +20,7 @@ blueprint:
     - name: Doctor Gill
       job_title: Doctor
       description: Dr. Gill, originally from the Philippines, moved to Edmonton with her family at the age of six. She pursued her undergraduate studies at the University of Saskatchewan...
-      image:
-        mobile: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
-        tablet: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
+      image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
       social_links:
         facebook: ''
         twitter: ''
@@ -30,9 +28,7 @@ blueprint:
     - name: Esther Howard
       job_title: Web Developer
       description: Esther is a skilled web developer with a passion for creating responsive and user-friendly websites.
-      image:
-        mobile: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
-        tablet: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
+      image: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
       social_links:
         facebook: ''
         twitter: ''
