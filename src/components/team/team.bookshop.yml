@@ -20,11 +20,12 @@ blueprint:
       job_title: Doctor
       description: Dr. Gill, originally from the Philippines, moved to Edmonton with her family at the age of six. She pursued her undergraduate studies at the University of Saskatchewan...
       image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
-    - name: Esther Howard
-      job_title: Web Developer
-      description: Esther is a skilled web developer with a passion for creating responsive and user-friendly websites.
+      read_more_url: /team-members/doctor-gill/
+    - name: 
+      job_title: 
+      description: 
       image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp?updatedAt=1724910341474
-
+      read_more_url: 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
