@@ -76,11 +76,12 @@ content_blocks:
           family at the age of six. She pursued her undergraduate studies at the
           University of Saskatchewan...
         image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
+        read_more_url: /team-members/doctor-gill/
       - name: Dr Easwaran
         job_title: Doctor
         description: >-
           Dr. Easwaran moved to Canada in 2003 and completed Masters in Vision
           Science from University of Waterloo in 2005...
-        image: >-
-          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp?updatedAt=1724910341474
+        image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
+        read_more_url: /team-members/doctor-gill/
 ---
