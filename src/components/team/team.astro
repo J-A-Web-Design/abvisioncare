@@ -21,7 +21,7 @@ const { title, topper, description, team_members } = Astro.props;
         {team_members.map((member) => (
         <div class="card" key={member.name}>
           <div class="card-header">
-            <img src={member.image} alt={member.name} class="rounded-lg w-full h-auto" />
+            <img src={member.image} alt={member.name} class="rounded-lg w-[700px] object-cover" height="300" width="300"/>
           </div>
           <div class="card-body">
             <div class="card-body-header">
@@ -84,9 +84,6 @@ const { title, topper, description, team_members } = Astro.props;
         transition: background-color 0.2s ease-in-out; /* hover:bg-gray-100 */
       }
 
-      .card:hover {
-        background-color: #f3f4f6; /* hover:bg-gray-100 */
-      }
       .card-header, .card-body-header, .card-body-footer{
         padding:  0.25rem 1rem;
       }
