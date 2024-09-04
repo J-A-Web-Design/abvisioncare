@@ -81,5 +81,6 @@ content_blocks:
         description: >-
           Dr. Easwaran moved to Canada in 2003 and completed Masters in Vision
           Science from University of Waterloo in 2005...
-        image: /images/alberta-vision-care-dreaswaran.webp
+        image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp?updatedAt=1724910341474
 ---
