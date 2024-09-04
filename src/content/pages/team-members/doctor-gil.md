@@ -38,7 +38,7 @@ content_blocks:
       color: '#393939'
     image:
       image_path: /src/assets/images/alberta-vision-care-drgill.webp
-      alt_text: An image
+      alt_text: An image of Dr Gill, Doctor at Alberta Vision Care
     flipped: true
     button:
 ---
