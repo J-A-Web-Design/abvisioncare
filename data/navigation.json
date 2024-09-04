@@ -6,10 +6,6 @@
     "color": "#393939",
     "links": [
       {
-        "link": "/",
-        "text": "Home"
-      },
-      {
         "link": "/about/",
         "text": "About"
       },
@@ -22,12 +18,12 @@
         "text": "FAQs"
       },
       {
-        "link": "/contact/",
-        "text": "Contact"
-      },
-      {
         "link": "/locations",
         "text": "Locations"
+      },
+      {
+        "link": "/contact/",
+        "text": "Contact"
       },
       {
         "link": "/book-an-eye-exam/",
