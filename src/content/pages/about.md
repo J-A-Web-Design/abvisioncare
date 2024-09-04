@@ -76,19 +76,10 @@ content_blocks:
           family at the age of six. She pursued her undergraduate studies at the
           University of Saskatchewan...
         image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
-        social_links:
-          facebook: ''
-          twitter: ''
-          instagram: ''
-      - name: Esther Howard
-        job_title: Web Developer
+      - name: Dr Easwaran
+        job_title: Doctor
         description: >-
-          Esther is a skilled web developer with a passion for creating
-          responsive and user-friendly websites.
-        image: >-
-          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg
-        social_links:
-          facebook: ''
-          twitter: ''
-          instagram: ''
+          Dr. Easwaran moved to Canada in 2003 and completed Masters in Vision
+          Science from University of Waterloo in 2005...
+        image: /images/alberta-vision-care-dreaswaran.webp
 ---
