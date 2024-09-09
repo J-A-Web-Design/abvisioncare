@@ -16,7 +16,7 @@ const contactEmail = "E: info@stitchgym.com";
               <h2 class="cs-title" cloudcannon-field="contactTitle">{contactTitle}</h2>
           </div>
           <!-- Form -->
-          <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post">
+          <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" netlify>
               <label class="cs-label">
                   Name *
                   <input class="cs-input" required type="text" id="name-1750" name="name" placeholder="John Doe">
@@ -24,10 +24,6 @@ const contactEmail = "E: info@stitchgym.com";
               <label class="cs-label cs-email">
                   Email *
                   <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="name@company.com">
-              </label>
-              <label class="cs-label cs-phone">
-                  Phone *
-                  <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="+1 (206) 987-6543">
               </label>
               <label class="cs-label">
                   Message *
@@ -308,7 +304,7 @@ const contactEmail = "E: info@stitchgym.com";
   @media only screen and (min-width: 81.25rem) {
     #contact-1750 .cs-label:nth-of-type(2),
     #contact-1750 .cs-label:nth-of-type(3) {
-      grid-column: span 6;
+      grid-column: span 12;
     }
   }
   /* Largest Desktop - 1920px */
