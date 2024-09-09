@@ -16,8 +16,13 @@ const contactEmail = "E: info@stitchgym.com";
               <h2 class="cs-title" cloudcannon-field="contactTitle">{contactTitle}</h2>
           </div>
           <!-- Form -->
-          <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" netlify>
-              <label class="cs-label">
+          <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" netlify-honeypot="bot-field" data-netlify-recaptcha="true" netlify>
+            <p class="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
+            <label class="cs-label">
                   Name *
                   <input class="cs-input" required type="text" id="name-1750" name="name" placeholder="John Doe">
               </label>
@@ -25,6 +30,8 @@ const contactEmail = "E: info@stitchgym.com";
                   Email *
                   <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="name@company.com">
               </label>
+              <div data-netlify-recaptcha="true">
+              </div>
               <label class="cs-label">
                   Message *
                   <textarea class="cs-input cs-textarea" required name="Message" id="message-1750" placeholder="Hello, I am interested..."></textarea>
