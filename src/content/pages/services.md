@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Services
+title: Services | Alberta Vision Care
 seo:
   page_description:
   canonical_url:
