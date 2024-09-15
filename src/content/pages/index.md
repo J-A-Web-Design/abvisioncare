@@ -1,11 +1,13 @@
 ---
 _schema: page
-title: Alberta Vision Care
+title: >-
+  Alberta Vision Care | Comprehensive Family Eye Care & Exams in Edmonton,
+  Spruce Grove & More
 seo:
   page_description: >-
-    A starting point for developers looking to build a website with Astro, using
-    Bookshop components in CloudCannon. Create your own copy, and start creating
-    your own components to use in the CloudCannon CMS.
+    Alberta Vision Care delivers trusted eye care in Edmonton, Spruce Grove, St.
+    Albert & Sherwood Park. Comprehensive exams, advanced diagnostics, and
+    patient-first service at convenient Superstore Optical locations.
   canonical_url:
   featured_image:
   featured_image_alt:

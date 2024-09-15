@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Locations
+title: Locations | Alberta Vision Care
 seo:
   page_description:
   canonical_url:

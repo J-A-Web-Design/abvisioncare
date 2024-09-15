@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Contact
+title: Contact | Alberta Vision Care
 seo:
   page_description:
   canonical_url:

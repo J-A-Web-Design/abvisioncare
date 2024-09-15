@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Frequently Asked Questions
+title: Frequently Asked Questions | Alberta Vision Care
 seo:
   page_description:
   canonical_url:
