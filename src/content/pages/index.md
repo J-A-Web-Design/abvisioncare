@@ -8,7 +8,7 @@ seo:
     Alberta Vision Care delivers trusted eye care in Edmonton, Spruce Grove, St.
     Albert & Sherwood Park. Comprehensive exams, advanced diagnostics, and
     patient-first service at convenient Superstore Optical locations.
-  canonical_url:
+  canonical_url: https://abvisioncare.ca/
   featured_image:
   featured_image_alt:
   author_twitter_handle:
