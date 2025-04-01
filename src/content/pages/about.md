@@ -63,8 +63,9 @@ content_blocks:
         we provide the best care and experience for all of our patients.
       color: '#393939'
     image:
-      image_path: /src/assets/images/abvisioncare-holistic-eye-health.webp
-      alt_text: Alberta Vision Care lady taking an eye exam
+      image_path: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-holistic-eye-health.webp
+      alt_text: Alberta Vision Care - lady giving an eye exam
     flipped: false
     button:
   - _bookshop_name: team
