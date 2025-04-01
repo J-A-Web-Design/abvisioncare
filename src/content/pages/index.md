@@ -157,11 +157,10 @@ content_blocks:
         a call if you have any questions.*
 
 
-        ![Alberta Vision Care Green Shield
-        logo](https://ik.imagekit.io/boxhuwbys/alberta-vision-care-GreenShield_Logo_Green_RGB.png)
+        &nbsp;
 
 
-        ![](https://ik.imagekit.io/boxhuwbys/alberta-vision-care-GreenShield_Logo_Green_RGB.png)
+        &nbsp;
   - _bookshop_name: cta
     title: Looking for a convenient location near you?
     fields:
@@ -169,4 +168,17 @@ content_blocks:
         label: dsd
         key: topper_textfsf
         default: Your Vision, Our Prioritydsf
+  - _bookshop_name: partners-alt
+    title: We Direct Bill!
+    subheading:
+      markdown_content: >-
+        *If you're under 18 or over 65, the cost of eye exams is covered by
+        Alberta Health Care. Please remember to bring your valid Alberta Health
+        Care card to your next appointment.<br>If you're between the ages of 19
+        and 64 and have insurance you'd like to use, we can likely bill your
+        provider directly. If your insurance provider isn't listed below, we
+        accept most types and can verify coverage for you. Feel free to give us
+        a call if you have any questions.*
+      color: '#000000'
+    partners: []
 ---
