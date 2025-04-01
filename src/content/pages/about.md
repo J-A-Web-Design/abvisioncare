@@ -54,13 +54,13 @@ content_blocks:
       color: '#393939'
     text:
       markdown_content: >-
-        Our board certified optometrists use their clinical experience and
+        Our board-certified optometrists use their clinical experience and
         extensive knowledge to diagnose and manage the wide array of ocular
         diseases our patients encounter. Having an integrative approach that
-        combines technologies such as retinal cameras, and visual field
-        machines, with a patient centered approach through patient education and
-        collaboration, helps ensure that we provide the best care and experience
-        for all of our patients.
+        combines technologies such as optical coherence tomography (OCT),
+        retinal cameras, and visual field machines, with a patient-centred
+        approach through patient education and collaboration, helps ensure that
+        we provide the best care and experience for all of our patients.
       color: '#393939'
     image:
       image_path: /src/assets/images/abvisioncare-holistic-eye-health.webp
