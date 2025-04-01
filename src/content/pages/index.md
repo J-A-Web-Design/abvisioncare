@@ -55,7 +55,7 @@ content_blocks:
       _bookshop_name: buttons/primary
       button_text: Contact Us
       button_link: /contact
-      background_color: '#a0a2ff'
+      background_color: '#1e40af'
       hover_brightness: 0.85
       text_color: '#FEF9EF'
       button_icon: Github
