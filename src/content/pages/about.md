@@ -23,8 +23,10 @@ content_blocks:
         url: /about-us
         active: true
     backgroundImage:
-      mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-about-us.webp
-      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-about-us.webp
+      mobile: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header-mob.webp
+      desktop: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header.webp
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
