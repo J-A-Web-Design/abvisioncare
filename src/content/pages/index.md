@@ -55,7 +55,7 @@ content_blocks:
       _bookshop_name: buttons/primary
       button_text: Contact Us
       button_link: /contact
-      background_color: '#034AD8'
+      background_color: '#1e40af'
       hover_brightness: 0.85
       text_color: '#FEF9EF'
       button_icon: Github
@@ -148,18 +148,29 @@ content_blocks:
     title: We Direct Bill
     subheading:
       markdown_content: >-
-        *If you're under 18 or over 65, the cost of eye exams is covered by
+        If you're under 18 or over 65, the cost of eye exams is covered by
         Alberta Health Care. Please remember to bring your valid Alberta Health
-        Care card to your next appointment.<br>If you're between the ages of 19
-        and 64 and have insurance you'd like to use, we can likely bill your
+        Care card to your next appointment. If you're between the ages of 19 and
+        64 and have insurance you'd like to use, we can likely bill your
         provider directly. If your insurance provider isn't listed below, we
         accept most types and can verify coverage for you. Feel free to give us
-        a call if you have any questions.*
+        a call if you have any questions.
       color: '#000000'
     partners:
-      - image: /favicon.jpg
-        alt: Partner 1
-        link: '#'
+      - image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-GreenShield_Logo_Green_RGB.png
+        alt: Alberta Vision Care - Green Shield logo
+        link: https://www.greenshield.ca/en-ca
+      - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-canada-life.png
+        alt: Alberta Vision Care - Canada Life logo
+        link: https://www.canadalife.com/
+      - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-Manulife-logo.png
+        alt: Alberta Vision Care - Manulife logo
+        link: https://www.manulife.ca/personal.html
+      - image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-alberta-blue-cross-logo.png
+        alt: Alberta Vision Care - Alberta Blue Cross logo
+        link: https://www.ab.bluecross.ca/index.php
   - _bookshop_name: cta
     title: Looking for a convenient location near you?
     fields:
