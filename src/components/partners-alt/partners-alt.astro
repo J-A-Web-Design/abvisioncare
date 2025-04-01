@@ -28,7 +28,7 @@ const { title, partners, subheading } = Astro.props;
         <p class="cs-text" style={`color: ${block.subheading.color};`}>
           {block.subheading.markdown_content}
        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-500 sm:gap-12 lg:grid-cols-3 dark:text-gray-400 justify-items-center items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-500 sm:gap-12 lg:grid-cols-4 dark:text-gray-400 justify-items-center items-center">
           {partners.map(partner => (
             <a href={partner.link} class="flex justify-center items-center" target="_blank">
               <Picture
