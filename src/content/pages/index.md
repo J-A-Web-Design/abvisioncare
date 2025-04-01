@@ -8,7 +8,7 @@ seo:
     Alberta Vision Care delivers trusted eye care in Edmonton, Spruce Grove, St.
     Albert & Sherwood Park. Comprehensive exams, advanced diagnostics, and
     patient-first service at convenient Superstore Optical locations.
-  canonical_url:
+  canonical_url: https://abvisioncare.ca/
   featured_image:
   featured_image_alt:
   author_twitter_handle:
@@ -17,14 +17,16 @@ seo:
 content_blocks:
   - _bookshop_name: hero
     background_image:
-      image_path: /src/assets/images/alberta-vision-care-hero.webp
+      image_path: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-superstore.webp
       type: image
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
       heading_color: '#3dc3dc'
     subheading:
-      markdown_content: Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park
+      markdown_content: >-
+        Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park
+        conveniently located inside superstore optical
       color: '#FEF9EF'
     buttons:
       - _bookshop_name: buttons/primary
@@ -100,8 +102,9 @@ content_blocks:
         title: Advanced Diagnostics
         description: >-
           Our optometrists are equipped with state-of-the-art diagnostic tools
-          like retinal cameras and visual field machines to accurately diagnose,
-          treat, and manage various eye diseases.
+          like optical coherence tomography (OCT), retinal cameras, and visual
+          field machines to accurately diagnose, treat, and manage various eye
+          diseases.
       - image: /images/alberta-vision-care-patient-centered-care.png
         title: Patient-Centered Care
         description: >-
@@ -111,15 +114,17 @@ content_blocks:
   - _bookshop_name: fourcards-alt
     title: Our Services
     cards:
-      - image: /images/alberta-vision-care-eye-exam.webp
+      - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-exams.webp
         title: Eye Exams
         description: >-
           Comprehensive exams for all ages, including pediatric and senior eye
           care.
-      - image: /images/alberta-vision-care-emergency-care.webp
+      - image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-emergency-care.webp
         title: Emergency Care
         description: Immediate attention for eye injuries or sudden vision problems.
-      - image: /images/alberta-vision-care-disease-management.webp
+      - image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-disease-management.webp
         title: Disease Management
         description: >-
           Expert management of conditions such as diabetic retinopathy,
@@ -139,6 +144,24 @@ content_blocks:
       - image: /images/cao-logo.png
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
+  - _bookshop_name: markdown-text
+    markdown:
+      heading: 'We Direct Bill! '
+      markdown_content: >-
+        *If you're under 18 or over 65, the cost of eye exams is covered by
+        Alberta Health Care. Please remember to bring your valid Alberta Health
+        Care card to your next appointment.<br>If you're between the ages of 19
+        and 64 and have insurance you'd like to use, we can likely bill your
+        provider directly. If your insurance provider isn't listed below, we
+        accept most types and can verify coverage for you. Feel free to give us
+        a call if you have any questions.*
+
+
+        ![Alberta Vision Care Green Shield
+        logo](https://ik.imagekit.io/boxhuwbys/alberta-vision-care-GreenShield_Logo_Green_RGB.png)
+
+
+        ![](https://ik.imagekit.io/boxhuwbys/alberta-vision-care-GreenShield_Logo_Green_RGB.png)
   - _bookshop_name: cta
     title: Looking for a convenient location near you?
     fields:

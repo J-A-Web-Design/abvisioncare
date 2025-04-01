@@ -2,8 +2,11 @@
 _schema: default
 title: About | Alberta Vision Care
 seo:
-  page_description:
-  canonical_url:
+  page_description: >-
+    Experience expert eye care with Alberta Vision Care. Our board-certified
+    optometrists provide a holistic approach to eye health, using advanced
+    technology to diagnose and manage ocular diseases. Your vision, our priority
+  canonical_url: https://abvisioncare.ca/about/
   featured_image:
   featured_image_alt:
   author_twitter_handle:
