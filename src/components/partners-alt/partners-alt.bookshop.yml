@@ -11,6 +11,9 @@ spec:
 
 blueprint:
   title: "Our Partners"
+  subheading:
+    markdown_content: "Supporting optometry through strong partnerships."
+    color: "#000000"
   partners:
     - image: "@assets/Alberta-Collage-of-Optometrists.png"
       alt: "Partner 1"
@@ -35,6 +38,20 @@ _inputs:
           - Title
         subtext:
           - 'Update the section title.'
+  subheading:
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: subheading.markdown_content
+          - 'Subheading Content'
+        subtext:
+          - 'Update the section subheading text.'
+    color:
+      text:
+        - key: subheading.color
+        - 'Subheading Color'
+      icon: 'palette'        
   partners:
     options:
       preview:
