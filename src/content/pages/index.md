@@ -114,15 +114,17 @@ content_blocks:
   - _bookshop_name: fourcards-alt
     title: Our Services
     cards:
-      - image: /images/alberta-vision-care-eye-exam.webp
+      - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-exams.webp
         title: Eye Exams
         description: >-
           Comprehensive exams for all ages, including pediatric and senior eye
           care.
-      - image: /images/alberta-vision-care-emergency-care.webp
+      - image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-emergency-care.webp
         title: Emergency Care
         description: Immediate attention for eye injuries or sudden vision problems.
-      - image: /images/alberta-vision-care-disease-management.webp
+      - image: >-
+          https://ik.imagekit.io/boxhuwbys/alberta-vision-care-disease-management.webp
         title: Disease Management
         description: >-
           Expert management of conditions such as diabetic retinopathy,
@@ -142,6 +144,17 @@ content_blocks:
       - image: /images/cao-logo.png
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
+  - _bookshop_name: markdown-text
+    markdown:
+      heading: 'We Direct Bill! '
+      markdown_content: >-
+        *If you're under 18 or over 65, the cost of eye exams is covered by
+        Alberta Health Care. Please remember to bring your valid Alberta Health
+        Care card to your next appointment.<br>If you're between the ages of 19
+        and 64 and have insurance you'd like to use, we can likely bill your
+        provider directly. If your insurance provider isn't listed below, we
+        accept most types and can verify coverage for you. Feel free to give us
+        a call if you have any questions.*
   - _bookshop_name: cta
     title: Looking for a convenient location near you?
     fields:
