@@ -57,6 +57,8 @@ const imageSrc =
               <Picture
                 src={imageSrc}
                 alt={block.image.alt_text}
+                width={images[block.image.image_path]?.default?.width ?? 1200}
+                height={images[block.image.image_path]?.default?.height ?? 630}
                 class="w-full h-auto rounded-md shadow"
               />
             </div>
@@ -76,6 +78,8 @@ const imageSrc =
               <Picture
                 src={imageSrc}
                 alt={block.image.alt_text}
+                width={images[block.image.image_path]?.default?.width ?? 1200}
+                height={images[block.image.image_path]?.default?.height ?? 630}
                 class="w-full h-auto rounded-md shadow"
               />
             </div>
