@@ -23,8 +23,10 @@ content_blocks:
         url: /about-us
         active: true
     backgroundImage:
-      mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-about-us.webp
-      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-about-us.webp
+      mobile: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header-mob.webp?updatedAt=1743549769213
+      desktop: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header.webp
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
@@ -41,7 +43,7 @@ content_blocks:
         to maintain them.
       color: '#393939'
     image:
-      image_path: /src/assets/images/alberta-vision-care-about-us-1-1.webp
+      image_path: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-exam-2.webp
       alt_text: Alberta Vision Care Eye Test
     flipped: true
     button:
@@ -52,13 +54,13 @@ content_blocks:
       color: '#393939'
     text:
       markdown_content: >-
-        Our board certified optometrists use their clinical experience and
+        Our board-certified optometrists use their clinical experience and
         extensive knowledge to diagnose and manage the wide array of ocular
         diseases our patients encounter. Having an integrative approach that
-        combines technologies such as retinal cameras, and visual field
-        machines, with a patient centered approach through patient education and
-        collaboration, helps ensure that we provide the best care and experience
-        for all of our patients.
+        combines technologies such as optical coherence tomography (OCT),
+        retinal cameras, and visual field machines, with a patient-centred
+        approach through patient education and collaboration, helps ensure that
+        we provide the best care and experience for all of our patients.
       color: '#393939'
     image:
       image_path: /src/assets/images/abvisioncare-holistic-eye-health.webp
