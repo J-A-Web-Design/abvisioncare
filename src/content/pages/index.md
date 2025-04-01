@@ -157,7 +157,7 @@ content_blocks:
         a call if you have any questions.*
       color: '#000000'
     partners:
-      - image: '@assets/Alberta-Collage-of-Optometrists.png'
+      - image: /favicon.jpg
         alt: Partner 1
         link: '#'
   - _bookshop_name: cta
