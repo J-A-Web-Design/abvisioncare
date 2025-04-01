@@ -24,7 +24,7 @@ content_blocks:
         active: true
     backgroundImage:
       mobile: >-
-        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header-mob.webp
+        https://ik.imagekit.io/boxhhttps://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header.webpuwbys/alberta-vision-care-optometry-header-mob.webp
       desktop: >-
         https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header.webp
   - _bookshop_name: left-right
