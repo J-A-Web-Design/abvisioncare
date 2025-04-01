@@ -17,14 +17,16 @@ seo:
 content_blocks:
   - _bookshop_name: hero
     background_image:
-      image_path: /src/assets/images/alberta-vision-care-hero.webp
+      image_path: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-superstore.webp
       type: image
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
       heading_text: Alberta’s Premier Vision Care Provider
       heading_color: '#3dc3dc'
     subheading:
-      markdown_content: Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park
+      markdown_content: >-
+        Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park
+        conveniently located inside superstore optical
       color: '#FEF9EF'
     buttons:
       - _bookshop_name: buttons/primary
