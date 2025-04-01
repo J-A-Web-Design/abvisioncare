@@ -43,7 +43,7 @@ content_blocks:
         to maintain them.
       color: '#393939'
     image:
-      image_path: /src/assets/images/alberta-vision-care-about-us-1-1.webp
+      image_path: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-exam-2.webp
       alt_text: Alberta Vision Care Eye Test
     flipped: true
     button:
