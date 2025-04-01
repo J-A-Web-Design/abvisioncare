@@ -102,8 +102,9 @@ content_blocks:
         title: Advanced Diagnostics
         description: >-
           Our optometrists are equipped with state-of-the-art diagnostic tools
-          like retinal cameras and visual field machines to accurately diagnose,
-          treat, and manage various eye diseases.
+          like optical coherence tomography (OCT), retinal cameras, and visual
+          field machines to accurately diagnose, treat, and manage various eye
+          diseases.
       - image: /images/alberta-vision-care-patient-centered-care.png
         title: Patient-Centered Care
         description: >-
