@@ -1,7 +1,7 @@
 spec:
   structures:
     - content_blocks
-  label: Partners Section
+  label: Partners Alt Section
   description: Section displaying partner logos with links
   icon: 'business'
   tags:
