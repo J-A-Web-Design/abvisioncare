@@ -30,15 +30,15 @@ content_blocks:
       St. Albert, and Spruce Grove.
     partners:
       - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-superstore.png
-        alt: Partner 1
-        link: '#'
+        alt: Alberta Vision Care - Real Canadian Superstore logo
+        link: https://www.realcanadiansuperstore.ca/en
   - _bookshop_name: locations
     title: Locations
     map_iframe_src: >-
       https://www.google.com/maps/d/embed?mid=1Rhxpvbfsh0ZWprSjaMlTOi3zsbpH0zQ&ehbc=2E312F
     locations:
       - id: 1
-        name: 17th Street
+        name: Whitemud and 17 St.
         address: 4410-17th St. N.W.
         number: 7804508328
         numberLink: tel:7804508328
@@ -47,9 +47,9 @@ content_blocks:
       - id: 2
         name: South Common
         address: 9711-23rd Ave. N.W.
-        number: 7804903949
-        numberLink: tel:780 490 3949
-        ext: ''
+        number: 7804903918
+        numberLink: tel:7804903918
+        ext: '135'
         mapLink: ''
       - id: 3
         name: Windermere
@@ -68,8 +68,8 @@ content_blocks:
       - id: 5
         name: Calgary Trail
         address: 4821 Calgary Trail N.W.
-        number: 7804302797
-        numberLink: tel:780-430-2797
+        number: 7804302769
+        numberLink: tel:7804302769
         ext: 135
         mapLink: ''
       - id: 6
@@ -98,14 +98,14 @@ content_blocks:
         address: 100-410 Baseline Road
         number: 7804175212
         numberLink: tel:780-417-5212
-        ext: ''
+        ext: '135'
         mapLink: ''
       - id: 10
         name: St. Albert
         address: 101 St. Albert Road
         number: 7804186847
         numberLink: 'tel: 780-418-6847'
-        ext: ''
+        ext: '137'
         mapLink: ''
       - id: 11
         name: Spruce Grove
@@ -114,18 +114,11 @@ content_blocks:
         numberLink: tel:780-960-7427
         ext: ''
         mapLink: ''
-      - id: 12
-        name: Kingsway
-        address: 11541 Kingsway Avenue
-        number: 7807331400
-        numberLink: tel:780-733-1400
-        ext: 351
-        mapLink: ''
       - id: 0
-        name: 615 54 Street
+        name: Harvest Hills
         address: 615 54 Street
         number: 7804400850
-        numberLink: ''
+        numberLink: tel:7804400850
         ext: 0
         mapLink: ''
 ---
