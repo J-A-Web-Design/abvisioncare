@@ -20,8 +20,10 @@ content_blocks:
         url: /about-us
         active: true
     backgroundImage:
-      mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
-      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
+      mobile: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-chart.webp?updatedAt=1743561591117
+      desktop: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-chart.webp?updatedAt=1743561591117
   - _bookshop_name: faq-accordion
     faqs:
       markdown_content: >-
@@ -63,6 +65,7 @@ content_blocks:
         Optometrists play a crucial role in maintaining eye health and overall
         visual function, working both independently and collaboratively with
         other healthcare providers.
+
 
 
         <br>
@@ -128,6 +131,7 @@ content_blocks:
         frequent eye exams if you are at higher risk. Regular checkups are
         crucial for addressing potential issues before they become more serious
         and to adapt any treatments as needed
+
 
 
         <br>
