@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Doctor Gil
+title: Dr.Gill Dhanju
 seo:
   page_description:
   canonical_url:
@@ -10,12 +10,9 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: left-right
-    background_color: '#ffffff'
-    heading:
-      heading_text: Doctor Gill
-      color: '#393939'
-    text:
+  - _bookshop_name: markdown-text
+    markdown:
+      heading: 'Dr.Gill Dhanju '
       markdown_content: >-
         Dr. Gill, originally from the Philippines, moved to Edmonton with her
         family at the age of six. She pursued her undergraduate studies at the
@@ -35,10 +32,4 @@ content_blocks:
         proficiency in English, she speaks fluent Punjabi. Outside of her
         professional life, Dr. Gill enjoys traveling and spending time outdoors
         with her family.
-      color: '#393939'
-    image:
-      image_path: /src/assets/images/alberta-vision-care-drgill.webp
-      alt_text: An image of Dr Gill, Doctor at Alberta Vision Care
-    flipped: false
-    button:
 ---

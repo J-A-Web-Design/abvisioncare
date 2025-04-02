@@ -29,4 +29,11 @@ content_blocks:
       alt_text: An image of Dr Easwaran, Doctor at Alberta Vision Care
     flipped: false
     button:
+  - _bookshop_name: markdown-text
+    markdown:
+      heading: 'Dr. Gill Dhanju '
+      markdown_content: >-
+        A starting point for developers looking to build a website with Astro,
+        using Bookshop components in CloudCannon. Create your own copy, and
+        start creating your own components to use in the CloudCannon CMS.
 ---
