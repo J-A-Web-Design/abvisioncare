@@ -108,5 +108,5 @@ content_blocks:
           Dr. Jasleen Mahil was born and raised in Edmonton. She completed her
           Bachelor of Science degree at the University of Alberta. She continued
           her education at the Illinois College of Optometry...
-        read_more_url: ''
+        read_more_url: /team-members/dr-jasleen-mahil
 ---
