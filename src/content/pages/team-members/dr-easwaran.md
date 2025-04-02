@@ -31,9 +31,12 @@ content_blocks:
     button:
   - _bookshop_name: markdown-text
     markdown:
-      heading: 'Dr. Gill Dhanju '
+      heading: Dr Easwaran
       markdown_content: >-
-        A starting point for developers looking to build a website with Astro,
-        using Bookshop components in CloudCannon. Create your own copy, and
-        start creating your own components to use in the CloudCannon CMS.
+        Dr. Easwaran moved to Canada in 2003 and completed Masters in Vision
+        Science from University of Waterloo in 2005.She then completed her
+        International optometric bridging program from U of W and started
+        practicing in 2010. She practiced in Camrose for 7 years and from 2017
+        she has been practicing in Edmonton. She has a special interests in
+        Myopia control and ocular nutrition.
 ---
