@@ -19,12 +19,10 @@ blueprint:
     - name: Doctor Gill
       job_title: Doctor
       description: Dr. Gill, originally from the Philippines, moved to Edmonton with her family at the age of six. She pursued her undergraduate studies at the University of Saskatchewan...
-      image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
       read_more_url: /team-members/dr-gill/
     - name:  Dr Easwaran
       job_title: Doctor
       description: Dr. Easwaran moved to Canada in 2003 and completed Masters in Vision Science from University of Waterloo in 2005... 
-      image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
       read_more_url: /team-members/dr-easwaran/
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -66,16 +64,6 @@ _inputs:
       - name: description
         type: textarea
         label: Description
-      - name: image
-        type: group
-        label: Images
-        fields:
-          - name: mobile
-            type: image
-            label: Mobile Image
-          - name: tablet
-            type: image
-            label: Tablet & Above Image
       - name: read_more_url
         type: url
         label: Read More URL
