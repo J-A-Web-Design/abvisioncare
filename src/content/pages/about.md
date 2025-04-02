@@ -94,7 +94,7 @@ content_blocks:
           Dr. Tony Mann graduated in 1993 with a Bachelor’s degree in Computer
           Science from the University of Alberta, and subsequently with a Doctor
           of Optometry in 1998...
-        read_more_url: /dr-tony-mann
+        read_more_url: /team-members/dr-tony-mann
       - name: Dr. Benjie Liao
         job_title: Optometrist
         description: >-
