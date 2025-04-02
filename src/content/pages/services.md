@@ -26,19 +26,20 @@ content_blocks:
     markdown:
       heading: Your Guide to Eye Exams and Care at Alberta Vision Care
       markdown_content: >-
-        At Alberta Vision Care, we recommend regular eye exams to maintain
-        optimal vision health. Here’s a summary of our recommendations and
-        services:
+        At Alberta Vision Care, we recommend regular **comprehensive eye exams**
+        to maintain optimal vision health. Here’s a summary of our
+        recommendations and services:
 
 
-        ### **General Eye Exam Recommendations:**
+        ### Adult Eye Exam Recommendations:
 
 
-        * **Ages 19 to 64:** We suggest having your eyes examined every two
-        years.
+        * **Ages 19 to 64:** Alberta Association of Optometrists recommends
+        having your eyes examined every 1-2 years.
 
         * **Contact Lens Wearers:** Annual eye exams are essential.
 
+          &nbsp;
 
         **Health Conditions and Vision:** Certain conditions like diabetes and
         hypertension can increase the risk of vision problems. Early detection
@@ -50,7 +51,7 @@ content_blocks:
         &nbsp;
 
 
-        ### **Comprehensive Eye Exam Includes:**
+        ### Comprehensive Eye Exam Includes:
 
 
         * Glasses Prescription
@@ -69,23 +70,24 @@ content_blocks:
         &nbsp;
 
 
-        ### **Pediatric Eye Exam:**
+        ### Pediatric Eye Exam:
 
 
-        * **Coverage:** Children from six months to nineteen years are covered
-        under Alberta Health Care with a valid Alberta Health Card.
+        * **Coverage:** Children from birth to 18 years are covered under
+        Alberta Health Care with a valid Alberta Health Card.
 
-        * **Recommendation:** The first eye check-up should occur before the
-        child turns one year old to identify any issues early and provide
-        necessary treatment.
+        * *Alberta Association of Optometrists recommends that*
+          * ***Infants and toddlers (birth to 24months) -** Infants should undergo their first comprehensive eye exam between the ages of 6 and 9 months.*
+          * ***Preschool children (2 to 5 years)-** Preschool children should undergo at least one comprehensive eye exam between the ages of 2 and 5 years.*
+          * ***School age children (6 to 18 years)-** School age children should undergo a comprehensive eye exam annually.*
 
           &nbsp;
 
-        ### **Senior Eye Exam:**
+        ### Senior Eye Exam:
 
 
-        * **Coverage:** Individuals over 65 receive annual eye exams under
-        Alberta Health Care with a valid card.
+        * **Coverage:** Seniors 65+ are covered under Alberta Health Care with a
+        valid Alberta Health Card.
 
         * **Recommendation:** Annual check-ups are advised due to age-related
         changes. We monitor conditions like glaucoma, macular degeneration, and
@@ -95,7 +97,7 @@ content_blocks:
         &nbsp;
 
 
-        ### **Emergencies:**
+        ### Emergencies:
 
 
         * **During Office Hours:** Contact our office immediately if you
@@ -108,7 +110,7 @@ content_blocks:
         &nbsp;
 
 
-        ### **Emergency Situations to Address:**
+        ### Emergency Situations to Address:
 
 
         * Redness and irritation
