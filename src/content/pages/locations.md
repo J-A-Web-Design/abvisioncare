@@ -121,4 +121,15 @@ content_blocks:
         numberLink: tel:7804400850
         ext: 0
         mapLink: ''
+  - _bookshop_name: markdown-text
+    markdown:
+      heading:
+      markdown_content: |-
+        *Working hours*
+
+        *Monday to Friday: 10-6pm*
+
+        *Saturday: 10-4pm*
+
+        *Sunday and Statutory Holidays: Closed*
 ---
