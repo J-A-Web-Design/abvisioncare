@@ -16,12 +16,22 @@ content_blocks:
       - label: Home
         url: /
         active: false
-      - label: About Us
-        url: /about-us
+      - label: Locations
+        url: /locations
         active: true
     backgroundImage:
-      mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
-      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
+      mobile: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-glasses.webp?updatedAt=1722648726101
+      desktop: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-glasses.webp?updatedAt=1722648726101
+  - _bookshop_name: partners
+    title: >-
+      We are conveniently located within Superstore in Edmonton, Sherwood Park,
+      St. Albert, and Spruce Grove.
+    partners:
+      - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-superstore.png
+        alt: Partner 1
+        link: '#'
   - _bookshop_name: locations
     title: Locations
     map_iframe_src: >-
