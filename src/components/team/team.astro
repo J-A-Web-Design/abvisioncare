@@ -20,9 +20,6 @@ const { title, topper, description, team_members } = Astro.props;
         <div class="grid lg:grid-cols-2 gap-4">
         {team_members.map((member) => (
         <div class="card" key={member.name}>
-          <div class="card-header">
-            <img src={member.image} alt={member.name} class="rounded-lg w-[700px] object-cover" height="300" width="300"/>
-          </div>
           <div class="card-body">
             <div class="card-body-header">
               <h4 class="mb-2 text-2xl font-bold">
