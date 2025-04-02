@@ -69,25 +69,44 @@ content_blocks:
     flipped: false
     button:
   - _bookshop_name: team
-    title: 'Our Optometrists '
+    title: Our Optometrists
     topper: Meet Our Team
     description: >-
       Meet our dedicated team of optometrists who are passionate about what they
       do.
     team_members:
-      - name: Dr.Gill Dhanju
+      - name: Doctor Gill
         job_title: Optometrist
         description: >-
           Dr. Gill, originally from the Philippines, moved to Edmonton with her
           family at the age of six. She pursued her undergraduate studies at the
           University of Saskatchewan...
-        image: https://ik.imagekit.io/boxhuwbys/Alberta-Vision-Care-DrGill.webp
         read_more_url: /team-members/dr-gill/
       - name: Dr Easwaran
         job_title: Optometrist
         description: >-
           Dr. Easwaran moved to Canada in 2003 and completed Masters in Vision
           Science from University of Waterloo in 2005...
-        image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-DrEaswaran.webp
         read_more_url: /team-members/dr-easwaran/
+      - name: Dr. Tony Mann
+        job_title: Optometrist
+        description: >-
+          Dr. Tony Mann graduated in 1993 with a Bachelor’s degree in Computer
+          Science from the University of Alberta, and subsequently with a Doctor
+          of Optometry in 1998...
+        read_more_url: ''
+      - name: Dr. Benjie Liao
+        job_title: Optometrist
+        description: >-
+          Dr. Benjie grew up in Manila, Philippines and graduated from Centro
+          Escolar University in 1998 with a degree of Doctor of Optometry. He
+          served most of his time in the Philippines...
+        read_more_url: ''
+      - name: Dr. Jasleen Mahil
+        job_title: Optometrist
+        description: >-
+          Dr. Jasleen Mahil was born and raised in Edmonton. She completed her
+          Bachelor of Science degree at the University of Alberta. She continued
+          her education at the Illinois College of Optometry...
+        read_more_url: ''
 ---
