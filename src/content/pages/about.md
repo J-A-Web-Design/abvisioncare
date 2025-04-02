@@ -101,7 +101,7 @@ content_blocks:
           Dr. Benjie grew up in Manila, Philippines and graduated from Centro
           Escolar University in 1998 with a degree of Doctor of Optometry. He
           served most of his time in the Philippines...
-        read_more_url: ''
+        read_more_url: /team-members/dr-benjie-liao
       - name: Dr. Jasleen Mahil
         job_title: Optometrist
         description: >-
