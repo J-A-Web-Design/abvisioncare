@@ -20,7 +20,9 @@ content_blocks:
         url: /about-us
         active: true
     backgroundImage:
-      mobile: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
-      desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
+      mobile: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-kid-eye-chart.webp?updatedAt=1743632776503
+      desktop: >-
+        https://ik.imagekit.io/boxhuwbys/alberta-vision-care-kid-eye-chart.webp?updatedAt=1743632776503
   - _bookshop_name: booking
 ---

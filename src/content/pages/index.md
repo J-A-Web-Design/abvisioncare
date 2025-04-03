@@ -1,8 +1,8 @@
 ---
 _schema: page
 title: >-
-  Alberta Vision Care | Comprehensive Family Eye Care & Exams in Edmonton,
-  Spruce Grove & More
+  Alberta Vision Care | Eye Exams & Optometrists in Edmonton, Spruce Grove, St.
+  Albert, and Sherwood Park
 seo:
   page_description: >-
     Alberta Vision Care delivers trusted eye care in Edmonton, Spruce Grove, St.
