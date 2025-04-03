@@ -20,7 +20,7 @@ content_blocks:
         url: /contact
         active: true
     backgroundImage:
-      mobile: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-kid-eye-chart.webp
-      desktop: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-kid-eye-chart.webp
+      mobile: https://ik.imagekit.io/boxhuwbys/abvisioncare-optometrist.webp
+      desktop: https://ik.imagekit.io/boxhuwbys/abvisioncare-optometrist.webp
   - _bookshop_name: contactform
 ---
