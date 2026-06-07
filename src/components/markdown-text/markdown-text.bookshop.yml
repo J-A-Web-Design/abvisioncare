@@ -15,19 +15,4 @@ blueprint:
   markdown:
     heading:
     markdown_content: >-
-      A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
-
-
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-
-# Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  markdown:
-    options:
-      preview:
-        icon: 'short_text'
-        text:
-          - Markdown
-        subtext:
-          - 'Update frequently asked questions.'
+      At Alberta Vision Care, we are dedicated to delivering high-quality eye care to patients across Edmonton and the surrounding communities.

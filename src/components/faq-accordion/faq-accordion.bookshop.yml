@@ -14,19 +14,6 @@ spec:
 blueprint:
   faqs:
     markdown_content: >-
-      A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
+      ### What is an Optometrist?
 
-
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-
-# Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  faqs:
-    options:
-      preview:
-        icon: 'short_text'
-        text:
-          - FAQs
-        subtext:
-          - 'Update frequently asked questions.'
+      An optometrist is a licensed eye care professional who examines, diagnoses, treats, and manages diseases and disorders of the eye and visual system.

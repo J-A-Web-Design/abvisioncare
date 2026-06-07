@@ -1,5 +1,4 @@
 ---
-// CloudCannon variables to enable editing
 const contactTitle = "Contact Us";
 const contactSubtitle = "Get in Touch";
 const address = "Alberta, Canada";
@@ -11,8 +10,8 @@ const sundayHours = "Sunday and Statutory Holidays: Closed";
   <div class="cs-container">
       <div class="cs-form-group">
           <div class="cs-content">
-              <span class="cs-topper" cloudcannon-field="contactSubtitle">{contactSubtitle}</span>
-              <h2 class="cs-title" cloudcannon-field="contactTitle">{contactTitle}</h2>
+              <span class="cs-topper">{contactSubtitle}</span>
+              <h2 class="cs-title">{contactTitle}</h2>
           </div>
           <!-- Form -->
           <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post" netlify-honeypot="bot-field" netlify>
@@ -40,13 +39,13 @@ const sundayHours = "Sunday and Statutory Holidays: Closed";
       <div class="cs-info-group">
           <div class="cs-info">
               <span class="cs-topper">Location</span>
-              <span class="cs-detail" cloudcannon-field="address">{address}</span>
+              <span class="cs-detail">{address}</span>
           </div>
           <div class="cs-info">
               <span class="cs-topper">Working Hours</span>
-              <span class="cs-detail" cloudcannon-field="workingHours1">{workingHours1}</span>
-              <span class="cs-detail" cloudcannon-field="workingHours2">{workingHours2}</span>
-              <span class="cs-detail" cloudcannon-field="sundayHours">{sundayHours}</span>
+              <span class="cs-detail">{workingHours1}</span>
+              <span class="cs-detail">{workingHours2}</span>
+              <span class="cs-detail">{sundayHours}</span>
           </div>
       </div>
   </div>

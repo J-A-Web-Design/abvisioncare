@@ -1,7 +1,7 @@
 {
   "site_title": "Alberta Vision Care",
-  "description": "A starter template for Astro, built by Bookshop components - for CloudCannon CMS.",
+  "description": "Alberta Vision Care provides comprehensive eye exams and optometry services across Edmonton, Spruce Grove, St. Albert, and Sherwood Park, conveniently located inside Superstore Optical.",
   "twitter_site": "",
-  "image": "/images/astro-logo-light-gradient.png",
-  "image_alt": "Astro logo"
+  "image": "/images/alberta-vision-care-logo.png",
+  "image_alt": "Alberta Vision Care logo"
 }

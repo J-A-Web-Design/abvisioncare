@@ -1,0 +1,5 @@
+# Astro's [...slug].astro catch-all intercepts /admin (no matching content
+# collection entry => 404) before it reaches the static public/admin/index.html.
+# This rewrite (200, not a redirect) makes the Decap CMS load at /admin/ in
+# production on Netlify. /admin/index.html already works without this.
+/admin/*  /admin/index.html  200

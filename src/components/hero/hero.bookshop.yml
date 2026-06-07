@@ -18,11 +18,11 @@ blueprint:
       type: 'image'
       alt_text: An Image
   heading:
-    heading_text: Astro Bookshop Starter
+    heading_text: Alberta's Premier Vision Care Provider
     heading_color: '#3dc3dc'
   subheading:
     markdown_content: >-
-      A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
+      Proudly serving Edmonton, Spruce Grove, St. Albert, and Sherwood Park with comprehensive eye exams and optometry services.
     color: '#393939'
   buttons: 
     - text:
@@ -42,43 +42,3 @@ blueprint:
       text_color:
         type: 'color'
         label: 'Button Text Color'
-
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-
-# Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  heading:
-    options:
-      preview:
-        icon: 'short_text'
-        text:
-          - key: heading_text
-          - Heading
-        subtext:
-          - key: heading_color
-          - 'Update heading gradient color and text content.'
-  subheading:
-    options:
-      preview:
-        icon: 'short_text'
-        text:
-          - Subheading
-        subtext:
-          - 'Update subheading content and color.'
-  heading_color:
-      type: color
-      preview:
-        text:
-          - key: name
-          - 'Select a color for the heading text.'
-  background_image:
-    options:
-      preview:
-        icon: 'image'
-        text:
-          - key: alt_text
-          - 'Background Image'
-        subtext:
-          - key: image_path
-          - 'Update background image'

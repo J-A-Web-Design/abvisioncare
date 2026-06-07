@@ -1,0 +1,436 @@
+backend:
+  name: github
+  repo: J-A-Web-Design/abvisioncare
+  branch: main
+
+# Only activates when the CMS is loaded from localhost — lets you test the
+# whole editing experience against your real working tree (via `npx decap-server`
+# running alongside `npm run dev`) without touching GitHub OAuth at all.
+local_backend: true
+
+# Netlify is configured to proxy GitHub OAuth for this site (see Site settings
+# > Access control > OAuth in the Netlify dashboard). Editors log in with their
+# own GitHub account and need write access to the repo.
+
+media_folder: "public/images"
+public_folder: "/images"
+
+site_url: https://abvisioncare.ca
+display_url: https://abvisioncare.ca
+logo_url: /images/alberta-vision-care-logo.png
+
+# ---------------------------------------------------------------------------
+# Shared field groups (referenced below via YAML anchors so every collection
+# that embeds these shapes — pages, team members, blog posts, blocks — stays
+# in sync with a single definition).
+# ---------------------------------------------------------------------------
+_shared:
+  seo_fields: &seo_fields
+    label: SEO
+    name: seo
+    widget: object
+    collapsed: true
+    required: false
+    fields:
+      - { label: Page Description, name: page_description, widget: text, required: false }
+      - { label: Canonical URL, name: canonical_url, widget: string, required: false }
+      - { label: Featured Image, name: featured_image, widget: image, required: false }
+      - { label: Featured Image Alt Text, name: featured_image_alt, widget: string, required: false }
+      - { label: Author Twitter Handle, name: author_twitter_handle, widget: string, required: false }
+      - { label: Open Graph Type, name: open_graph_type, widget: string, required: false }
+      - { label: 'No Index', name: no_index, widget: boolean, default: false }
+
+  card_fields: &card_fields
+    - { label: Image, name: image, widget: image }
+    - { label: Title, name: title, widget: string }
+    - { label: Description, name: description, widget: text }
+
+  partner_fields: &partner_fields
+    - { label: Logo, name: image, widget: image }
+    - { label: Alt Text, name: alt, widget: string }
+    - { label: Link, name: link, widget: string }
+
+  # A single polymorphic "button" slot (left-right.button, cta button, etc).
+  # Bookshop picks the component to render from `_bookshop_name`; Decap has no
+  # native "one of several object shapes" widget for a single field, so this
+  # exposes the union of both button components' props behind a type selector.
+  # (Bookshop ignores whichever fields don't apply to the chosen type.)
+  single_button_fields: &single_button_fields
+    - label: Button Type
+      name: _bookshop_name
+      widget: select
+      options: ['buttons/primary', 'buttons/secondary']
+      default: 'buttons/primary'
+    - { label: Button Text, name: button_text, widget: string, required: false }
+    - { label: Button Link, name: button_link, widget: string, required: false }
+    - { label: Background Color, name: background_color, widget: color, required: false, allow_input: true }
+    - { label: Text Color, name: text_color, widget: color, required: false, allow_input: true }
+    - { label: Hover Brightness, name: hover_brightness, widget: number, value_type: float, required: false }
+    - { label: Icon (Font Awesome name), name: button_icon, widget: string, required: false }
+
+  # Repeatable buttons (hero.buttons) map cleanly onto Decap's list+types,
+  # using `typeKey: _bookshop_name` so the stored data matches Bookshop's
+  # existing `_bookshop_name: buttons/primary|secondary` discriminator exactly.
+  button_block_types: &button_block_types
+    - label: Primary Button
+      name: buttons/primary
+      widget: object
+      fields:
+        - { label: Button Text, name: button_text, widget: string, required: false }
+        - { label: Button Link, name: button_link, widget: string, required: false }
+        - { label: Background Color, name: background_color, widget: color, required: false, allow_input: true }
+        - { label: Hover Brightness, name: hover_brightness, widget: number, value_type: float, required: false }
+        - { label: Text Color, name: text_color, widget: color, required: false, allow_input: true }
+        - { label: Icon (Font Awesome name), name: button_icon, widget: string, required: false }
+    - label: Secondary Button
+      name: buttons/secondary
+      widget: object
+      fields:
+        - { label: Button Text, name: button_text, widget: string, required: false }
+        - { label: Icon (Font Awesome name), name: button_icon, widget: string, required: false }
+        - { label: Button Link, name: button_link, widget: string, required: false }
+        - { label: Text Color, name: text_color, widget: color, required: false, allow_input: true }
+        - { label: Hover Brightness, name: hover_brightness, widget: number, value_type: float, required: false }
+
+  # All 16 Bookshop components, translated from their *.bookshop.yml blueprints
+  # into Decap's polymorphic list `types`. `typeKey: _bookshop_name` keeps the
+  # stored frontmatter byte-for-byte compatible with what Bookshop expects, so
+  # the Astro render path ([...slug].astro -> Bookshop) needs no changes.
+  content_block_types: &content_block_types
+    - label: Hero Section
+      name: hero
+      widget: object
+      fields:
+        - label: Background Image
+          name: background_image
+          widget: object
+          fields:
+            - { label: Image, name: image_path, widget: image }
+            - { label: Type, name: type, widget: hidden, default: image }
+            - { label: Alt Text, name: alt_text, widget: string }
+        - label: Heading
+          name: heading
+          widget: object
+          fields:
+            - { label: Heading Text, name: heading_text, widget: string }
+            - { label: Heading Color, name: heading_color, widget: color, allow_input: true }
+        - label: Subheading
+          name: subheading
+          widget: object
+          fields:
+            - { label: Content, name: markdown_content, widget: markdown }
+            - { label: Color, name: color, widget: color, allow_input: true }
+        - label: Buttons
+          name: buttons
+          widget: list
+          types: *button_block_types
+          typeKey: _bookshop_name
+
+    - label: Left Right
+      name: left-right
+      widget: object
+      fields:
+        - { label: Background Color, name: background_color, widget: color, allow_input: true }
+        - label: Heading
+          name: heading
+          widget: object
+          fields:
+            - { label: Heading Text, name: heading_text, widget: string }
+            - { label: Color, name: color, widget: color, allow_input: true }
+        - label: Text
+          name: text
+          widget: object
+          fields:
+            - { label: Content, name: markdown_content, widget: markdown }
+            - { label: Color, name: color, widget: color, allow_input: true }
+        - label: Image
+          name: image
+          widget: object
+          fields:
+            - { label: Image, name: image_path, widget: image }
+            - { label: Alt Text, name: alt_text, widget: string }
+        - { label: Flipped (image on the left), name: flipped, widget: boolean, default: false }
+        - label: Button
+          name: button
+          widget: object
+          required: false
+          fields: *single_button_fields
+
+    - label: Four Cards
+      name: fourcards
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - label: Cards
+          name: cards
+          widget: list
+          fields: *card_fields
+
+    - label: Four Cards (Alt)
+      name: fourcards-alt
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - label: Cards
+          name: cards
+          widget: list
+          fields: *card_fields
+
+    - label: Partners
+      name: partners
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - label: Partners
+          name: partners
+          widget: list
+          fields: *partner_fields
+
+    - label: Partners (Alt, with subheading)
+      name: partners-alt
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - label: Subheading
+          name: subheading
+          widget: object
+          fields:
+            - { label: Content, name: markdown_content, widget: markdown }
+            - { label: Color, name: color, widget: color, allow_input: true }
+        - label: Partners
+          name: partners
+          widget: list
+          fields: *partner_fields
+
+    - label: Meet The Team
+      name: team
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - { label: Topper, name: topper, widget: string }
+        - { label: Description, name: description, widget: text }
+        - label: Team Members
+          name: team_members
+          widget: list
+          fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Job Title, name: job_title, widget: string }
+            - { label: Description, name: description, widget: text }
+            - { label: 'Read More URL (links to a Team Members entry)', name: read_more_url, widget: string, required: false }
+
+    - label: Markdown Section
+      name: markdown-text
+      widget: object
+      fields:
+        - label: Markdown
+          name: markdown
+          widget: object
+          fields:
+            - { label: Heading, name: heading, widget: string, required: false }
+            - { label: Content, name: markdown_content, widget: markdown }
+
+    - label: FAQ Section
+      name: faq-accordion
+      widget: object
+      fields:
+        - label: FAQs
+          name: faqs
+          widget: object
+          fields:
+            - { label: 'Content (one markdown block; use ### for each question)', name: markdown_content, widget: markdown }
+
+    - label: Locations
+      name: locations
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - { label: Google Maps Embed URL, name: map_iframe_src, widget: string }
+        - label: Locations
+          name: locations
+          widget: list
+          fields:
+            - { label: ID, name: id, widget: number, value_type: int }
+            - { label: Name, name: name, widget: string }
+            - { label: Address, name: address, widget: string }
+            - { label: Phone Number, name: number, widget: string }
+            - { label: 'Phone Link (tel:...)', name: numberLink, widget: string }
+            - { label: Extension, name: ext, widget: string, required: false }
+            - { label: Map Link, name: mapLink, widget: string, required: false }
+
+    - label: Page Banner
+      name: pagebanner
+      widget: object
+      fields:
+        - { label: Title, name: title, widget: string }
+        - label: Breadcrumbs
+          name: breadcrumbs
+          widget: list
+          fields:
+            - { label: Label, name: label, widget: string }
+            - { label: URL, name: url, widget: string }
+            - { label: Active (current page), name: active, widget: boolean, default: false }
+        - label: Background Image
+          name: backgroundImage
+          widget: object
+          fields:
+            - { label: Mobile, name: mobile, widget: image, required: false }
+            - { label: Desktop, name: desktop, widget: image, required: false }
+
+    - label: CTA Section
+      name: cta
+      widget: object
+      # Note: cta.astro only ever reads `title` (topper/button/image are
+      # hardcoded in the component) — the old blueprint's `fields: []` array
+      # was dead, half-finished schema data, dropped here rather than carried
+      # forward.
+      fields:
+        - { label: Title, name: title, widget: string }
+
+    - label: Book An Eye Exam (form has no editable props)
+      name: booking
+      widget: object
+      fields:
+        - { label: 'No editable fields — this form is hardcoded in booking.astro', name: _no_fields, widget: hidden, default: true }
+
+    - label: Contact Form (form has no editable props)
+      name: contactform
+      widget: object
+      fields:
+        - { label: 'No editable fields — this form is hardcoded in contactform.astro', name: _no_fields, widget: hidden, default: true }
+
+collections:
+  - name: pages
+    label: Pages
+    folder: src/content/pages
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    fields:
+      - { label: Schema, name: _schema, widget: hidden, default: default }
+      - { label: Title, name: title, widget: string }
+      - *seo_fields
+      - label: Content Blocks
+        name: content_blocks
+        widget: list
+        types: *content_block_types
+        typeKey: _bookshop_name
+
+  - name: team_members
+    label: Team Members
+    folder: src/content/pages/team-members
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    fields:
+      - { label: Schema, name: _schema, widget: hidden, default: default }
+      - { label: Title, name: title, widget: string }
+      - *seo_fields
+      - label: Content Blocks
+        name: content_blocks
+        widget: list
+        types: *content_block_types
+        typeKey: _bookshop_name
+
+  - name: blog
+    label: Blog Posts
+    folder: src/content/blog
+    create: true
+    extension: mdx
+    format: frontmatter
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: title
+    fields:
+      - { label: Date, name: date, widget: datetime }
+      - { label: Title, name: title, widget: string }
+      - label: Tags
+        name: tags
+        widget: list
+        field: { label: Tag, name: tag, widget: string }
+      - { label: Author, name: author, widget: string }
+      - { label: Thumbnail Image, name: thumb_image_path, widget: image }
+      - { label: Thumbnail Alt Text, name: thumb_image_alt, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Image Alt Text, name: image_alt, widget: string }
+      - *seo_fields
+      - { label: Body, name: body, widget: markdown }
+
+  - name: data
+    label: Site Data
+    files:
+      - name: site
+        label: Site Settings
+        file: data/site.json
+        fields:
+          - { label: Site Title, name: site_title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Twitter Handle, name: twitter_site, widget: string, required: false }
+          - { label: Default Share Image, name: image, widget: image }
+          - { label: Image Alt Text, name: image_alt, widget: string }
+
+      - name: navigation
+        label: Navigation
+        file: data/navigation.json
+        fields:
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - { label: Logo, name: logo, widget: image }
+              - { label: Logo Link, name: logo_url, widget: string }
+              - { label: Background Color, name: background_color, widget: color, allow_input: true }
+              - { label: Text Color, name: color, widget: color, allow_input: true }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: Link, name: link, widget: string }
+                  - { label: Text, name: text, widget: string }
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Logo, name: logo, widget: image }
+              - { label: Logo Link, name: logo_url, widget: string }
+              - { label: Copyright Text, name: copyright, widget: string }
+              - { label: Developer Name, name: developer, widget: string }
+              - { label: Developer URL, name: developer_url, widget: string }
+              - { label: Background Color, name: background_color, widget: color, allow_input: true }
+              - { label: Text Color, name: color, widget: color, allow_input: true }
+              - label: Useful Links
+                name: useful_links
+                widget: list
+                fields:
+                  - { label: Text, name: text, widget: string }
+                  - { label: URL, name: url, widget: string }
+              - label: Locations
+                name: locations
+                widget: list
+                fields:
+                  - { label: Text, name: text, widget: string }
+                  - { label: URL, name: url, widget: string }
+              - label: Social Links
+                name: social
+                widget: list
+                fields:
+                  - { label: Profile URL, name: link, widget: string }
+                  - { label: 'Icon name (Font Awesome, must exist in icons.json + icon.jsx)', name: social_icon, widget: string }
+
+      - name: colors
+        label: 'Color Palette (used to populate color pickers across the site)'
+        file: data/colors.json
+        fields:
+          - label: Colors
+            name: colors
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Value, name: value, widget: color, allow_input: true }
+
+      - name: icons
+        label: 'Available Icons (must each exist in src/components/utility/icon.jsx)'
+        file: data/icons.json
+        fields:
+          - label: Icons
+            name: icons
+            widget: list
+            field: { label: Icon Name, name: icon, widget: string }

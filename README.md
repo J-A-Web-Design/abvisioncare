@@ -1,19 +1,10 @@
-# Astro CloudCannon Starter
+# Alberta Vision Care
 
-A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon.
+An Astro site built with [Bookshop](https://github.com/cloudcannon/bookshop) components, edited through [Decap CMS](https://decapcms.org/) (a free, open-source, git-based CMS).
 
-Create your own copy, and start creating your own components to use in the CloudCannon CMS. Build components with `.jsx` or `.astro`.
-
-To try to cut down on setup time this starter template includes some commonly used [features](#features) in CloudCannon.
-
-This template is aimed at helping developers build sites quickly, rather than providing editors with a fully built editable site.
-If you are an editor looking for an already built template, have a look at [CloudCannon's templates page](https://cloudcannon.com/templates/).
-
-[See a demo version of this site](https://tiny-jackal.cloudvent.net/).
+Content lives as markdown/JSON in this repo. Editors make changes at `/admin/`, which commits straight to GitHub — no separate hosted CMS service required.
 
 ## Getting Started
-
-To start using this template, go to the [GitHub repository](https://github.com/CloudCannon/astro-starter/), and click `Use this template` to make your own copy.
 
 ### Commands
 
@@ -33,13 +24,30 @@ All commands are run from the root of the project, from a terminal:
 2. Run `npm install`
 3. Run `npm start`
 
+## Content Editing (Decap CMS)
+
+Visit `/admin/` on a deployed build (or locally — see below) to edit pages, team member bios, blog posts, and sitewide data (navigation, SEO, colors, icons).
+
+The CMS config lives at [public/admin/config.yml](public/admin/config.yml). Each page's `content_blocks` is a list of typed Bookshop component blocks — Decap's `list` widget with `types` mirrors Bookshop's `_bookshop_name` discriminator directly, so what an editor builds in the CMS is exactly what Bookshop renders, with no transformation step in between.
+
+### Editing locally
+
+1. Run `npm run dev`
+2. In a second terminal, run `npx decap-server`
+3. Open `http://localhost:4321/admin/index.html` — Decap detects `localhost` and offers to use the local backend, reading and writing your working tree directly (no GitHub login needed for local testing)
+
+In production, the CMS authenticates editors via GitHub OAuth (configured through Netlify's Access Control settings) and commits changes directly to this repo's `main` branch.
+
+### Adding a new field to an existing component
+
+1. Update the component's `.astro` file and its `.bookshop.yml` `blueprint` (Bookshop still uses `blueprint` to register the component and its default shape — the `_inputs`/`preview` sections that CloudCannon used for its visual editor are no longer needed)
+2. Add the matching field to that component's entry under `content_block_types` in [public/admin/config.yml](public/admin/config.yml)
+
 ## Features
 
 ### Bookshop
 
-[Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/) is a component development workflow for static websites.
-
-Build custom components that non-technical editors can use in a page building experience in CloudCannon.
+[Bookshop](https://github.com/cloudcannon/bookshop) is a component development workflow for static websites — pages are built by composing small, self-contained components driven by data in frontmatter.
 
 Bookshop is already set up on this project, so that you can start building components straight away.
 
@@ -80,7 +88,7 @@ const block = Astro.props;
 `src/components/ExampleComponent/ExampleComponent.bookshop.yml`
 
 ```yaml
-# Metadata about this component, to be used in the CMS
+# Registers the component with Bookshop and defines its default shape
 spec:
   structures:
     - content_blocks
@@ -90,17 +98,12 @@ spec:
   tags:
     - Example
 
-# Defines the structure of this component, as well as the default values
 blueprint:
   background_color: '#ffffff'
   text_color: '#000000'
-
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-
-# Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
 ```
+
+Then add a matching entry under `content_block_types` in [public/admin/config.yml](public/admin/config.yml) so editors can configure it through the CMS — see [Content Editing](#content-editing-decap-cms) above.
 
 ### Blog & Documentation Pages
 
@@ -112,7 +115,7 @@ The blog pages in this template use MDX to allow for snippets. Snippets allow yo
 
 A common layout, with changing markdown content is favored for these kinds of text heavy pages, rather than using Bookshop components - which are defined and managed in your markdown pages frontmatter.
 
-These text heavy pages will be edited in CloudCannon's content editor, rather than the visual editor used for building pages with Bookshop components.
+These text-heavy pages are edited as plain markdown/MDX through the `blog` collection in Decap, rather than as Bookshop content blocks.
 
 ### Image Optimization
 
@@ -141,11 +144,9 @@ An Astro `<Image />` will process an image in your src/assets/images folder, and
   decoding="async" />
 ```
 
-This template also demonstrates how to set [`uploads` paths](https://cloudcannon.com/documentation/articles/adjusting-the-uploads-path/) on an input level, to allow for both processed and unprocessed images on one site.
+By default, image fields in the CMS upload to `public/images` (`media_folder` in [public/admin/config.yml](public/admin/config.yml)), meaning they're served unprocessed.
 
-On this template, by default, image inputs are opened at `public/images`, meaning they are unprocessed images.
-
-Components that use the Astro <Image /> component are configured so the image source input opens at src/assets/images, which are images to be processed and optimized on build.
+Components that use the Astro `<Image />` component should source their images from `src/assets/images` instead, so they're processed and optimized on build.
 
 ### SEO Controls
 
@@ -215,48 +216,21 @@ To remove Font Awesome Icons:
 import Icon from '../utility/icon';
 ```
 
-4. Remove `icons.json`
-5. Remove any select inputs that were using the icon
-
-```yaml
-icon:
-  type: select
-  options:
-    values: data.icons
-```
-
-6. Remove icons from your defined data in `cloudcannon.config.yml`
-
-```yaml
-data_config:
-  icons:
-    path: data/icons.json
-```
+4. Remove `data/icons.json`
+5. Remove the `button_icon` / `social_icon` fields referencing it from [public/admin/config.yml](public/admin/config.yml)
 
 ### Data files
 
-Demonstrates using data files to:
+`data/*.json` holds sitewide values editable through the `data` collection in Decap (see [public/admin/config.yml](public/admin/config.yml)):
 
-- Populate select inputs in CloudCannon. This is powerful for allowing editors to make styling changes to the page, within a set design system populated by an editable data file.
-- Set sitewide values such as the overall site SEO settings.
-- Control header and footer data to allow editors control over navigation.
+- `site.json` — sitewide SEO/share defaults
+- `navigation.json` — header and footer links, logos, and social profiles
+- `colors.json` — the color palette offered in color-picker fields across the site
+- `icons.json` — the list of Font Awesome icon names available to `button_icon`/`social_icon` fields (must stay in sync with `src/components/utility/icon.jsx`)
 
-### Schemas
+### CMS Config
 
-Shows how to set up schemas in CloudCannon to allow for non-technical editors to create new pages, with preset frontmatter and content.
-Schemas can be define on a collection level, allowing your new blog pages to be different to your new landing pages.
-This allows for your text heavy blog/docs pages to be built and edited in the content editor, while your other pages can be built with Bookshop in the visual editor.
-
-### CloudCannon Config
-
-A `cloudcannon.config.yml` file has been provided with some configuration that starts to show what can be done to configure the CMS.
-
-The placeholder Bookshop components show how to configure your components to control inputs and previews in CloudCannon.
-
-### Markdown Styles
-
-Markdown toolbar has all the options supported in the rich text editor, along with stylings to make them work.
-See the CloudCannon [Docs](https://cloudcannon.com/documentation/articles/configure-your-rich-text-editors/) for more information.
+[public/admin/config.yml](public/admin/config.yml) defines every collection and field exposed to editors at `/admin/` — see [Content Editing](#content-editing-decap-cms) above for how it maps onto Bookshop's component blueprints.
 
 ### CSS Variables
 

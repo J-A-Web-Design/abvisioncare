@@ -8,10 +8,10 @@ const { title = "", breadcrumbs = [], backgroundImage } = Astro.props;
 
 <div id="banner-1400">
     <div class="cs-container">
-        <span class="cs-int-title" data-cloudcannon-field="title">{title}</span>
+        <span class="cs-int-title">{title}</span>
         <div class="cs-breadcrumbs">
             {breadcrumbs.map((crumb, index) => (
-            <a href={crumb.url} class={`cs-link ${crumb.active} ? 'cs-active' : ''`} key={index} data-cloudcannon-field={`breadcrumbs[${index}].url`}>{crumb.label}
+            <a href={crumb.url} class={`cs-link ${crumb.active} ? 'cs-active' : ''`} key={index}>{crumb.label}
             </a>
             ))}
         </div>
@@ -19,10 +19,10 @@ const { title = "", breadcrumbs = [], backgroundImage } = Astro.props;
     <!--Background Image-->
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset={backgroundImage.mobile} data-cloudcannon-field="backgroundImage.mobile">
+        <source media="(max-width: 600px)" srcset={backgroundImage.mobile}>
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset={backgroundImage.desktop} data-cloudcannon-field="backgroundImage.desktop">
-        <img decoding="async" src={backgroundImage.desktop} alt="people laughing" width="1280" height="568" aria-hidden="true" data-cloudcannon-field="backgroundImage.desktop">
+        <source media="(min-width: 601px)" srcset={backgroundImage.desktop}>
+        <img decoding="async" src={backgroundImage.desktop} alt="people laughing" width="1280" height="568" aria-hidden="true">
     </picture>
 </div>
 <style>

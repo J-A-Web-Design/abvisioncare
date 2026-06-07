@@ -22,7 +22,6 @@ const {title, cards} = Astro.props;
                         <img
                             src={card.image}
                             alt={card.title}
-                            data-cloudcannon-field={`cards[${index}].image`}
                             class="cs-card-image"
                             loading="lazy"
                             decoding="async"
@@ -31,10 +30,10 @@ const {title, cards} = Astro.props;
                         />
                     </picture>
                     <div class="px-4 pb-4">
-                        <h3 class="cs-h3" data-cloudcannon-field={`cards[${index}].title`}>
+                        <h3 class="cs-h3">
                         {card.title}
                     </h3>
-                    <p class="cs-item-text" data-cloudcannon-field={`cards[${index}].description`}>
+                    <p class="cs-item-text">
                         {card.description}
                     </p>
                     </div>
