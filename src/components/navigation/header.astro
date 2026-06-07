@@ -41,9 +41,13 @@ import { header } from "../../../data/navigation.json";
       >
         {
           header.links.map((link) => {
+            const isBooking = link.link === "/book-an-eye-exam/";
             return (
               <li class="header__nav-item">
-                <a class="header__nav-link" href={link.link}>
+                <a
+                  class={`header__nav-link ${isBooking ? "header__nav-link--cta" : ""}`}
+                  href={link.link}
+                >
                   {link.text}
                 </a>
               </li>
@@ -101,6 +105,18 @@ import { header } from "../../../data/navigation.json";
   }
   .header__nav-link:hover {
     color: #034ad8;
+  }
+
+  .header__nav-link--cta {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .header__nav-link--cta:hover {
+    background-color: #163578;
+    color: #fff;
   }
 
   @media screen and (max-width: 600px) {
