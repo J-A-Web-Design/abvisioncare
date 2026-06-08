@@ -38,6 +38,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#f2f2f2'
     heading:
+      topper: Where We Serve
       heading_text: Trusted Eye Care in Edmonton & Surrounding Areas
       color: '#393939'
     text:
@@ -62,6 +63,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#FAF9F6'
     heading:
+      topper: Our Mission
       heading_text: Our Commitment to Your Vision
       color: '#393939'
     text:
@@ -85,6 +87,7 @@ content_blocks:
       text_color: '#ffffff'
       button_icon: Github
   - _bookshop_name: fourcards
+    topper: Our Advantages
     title: Why Choose Us
     cards:
       - image: /images/alberta-vision-care-convenient-locations.png
@@ -112,6 +115,7 @@ content_blocks:
           understand your eye health, any potential issues, and how to address
           them.
   - _bookshop_name: fourcards-alt
+    topper: What We Offer
     title: Our Services
     cards:
       - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-eye-exams.webp
@@ -133,6 +137,7 @@ content_blocks:
         title: Consultations
         description: Advice on eye nutrition and maintaining overall eye health.
   - _bookshop_name: partners
+    topper: Trusted Affiliations
     title: Our Partners
     partners:
       - image: /images/aao-logo.png
@@ -145,6 +150,7 @@ content_blocks:
         alt: Canadian Association of Optometrists
         link: https://opto.ca/
   - _bookshop_name: partners-alt
+    topper: Insurance & Billing
     title: We Direct Bill
     subheading:
       markdown_content: >-

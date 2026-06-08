@@ -8,6 +8,7 @@ interface Props {
   background_color: string;
   flipped: boolean;
   heading: {
+    topper: string;
     heading_text: string;
     color: string;
   };
@@ -47,7 +48,7 @@ const imageSrc =
   images[block.image.image_path]?.default ?? block.image.image_path;
 ---
 
-<section class="pt-20 pb-10 px-4" style={`background-color: ${block.background_color};`}>
+<section class="pt-12 pb-8 px-4" style={`background-color: ${block.background_color};`}>
     <Container>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
@@ -63,7 +64,8 @@ const imageSrc =
               />
             </div>
             <div class="col-2 order-1">
-              <h2 class="text-2xl md:text-4xl font-bold" style={`color: ${block.heading.color};`}>
+              <span class="cs-topper">{block.heading.topper}</span>
+              <h2 class="cs-title" style={`color: ${block.heading.color};`}>
                 {block.heading.heading_text}
               </h2>
               <div class="mt-4 md:mt-12 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
@@ -84,7 +86,8 @@ const imageSrc =
               />
             </div>
             <div class="col-2">
-              <h2 class="text-2xl md:text-4xl font-bold" style={`color: ${block.heading.color};`}>
+              <span class="cs-topper">{block.heading.topper}</span>
+              <h2 class="cs-title" style={`color: ${block.heading.color};`}>
                 {block.heading.heading_text}
               </h2>
               <div class="mt-4 md:mt-12 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
@@ -102,7 +105,7 @@ const imageSrc =
   @media only screen and (min-width: 1024px) 
   {
     
-  h2 {
+  .cs-title {
     max-width: 620px;
     margin-block: 30px;
   }

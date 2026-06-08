@@ -13,6 +13,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   markdown:
+    topper: Our Mission
     heading:
     markdown_content: >-
       At Alberta Vision Care, we are dedicated to delivering high-quality eye care to patients across Edmonton and the surrounding communities.

@@ -9,6 +9,7 @@ spec:
   - Section
 
 blueprint:
+  topper: "Our Advantages"
   title: "Why Choose Us"
   cards:
     - image: '/path/to/image1.svg'

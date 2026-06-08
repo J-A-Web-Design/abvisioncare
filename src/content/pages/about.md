@@ -30,6 +30,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
+      topper: Why Choose Us
       heading_text: Expert Eye Care for Your Well-Being
       color: '#393939'
     text:
@@ -50,6 +51,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
+      topper: Our Approach
       heading_text: Holistic Approach to Eye Health
       color: '#393939'
     text:

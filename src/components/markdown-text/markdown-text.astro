@@ -4,6 +4,7 @@ import { marked } from 'marked';
 
 interface Props {
   markdown: {
+    topper: string;
     heading:string;
     markdown_content: string;
     color: string;
@@ -18,6 +19,7 @@ const block = Astro.props;
 <section id="faq-1194">
   <div class="cs-container">
     <div class="cs-content">
+      <span class="cs-topper">{block.markdown?.topper}</span>
       <h2 class="cs-title">{block.markdown?.heading}</h2>
       <Markdown content={block.markdown?.markdown_content || 'Content not available'}>          
     </div>
@@ -46,8 +48,8 @@ const block = Astro.props;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* 40px - 48px */
-      gap: clamp(2.5rem, 5vw, 3rem);
+      /* 28px - 36px */
+      gap: clamp(1.75rem, 3.5vw, 2.25rem);
     }
     #faq-1194 .cs-content {
       text-align: left;

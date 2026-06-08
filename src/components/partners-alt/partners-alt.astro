@@ -9,6 +9,7 @@ interface Partner {
 }
 
 interface Props {
+  topper: string;
   title: string;
   partners: Partner[];
   subheading: {
@@ -18,13 +19,14 @@ interface Props {
 }
 const block = Astro.props;
 
-const { title, partners, subheading } = Astro.props;
+const { topper, title, partners, subheading } = Astro.props;
 ---
 
 <section class="bg-color">
     <Container>
-      <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 class="mb-4 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl">{title}</h2>
+      <div class="py-6 lg:py-10 mx-auto max-w-screen-xl px-4">
+        <span class="cs-topper">{topper}</span>
+        <h2 class="cs-title">{title}</h2>
         <p class="cs-text" style={`color: ${block.subheading.color};`}>
           {block.subheading.markdown_content}
        </p>
@@ -47,6 +49,17 @@ const { title, partners, subheading } = Astro.props;
 <style>
   .bg-color{
     background: #fff;
+  }
+  .cs-topper {
+    text-align: center;
+  }
+  .cs-title {
+    text-align: center;
+    margin: 0 auto 1rem auto;
+  }
+  .cs-title::after {
+    margin-left: auto;
+    margin-right: auto;
   }
   .cs-text {
           /* 16px - 20px */

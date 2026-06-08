@@ -24,6 +24,7 @@ content_blocks:
       desktop: https://ik.imagekit.io/azupnt3mqx/alberta-vision-care-contact-us.webp
   - _bookshop_name: markdown-text
     markdown:
+      topper: Eye Care 101
       heading: Your Guide to Eye Exams and Care at Alberta Vision Care
       markdown_content: >-
         At Alberta Vision Care, we recommend regular **comprehensive eye exams**

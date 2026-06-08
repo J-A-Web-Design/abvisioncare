@@ -25,6 +25,8 @@ content_blocks:
       desktop: >-
         https://ik.imagekit.io/boxhuwbys/alberta-vision-care-glasses.webp?updatedAt=1722648726101
   - _bookshop_name: partners
+    topper: Where to Find Us
+    plain_title: true
     title: >-
       We are conveniently located within Superstore in Edmonton, Sherwood Park,
       St. Albert, and Spruce Grove.
@@ -32,6 +34,18 @@ content_blocks:
       - image: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-superstore.png
         alt: Alberta Vision Care - Real Canadian Superstore logo
         link: https://www.realcanadiansuperstore.ca/en
+  - _bookshop_name: markdown-text
+    markdown:
+      topper: Plan Your Visit
+      heading: Our Hours
+      markdown_content: |-
+        *Working hours*
+
+        *Monday to Friday: 10-6pm*
+
+        *Saturday: 10-4pm*
+
+        *Sunday and Statutory Holidays: Closed*
   - _bookshop_name: locations
     title: Locations
     map_iframe_src: >-
@@ -121,15 +135,4 @@ content_blocks:
         numberLink: tel:7804400850
         ext: 0
         mapLink: ''
-  - _bookshop_name: markdown-text
-    markdown:
-      heading:
-      markdown_content: |-
-        *Working hours*
-
-        *Monday to Friday: 10-6pm*
-
-        *Saturday: 10-4pm*
-
-        *Sunday and Statutory Holidays: Closed*
 ---

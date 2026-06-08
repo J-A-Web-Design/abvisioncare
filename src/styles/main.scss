@@ -21,8 +21,8 @@
   /* 31px - 49px */
   --headerFontSize: clamp(1.9375rem, 3.9vw, 3rem);
   --bodyFontSize: 1.25rem;
-  /* 60px - 100px top and bottom */
-  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  /* 40px - 64px top and bottom */
+  --sectionPadding: clamp(2.5rem, 5vw, 4rem) 1rem;
 }
 
 body {

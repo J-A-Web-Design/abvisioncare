@@ -10,6 +10,7 @@ spec:
     - Section
 
 blueprint:
+  topper: "Insurance & Billing"
   title: "Our Partners"
   subheading:
     markdown_content: "Supporting optometry through strong partnerships."
