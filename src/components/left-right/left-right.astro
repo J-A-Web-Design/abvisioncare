@@ -48,7 +48,7 @@ const imageSrc =
   images[block.image.image_path]?.default ?? block.image.image_path;
 ---
 
-<section class="pt-12 pb-8 px-4" style={`background-color: ${block.background_color};`}>
+<section class="cs-left-right" style={`background-color: ${block.background_color};`}>
     <Container>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
@@ -102,9 +102,13 @@ const imageSrc =
   </Container>
 </section>
 <style>
-  @media only screen and (min-width: 1024px) 
+  .cs-left-right {
+    padding: var(--sectionPadding);
+  }
+
+  @media only screen and (min-width: 1024px)
   {
-    
+
   .cs-title {
     max-width: 620px;
     margin-block: 0 0.5rem;
