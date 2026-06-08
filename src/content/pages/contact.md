@@ -23,4 +23,6 @@ content_blocks:
       mobile: https://ik.imagekit.io/boxhuwbys/abvisioncare-optometrist.webp
       desktop: https://ik.imagekit.io/boxhuwbys/abvisioncare-optometrist.webp
   - _bookshop_name: contactform
+  - _bookshop_name: cta
+    title: Looking for a convenient location near you?
 ---

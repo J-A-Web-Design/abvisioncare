@@ -230,4 +230,6 @@ content_blocks:
         If you need a recheck or have any questions about your eligibility, feel
         free to contact our office. We’re here to assist you and ensure your eye
         care needs are met.
+  - _bookshop_name: cta
+    title: Looking for a convenient location near you?
 ---

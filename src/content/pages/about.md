@@ -111,4 +111,6 @@ content_blocks:
           Bachelor of Science degree at the University of Alberta. She continued
           her education at the Illinois College of Optometry...
         read_more_url: /team-members/dr-jasleen-mahil
+  - _bookshop_name: cta
+    title: Looking for a convenient location near you?
 ---

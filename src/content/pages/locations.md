@@ -135,4 +135,6 @@ content_blocks:
         numberLink: tel:7804400850
         ext: 0
         mapLink: ''
+  - _bookshop_name: cta
+    title: Looking for a convenient location near you?
 ---
