@@ -17,7 +17,7 @@ seo:
 content_blocks:
   - _bookshop_name: hero
     background_image:
-      image_path: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-superstore.webp
+      image_path: https://ik.imagekit.io/boxhuwbys/alberta-vision-care-optometry-header.webp
       type: image
       alt_text: Alberta Vision Care optometrist using an eye examination device
     heading:
@@ -173,9 +173,4 @@ content_blocks:
         link: https://www.ab.bluecross.ca/index.php
   - _bookshop_name: cta
     title: Looking for a convenient location near you?
-    fields:
-      - type: stringdfds
-        label: dsd
-        key: topper_textfsf
-        default: Your Vision, Our Prioritydsf
 ---

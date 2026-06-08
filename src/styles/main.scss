@@ -59,6 +59,19 @@ body {
   color: var(--headerColor);
   position: relative;
 }
+.cs-title::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 0.25rem;
+  margin-top: 0.75rem;
+  background-color: var(--primary);
+  border-radius: 0.125rem;
+}
+/* The hero's heading sits on a background image with its own color logic — skip the accent there */
+#hero-219 .cs-title::after {
+  display: none;
+}
 h2{
   font-family: "Exo Variable",sans-serif;
 }
