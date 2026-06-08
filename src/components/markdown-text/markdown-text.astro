@@ -69,6 +69,33 @@ const block = Astro.props;
       margin-right: auto;
     }
 
+    #faq-1194 :global(.markdown-text:has(h3)) {
+      width: 100%;
+      text-align: left;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.75rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+    }
+    #faq-1194 :global(.markdown-text h3) {
+      color: var(--primary);
+      font-weight: 700;
+      padding-bottom: 0.5rem;
+      margin-top: 2.25rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    #faq-1194 :global(.markdown-text h3:first-child) {
+      margin-top: 0;
+    }
+    #faq-1194 :global(.markdown-text strong) {
+      color: var(--headerColor, #1a1a1a);
+    }
+    #faq-1194 :global(.markdown-text ul li::marker),
+    #faq-1194 :global(.markdown-text ol li::marker) {
+      color: var(--primary);
+    }
+
   }
   /* Desktop - 1024px */
   @media only screen and (min-width: 64rem) {

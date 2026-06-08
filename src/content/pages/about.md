@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: About | Alberta Vision Care
+title: About
 seo:
   page_description: >-
     Experience expert eye care with Alberta Vision Care. Our board-certified
