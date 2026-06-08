@@ -52,14 +52,21 @@ const block = Astro.props;
       gap: clamp(1.75rem, 3.5vw, 2.25rem);
     }
     #faq-1194 .cs-content {
-      text-align: left;
+      text-align: center;
       max-width: 80rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #faq-1194 .cs-title {
       /* 20 characters wide including spaces */
       max-width: 120ch;
       margin: 0 0 2rem 0;
+    }
+    #faq-1194 .cs-title::after {
+      margin-left: auto;
+      margin-right: auto;
     }
 
   }
