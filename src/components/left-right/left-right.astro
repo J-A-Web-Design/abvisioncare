@@ -68,7 +68,7 @@ const imageSrc =
               <h2 class="cs-title" style={`color: ${block.heading.color};`}>
                 {block.heading.heading_text}
               </h2>
-              <div class="mt-4 md:mt-12 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
+              <div class="mt-4 md:mt-6 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
                 <Markdown content={block.text.markdown_content} />
               </div>
               {block.button && <Button {...block.button} />}
@@ -90,7 +90,7 @@ const imageSrc =
               <h2 class="cs-title" style={`color: ${block.heading.color};`}>
                 {block.heading.heading_text}
               </h2>
-              <div class="mt-4 md:mt-12 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
+              <div class="mt-4 md:mt-6 text-lg md:text-xl mb-8" style={`color: ${block.text.color};`}>
                 <Markdown content={block.text.markdown_content} />
               </div>
               {block.button && <Button {...block.button} />}
@@ -107,7 +107,7 @@ const imageSrc =
     
   .cs-title {
     max-width: 620px;
-    margin-block: 30px;
+    margin-block: 0 0.5rem;
   }
 }
 </style>
